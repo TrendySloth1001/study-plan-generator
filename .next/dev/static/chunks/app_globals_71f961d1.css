@@ -552,10 +552,6 @@
     bottom: calc(var(--spacing) * 0);
   }
 
-  .bottom-4 {
-    bottom: calc(var(--spacing) * 4);
-  }
-
   .-left-12 {
     left: calc(var(--spacing) * -12);
   }
@@ -1035,10 +1031,6 @@
     width: calc(var(--spacing) * 9);
   }
 
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
-
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
@@ -1255,10 +1247,6 @@
     animation: var(--animate-spin);
   }
 
-  .cursor-crosshair {
-    cursor: crosshair;
-  }
-
   .cursor-default {
     cursor: default;
   }
@@ -1305,10 +1293,6 @@
 
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .grid-cols-\[0_1fr\] {
@@ -2826,15 +2810,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:scale-110:hover {
-      --tw-scale-x: 110%;
-      --tw-scale-y: 110%;
-      --tw-scale-z: 110%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:border-neon-cyan:hover {
       border-color: var(--neon-cyan);
     }
@@ -2891,12 +2866,6 @@
   @media (hover: hover) {
     .hover\:bg-neon-green:hover {
       background-color: var(--neon-green);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-neon-pink:hover {
-      background-color: var(--neon-pink);
     }
   }
 
