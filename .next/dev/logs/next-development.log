@@ -991,3 +991,21 @@ It can also happen if the client has a browser extension installed which messes 
 [00:07:40.182] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [00:07:40.182] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
 [00:07:40.182] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763666969566}
+[00:09:06.980] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/app color: rgb(120, 120, 120) color: inherit {"dp":"/app","o":"http://localhost:3000/app","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763667056728}
+[00:09:07.486] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[00:09:13.188] Server  LOG      ✓ Compiled in 60ms
+[00:09:39.957] Server  LOG      ✓ Compiled in 61ms
+[00:09:53.492] Server  LOG      ✓ Compiled in 33ms
+[00:10:06.354] Server  LOG      ✓ Compiled in 72ms
+[00:10:26.794] Server  LOG      ✓ Compiled in 41ms
+[00:11:20.240] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763667189982}
+[00:12:58.186] Server  LOG      ✓ Compiled in 35ms
+[00:13:14.991] Server  LOG      ✓ Compiled in 35ms
+[00:14:15.700] Server  LOG      ✓ Compiled in 31ms
+[00:14:26.654] Server  LOG      ✓ Compiled in 35ms
+[00:14:34.059] Server  LOG      ✓ Compiled in 118ms
+[00:14:48.590] Server  LOG      ✓ Compiled in 43ms
+[00:14:56.829] Server  LOG      ✓ Compiled in 31ms
+[00:15:05.167] Server  LOG      ✓ Compiled in 31ms
+[00:15:19.473] Server  LOG      ✓ Compiled in 37ms
+[00:15:20.152] Browser LOG     THREE.WebGLRenderer: Context Lost.
