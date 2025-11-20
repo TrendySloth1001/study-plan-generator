@@ -1967,23 +1967,11 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                 const { done, value } = await reader.read();
                 if (done) break;
                 const chunk = decoder.decode(value);
-                const lines = chunk.split("\n");
-                for (const line of lines){
-                    if (line.startsWith("0:")) {
-                        try {
-                            const data = JSON.parse(line.slice(2));
-                            if (data.type === "text") {
-                                aiResponse += data.value;
-                                setLocalMessages((prev)=>prev.map((msg, idx)=>idx === prev.length - 1 ? {
-                                            ...msg,
-                                            content: aiResponse
-                                        } : msg));
-                            }
-                        } catch (e) {
-                        // Skip parsing errors
-                        }
-                    }
-                }
+                aiResponse += chunk;
+                setLocalMessages((prev)=>prev.map((msg, idx)=>idx === prev.length - 1 ? {
+                            ...msg,
+                            content: aiResponse
+                        } : msg));
             }
             updateContext(currentInput, aiResponse);
         } catch (error) {
@@ -2080,7 +2068,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                             className: "w-4 h-4 text-neon-yellow"
                         }, void 0, false, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 507,
+                            lineNumber: 495,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2088,13 +2076,13 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                             children: "DETECTED PREFERENCES"
                         }, void 0, false, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 508,
+                            lineNumber: 496,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/chat-bot.tsx",
-                    lineNumber: 506,
+                    lineNumber: 494,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2107,7 +2095,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 511,
+                            lineNumber: 499,
                             columnNumber: 32
                         }, this),
                         prefs.timePerWeek && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2120,7 +2108,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 512,
+                            lineNumber: 500,
                             columnNumber: 33
                         }, this),
                         prefs.format && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2130,13 +2118,13 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 513,
+                            lineNumber: 501,
                             columnNumber: 28
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/chat-bot.tsx",
-                    lineNumber: 510,
+                    lineNumber: 498,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2144,13 +2132,13 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                     children: "Tip: These will be used when you generate a plan!"
                 }, void 0, false, {
                     fileName: "[project]/components/chat-bot.tsx",
-                    lineNumber: 515,
+                    lineNumber: 503,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/chat-bot.tsx",
-            lineNumber: 505,
+            lineNumber: 493,
             columnNumber: 7
         }, this);
     };
@@ -2170,7 +2158,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                         className: "text-neon-cyan w-6 h-6"
                                     }, void 0, false, {
                                         fileName: "[project]/components/chat-bot.tsx",
-                                        lineNumber: 528,
+                                        lineNumber: 516,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2178,13 +2166,13 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                         children: "STUDY AI CHAT"
                                     }, void 0, false, {
                                         fileName: "[project]/components/chat-bot.tsx",
-                                        lineNumber: 529,
+                                        lineNumber: 517,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/chat-bot.tsx",
-                                lineNumber: 527,
+                                lineNumber: 515,
                                 columnNumber: 11
                             }, this),
                             onToggleFullscreen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2195,24 +2183,24 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-bot.tsx",
-                                    lineNumber: 537,
+                                    lineNumber: 525,
                                     columnNumber: 31
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$0$2e$454$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$maximize$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Maximize2$3e$__["Maximize2"], {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-bot.tsx",
-                                    lineNumber: 537,
+                                    lineNumber: 525,
                                     columnNumber: 67
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/chat-bot.tsx",
-                                lineNumber: 532,
+                                lineNumber: 520,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/chat-bot.tsx",
-                        lineNumber: 526,
+                        lineNumber: 514,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2220,13 +2208,13 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                         children: "Use @ or / for commands"
                     }, void 0, false, {
                         fileName: "[project]/components/chat-bot.tsx",
-                        lineNumber: 541,
+                        lineNumber: 529,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/chat-bot.tsx",
-                lineNumber: 525,
+                lineNumber: 513,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2242,7 +2230,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                         children: message.content
                                     }, void 0, false, {
                                         fileName: "[project]/components/chat-bot.tsx",
-                                        lineNumber: 558,
+                                        lineNumber: 546,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2253,18 +2241,18 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/components/chat-bot.tsx",
-                                        lineNumber: 559,
+                                        lineNumber: 547,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/chat-bot.tsx",
-                                lineNumber: 551,
+                                lineNumber: 539,
                                 columnNumber: 13
                             }, this)
                         }, message.id, false, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 547,
+                            lineNumber: 535,
                             columnNumber: 11
                         }, this)),
                     isAIResponding && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2276,7 +2264,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                     className: "w-4 h-4 animate-spin"
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-bot.tsx",
-                                    lineNumber: 569,
+                                    lineNumber: 557,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2284,31 +2272,31 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                     children: "Gemini AI is thinking..."
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-bot.tsx",
-                                    lineNumber: 570,
+                                    lineNumber: 558,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 568,
+                            lineNumber: 556,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/chat-bot.tsx",
-                        lineNumber: 567,
+                        lineNumber: 555,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         ref: messagesEndRef
                     }, void 0, false, {
                         fileName: "[project]/components/chat-bot.tsx",
-                        lineNumber: 574,
+                        lineNumber: 562,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/chat-bot.tsx",
-                lineNumber: 545,
+                lineNumber: 533,
                 columnNumber: 7
             }, this),
             getFormSuggestions(),
@@ -2327,7 +2315,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                 children: cmd.cmd
                             }, void 0, false, {
                                 fileName: "[project]/components/chat-bot.tsx",
-                                lineNumber: 595,
+                                lineNumber: 583,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2335,18 +2323,18 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                 children: cmd.desc
                             }, void 0, false, {
                                 fileName: "[project]/components/chat-bot.tsx",
-                                lineNumber: 596,
+                                lineNumber: 584,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, cmd.cmd, true, {
                         fileName: "[project]/components/chat-bot.tsx",
-                        lineNumber: 586,
+                        lineNumber: 574,
                         columnNumber: 15
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/chat-bot.tsx",
-                lineNumber: 582,
+                lineNumber: 570,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2364,7 +2352,7 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                             className: "flex-1 bg-panel-black border-2 border-neon-cyan text-neon-cyan p-3 text-base focus:outline-none focus:border-neon-pink transition-all"
                         }, void 0, false, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 605,
+                            lineNumber: 593,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2375,29 +2363,29 @@ function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = false, onToggleFull
                                 className: "w-6 h-6"
                             }, void 0, false, {
                                 fileName: "[project]/components/chat-bot.tsx",
-                                lineNumber: 619,
+                                lineNumber: 607,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/chat-bot.tsx",
-                            lineNumber: 614,
+                            lineNumber: 602,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/chat-bot.tsx",
-                    lineNumber: 604,
+                    lineNumber: 592,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/chat-bot.tsx",
-                lineNumber: 603,
+                lineNumber: 591,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/chat-bot.tsx",
-        lineNumber: 523,
+        lineNumber: 511,
         columnNumber: 5
     }, this);
 }

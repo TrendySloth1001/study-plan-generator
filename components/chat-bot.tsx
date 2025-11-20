@@ -431,27 +431,15 @@ export default function ChatBot({ studyPlan, onGeneratePlan, isFullscreen = fals
         if (done) break
 
         const chunk = decoder.decode(value)
-        const lines = chunk.split("\n")
+        aiResponse += chunk
         
-        for (const line of lines) {
-          if (line.startsWith("0:")) {
-            try {
-              const data = JSON.parse(line.slice(2))
-              if (data.type === "text") {
-                aiResponse += data.value
-                setLocalMessages((prev) => 
-                  prev.map((msg, idx) => 
-                    idx === prev.length - 1 
-                      ? { ...msg, content: aiResponse }
-                      : msg
-                  )
-                )
-              }
-            } catch (e) {
-              // Skip parsing errors
-            }
-          }
-        }
+        setLocalMessages((prev) => 
+          prev.map((msg, idx) => 
+            idx === prev.length - 1 
+              ? { ...msg, content: aiResponse }
+              : msg
+          )
+        )
       }
 
       updateContext(currentInput, aiResponse)

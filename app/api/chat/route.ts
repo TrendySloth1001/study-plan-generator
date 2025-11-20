@@ -7,7 +7,7 @@ export async function POST(req: Request) {
   try {
     const { messages } = await req.json()
 
-    const result = streamText({
+    const result = await streamText({
       model: google("gemini-2.0-flash-exp"),
       system: `You are an expert AI learning assistant for a study plan generator app. You help users:
 
@@ -25,7 +25,7 @@ Use a friendly but professional tone. Keep responses focused and actionable.`,
       maxTokens: 1000,
     })
 
-    return result.toDataStreamResponse()
+    return result.toTextStreamResponse()
   } catch (error) {
     console.error("[Chat API] Error:", error)
     return new Response(
