@@ -12,7 +12,7 @@
   "static/chunks/5a733_maath_dist_20d7ab15._.js",
   "static/chunks/7b341_n8ao_dist_N8AO_e77e189b.js",
   "static/chunks/3bba6_@react-three_postprocessing_dist_index_10ca558e.js",
-  "static/chunks/node_modules__pnpm_b4583805._.js"
+  "static/chunks/node_modules__pnpm_6938bb63._.js"
 ],
     source: "dynamic"
 });

@@ -166,8 +166,7 @@ function Planet({
   const cloudsRef = useRef<THREE.Mesh>(null)
   const atmosphereRef = useRef<THREE.Mesh>(null)
   const [hovered, setHovered] = useState(false)
-  const trailPoints = useRef<THREE.Vector3[]>([])
-  const trailRef = useRef<THREE.Line>(null)
+  const [tooltipPos, setTooltipPos] = useState<{ x: number; y: number } | null>(null)
 
   useFrame((state, delta) => {
     // Access time control from global state (will be set by TimeControl component)
@@ -218,20 +217,7 @@ function Planet({
       planetRef.current.position.x = x
       planetRef.current.position.z = z
       
-      // Record trail points (keep last 200 positions)
-      if (state.clock.elapsedTime % 0.1 < delta) {
-        trailPoints.current.push(new THREE.Vector3(x, 0, z))
-        if (trailPoints.current.length > 200) {
-          trailPoints.current.shift()
-        }
-        
-        // Update trail geometry
-        if (trailRef.current && trailPoints.current.length > 1) {
-          const geometry = new THREE.BufferGeometry().setFromPoints(trailPoints.current)
-          trailRef.current.geometry.dispose()
-          trailRef.current.geometry = geometry
-        }
-      }
+      // Trail recording removed for cleaner visualization
     }
     
     if (meshRef.current) {
@@ -263,27 +249,8 @@ function Planet({
     }
   })
 
-  // Initialize trail geometry
-  const initialTrailGeometry = useMemo(() => {
-    return new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0)])
-  }, [])
-
   return (
     <>
-      {/* Dynamic orbital trail */}
-      <primitive 
-        object={new THREE.Line(
-          initialTrailGeometry, 
-          new THREE.LineBasicMaterial({
-            color: color,
-            transparent: true,
-            opacity: 0.6,
-            blending: THREE.AdditiveBlending
-          })
-        )} 
-        ref={trailRef}
-      />
-      
       <group ref={planetRef}>
         {/* Data visualization particles when hovered */}
         {hovered && (
@@ -310,10 +277,17 @@ function Planet({
           onPointerOver={(e: ThreeEvent<PointerEvent>) => {
             e.stopPropagation()
             setHovered(true)
+            setTooltipPos({ x: e.clientX, y: e.clientY })
             document.body.style.cursor = 'pointer'
+          }}
+          onPointerMove={(e: ThreeEvent<PointerEvent>) => {
+            if (hovered) {
+              setTooltipPos({ x: e.clientX, y: e.clientY })
+            }
           }}
           onPointerOut={() => {
             setHovered(false)
+            setTooltipPos(null)
             document.body.style.cursor = 'auto'
           }}
         >
@@ -467,6 +441,37 @@ function Planet({
         )}
       </group>
       </group>
+      
+      {/* HTML Tooltip */}
+      {hovered && tooltipPos && typeof window !== 'undefined' && (
+        <Html position={[planetRef.current?.position.x || 0, planetRef.current?.position.y || 0, planetRef.current?.position.z || 0]}>
+          <div 
+            className="pointer-events-none whitespace-nowrap"
+            style={{
+              transform: 'translate(-50%, -120%)'
+            }}
+          >
+            <div 
+              className="px-3 py-1 rounded-full border-2 font-bold text-sm backdrop-blur-sm"
+              style={{
+                backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                borderColor: color,
+                color: color,
+                boxShadow: `0 0 10px ${color}60`
+              }}
+            >
+              {info.name.split(' - ')[0]}
+            </div>
+            <div 
+              className="w-0.5 h-4 mx-auto"
+              style={{
+                backgroundColor: color,
+                boxShadow: `0 0 5px ${color}`
+              }}
+            ></div>
+          </div>
+        </Html>
+      )}
     </>
   )
 }
@@ -843,7 +848,7 @@ function PlanetLabel({ text, position }: { text: string; position: [number, numb
 }
 
 // Time control UI component
-function TimeControl() {
+function TimeControl({ isFullscreen = false }: { isFullscreen?: boolean }) {
   const [timeScale, setTimeScale] = useState(1)
   const [isPaused, setIsPaused] = useState(false)
   const [isMinimized, setIsMinimized] = useState(false)
@@ -860,7 +865,7 @@ function TimeControl() {
   }
   
   return (
-    <div className="absolute top-4 left-4 bg-terminal-black/90 border-2 border-neon-cyan backdrop-blur-sm transition-all duration-300" style={{ zIndex: 40 }}>
+    <div className={`absolute top-4 ${isFullscreen ? 'right-4' : 'left-4'} bg-terminal-black/90 border-2 border-neon-cyan backdrop-blur-sm transition-all duration-300`} style={{ zIndex: 40 }}>
       <div 
         className="flex items-center justify-between p-3 cursor-pointer"
         onClick={() => setIsMinimized(!isMinimized)}
@@ -944,97 +949,113 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
   const planetData: { [key: string]: PlanetInfo } = {
     mercury: {
       name: "Mercury - Beginner Stage",
-      description: "The starting point of your learning journey. Quick to orbit, representing rapid initial progress.",
+      description: "The starting point of your learning journey. Quick to orbit, representing rapid initial progress. Like a speed demon, Mercury zips around the Sun in just 88 Earth days!",
       stage: "Foundation Building",
       facts: [
-        "Fastest orbital period - like quick early wins in learning",
-        "Closest to the knowledge source (Sun)",
-        "Small but mighty - basic concepts that pack a punch",
-        "No atmosphere - pure, unfiltered learning"
+        "🏃 Fastest orbital speed at 47 km/s - blaze through basics!",
+        "🌡️ Temperature swings from 430°C (day) to -180°C (night)",
+        "🪨 Heavily cratered surface - marks of countless learning impacts",
+        "💫 No atmosphere - pure, unfiltered knowledge exposure",
+        "🌅 One day = 176 Earth days (but year is only 88 days!)",
+        "🎯 Smallest planet but closest to success (the Sun)"
       ],
       color: "#00e1ff"
     },
     venus: {
       name: "Venus - Foundation Stage",
-      description: "Building your knowledge base with thick layers of understanding.",
+      description: "Building your knowledge base with thick layers of understanding. The rebel planet that spins backwards and shines brighter than any star!",
       stage: "Core Concepts",
       facts: [
-        "Dense atmosphere - deep conceptual layers",
-        "Brightest planet - clarity in fundamentals",
-        "Rotates backwards - challenging conventional thinking",
-        "Similar to Earth - relatable learning material"
+        "🔥 Hottest planet at 462°C - things are heating up!",
+        "⭐ Brightest object in night sky after the Moon",
+        "🔄 Spins clockwise (retrograde) - think differently!",
+        "🌋 Over 1,600 volcanoes - explosive learning potential",
+        "☁️ Clouds of sulfuric acid - intense study environment",
+        "🌍 Earth's twin in size but totally different in character"
       ],
       color: "#ff00e6"
     },
     earth: {
       name: "Earth - Core Learning",
-      description: "The perfect conditions for knowledge to flourish and grow.",
+      description: "The perfect conditions for knowledge to flourish and grow. The only known planet with life - where your skills truly come alive!",
       stage: "Active Learning",
       facts: [
-        "Goldilocks zone - optimal learning conditions",
-        "Life thrives here - your skills come alive",
-        "Has a moon - guidance and reflection",
-        "Dynamic weather - diverse learning experiences"
+        "🌍 Only planet with liquid water - fluid thinking!",
+        "🧬 Home to 8.7 million species - diverse skill sets",
+        "🌙 Perfect Moon size for tides and stability",
+        "🌊 70% ocean coverage - depth of knowledge",
+        "🛡️ Magnetic field protects from solar winds",
+        "🌀 Spins at 1,670 km/h at equator - always in motion!"
       ],
       color: "#00ff41"
     },
     mars: {
       name: "Mars - Practice Stage",
-      description: "The red planet of challenge and practical application.",
+      description: "The red planet of challenge and practical application. Home to the largest volcano and canyon in the solar system!",
       stage: "Hands-On Experience",
       facts: [
-        "Red from iron - building strong foundations",
-        "Thin atmosphere - direct exposure to problems",
-        "Polar ice caps - cool problem-solving",
-        "Potential for life - your skills developing"
+        "🏔️ Olympus Mons: 21 km tall - 3x Mt. Everest!",
+        "🌋 Valles Marineris: 4,000 km long canyon system",
+        "❄️ Polar ice caps contain frozen water and CO2",
+        "🤖 Host to multiple rovers - hands-on exploration",
+        "🌅 Sunsets appear blue due to dust particles",
+        "⚡ Massive dust storms can cover entire planet"
       ],
       color: "#ff4444"
     },
     jupiter: {
       name: "Jupiter - Advanced Topics",
-      description: "The giant leap into complex, interconnected concepts.",
+      description: "The giant leap into complex, interconnected concepts. So massive it could contain 1,300 Earths!",
       stage: "Advanced Mastery",
       facts: [
-        "Largest planet - vast knowledge domains",
-        "Many moons - multiple perspectives",
-        "Great Red Spot - tackling major challenges",
-        "Protects inner planets - mentor to others"
+        "🌪️ Great Red Spot: 400-year-old storm bigger than Earth",
+        "🌙 95 known moons - endless perspectives to explore",
+        "⚡ Lightning 1,000x more powerful than Earth's",
+        "🛡️ Protects inner planets by deflecting asteroids",
+        "🌀 Spins fastest: 1 day = 10 hours!",
+        "💍 Has faint rings made of dust from meteor impacts"
       ],
       color: "#ffaa00"
     },
     saturn: {
       name: "Saturn - Mastery Stage",
-      description: "Distinguished by your unique skill rings and accomplishments.",
+      description: "Distinguished by your unique skill rings and accomplishments. The most beautiful planet with spectacular ring system visible from Earth!",
       stage: "Expert Level",
       facts: [
-        "Iconic rings - your distinctive expertise",
-        "Second largest - commanding presence",
-        "Many moons - leading others",
-        "Beautiful structure - elegant solutions"
+        "💍 7 main rings spanning 282,000 km across",
+        "🪨 Rings made of ice chunks, rocks, and dust",
+        "🌊 Could float in water - least dense planet!",
+        "🌙 146 known moons - Titan is larger than Mercury",
+        "🌬️ Wind speeds up to 1,800 km/h at equator",
+        "⬡ Hexagon-shaped storm at north pole!"
       ],
       color: "#ffea00"
     },
     uranus: {
       name: "Uranus - Specialization",
-      description: "Tilted perspective bringing unique insights and innovation.",
+      description: "Tilted perspective bringing unique insights and innovation. The sideways planet that literally rolls around the Sun!",
       stage: "Unique Expertise",
       facts: [
-        "Tilted 98° - unconventional approaches",
-        "Ice giant - cool innovative solutions",
-        "Faint rings - subtle but significant impact",
-        "Distinct blue - standing out in your field"
+        "🔄 Tilted 98° - spins on its side like a rolling ball",
+        "❄️ Coldest planet at -224°C despite not being farthest",
+        "💎 Rains diamonds due to extreme pressure!",
+        "💍 13 faint rings discovered in 1977",
+        "🌙 27 moons named after Shakespeare & Pope characters",
+        "🔵 Blue color from methane in atmosphere"
       ],
       color: "#00ffff"
     },
     neptune: {
       name: "Neptune - Expertise Stage",
-      description: "The deepest level of mastery in your learning journey.",
+      description: "The deepest level of mastery in your learning journey. The windiest planet with supersonic storms!",
       stage: "Ultimate Mastery",
       facts: [
-        "Farthest planet - ultimate achievement",
-        "Strongest winds - powerful influence",
-        "Deep blue - profound knowledge",
-        "Takes 165 years to orbit - lifetime of learning"
+        "🌬️ Fastest winds at 2,100 km/h - 5x speed of sound!",
+        "🔭 Discovered by math before being seen (1846)",
+        "💙 Deep blue from methane - profound mastery",
+        "⏰ 1 year = 165 Earth years - epic journey!",
+        "🌑 14 known moons - Triton orbits backwards",
+        "💍 5 main rings named after Neptune discoverers"
       ],
       color: "#4444ff"
     }
@@ -1250,7 +1271,7 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
       </Canvas>
       
       {/* Time Control UI */}
-      <TimeControl />
+      <TimeControl isFullscreen={isFullscreen} />
       
       {/* Fullscreen Button - Only show when not in fullscreen mode */}
       {!isFullscreen && (
@@ -1268,12 +1289,6 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
 
       {/* Tech overlay effects */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Scan lines */}
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, #00ff41 2px, #00ff41 4px)',
-          animation: 'scan 8s linear infinite'
-        }}></div>
-        
         {/* Corner brackets */}
         <div className="absolute top-4 left-4 w-16 h-16 border-t-2 border-l-2 border-neon-cyan opacity-50"></div>
         <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-neon-cyan opacity-50"></div>
