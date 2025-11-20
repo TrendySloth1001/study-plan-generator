@@ -74,7 +74,7 @@ const detailedPlanetData = {
                 "Silicate mantle: 420 km thick",
                 "Crust: 100-300 km thick"
             ],
-            magnetField: "~1% of Earth's - surprisingly strong for small size"
+            magneticField: "~1% of Earth's - surprisingly strong for small size"
         },
         satellites: {
             moonCount: 0,
