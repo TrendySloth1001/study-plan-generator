@@ -51,6 +51,7 @@ export default function AppPage() {
       topic,
       difficulty: options?.difficulty || "intermediate",
       timePerWeek: options?.timePerWeek || 10,
+      timeUnit: options?.timeUnit || "hours",
       format: options?.format || "balanced",
     })
     setShowChat(false)
@@ -125,7 +126,7 @@ export default function AppPage() {
                     </div>
                     <div className="border-2 border-neon-green p-4 bg-terminal-black">
                       <p className="text-neon-green text-xs font-bold mb-1">TIME PER WEEK</p>
-                      <p className="text-neon-green text-lg">{studyPlan.timePerWeek} hours</p>
+                      <p className="text-neon-green text-lg">{studyPlan.timePerWeek} {studyPlan.timeUnit || "hours"}</p>
                     </div>
                     <div className="border-2 border-neon-pink p-4 bg-terminal-black">
                       <p className="text-neon-pink text-xs font-bold mb-1">TIMELINE</p>

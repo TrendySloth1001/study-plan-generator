@@ -2,10 +2,26 @@
 
 import { ArrowRight, Zap, Map, Target, TrendingUp, Sparkles, Brain } from "lucide-react"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, Suspense, useEffect } from "react"
+import dynamic from "next/dynamic"
+
+// Dynamically import Solar System (client-side only)
+const SolarSystemScene = dynamic(() => import("@/components/solar-system"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-[600px] md:h-[800px] flex items-center justify-center">
+      <div className="text-pixel-yellow animate-pulse">Loading Solar System...</div>
+    </div>
+  ),
+})
 
 export default function Home() {
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const features = [
     {
@@ -36,15 +52,15 @@ export default function Home() {
 
   // Dynamic stats - no hardcoded numbers
   const [stats, setStats] = useState([
-    { value: "AI", label: "Powered Learning", color: "neon-cyan", icon: "🤖" },
-    { value: "∞", label: "Unlimited Topics", color: "neon-green", icon: "📚" },
-    { value: "24/7", label: "Always Available", color: "neon-pink", icon: "⚡" },
+    { value: "AI", label: "Powered Learning", color: "neon-cyan" },
+    { value: "∞", label: "Unlimited Topics", color: "neon-green" },
+    { value: "24/7", label: "Always Available", color: "neon-pink" },
   ])
 
   return (
-    <main className="min-h-screen grid-bg bg-terminal-black">
+    <main className="min-h-screen grid-bg bg-terminal-black relative">
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-screen flex items-center">
+      <section className="relative overflow-hidden min-h-screen flex items-center z-10">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-64 h-64 border-4 border-neon-cyan animate-pulse"></div>
@@ -53,21 +69,23 @@ export default function Home() {
           <div className="absolute bottom-1/4 left-1/2 w-40 h-40 border-4 border-pixel-yellow animate-pulse delay-300"></div>
         </div>
 
-        {/* Floating particles */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-2 h-2 bg-neon-cyan animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${5 + Math.random() * 10}s`,
-              }}
-            />
-          ))}
-        </div>
+        {/* Floating particles - fixed positions to prevent hydration errors */}
+        {mounted && (
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {[10, 25, 40, 55, 70, 85, 15, 35, 60, 80, 5, 95, 30, 50, 75, 20, 45, 65, 90, 12].map((left, i) => (
+              <div
+                key={i}
+                className="absolute w-2 h-2 bg-neon-cyan animate-float"
+                style={{
+                  left: `${left}%`,
+                  top: `${(i * 5.26) % 100}%`,
+                  animationDelay: `${(i * 0.25) % 5}s`,
+                  animationDuration: `${8 + (i % 7)}s`,
+                }}
+              />
+            ))}
+          </div>
+        )}
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 text-center">
           {/* Badge */}
@@ -115,19 +133,47 @@ export default function Home() {
                 key={i} 
                 className={`border-4 border-${stat.color} pixel-border p-8 bg-panel-black hover:bg-terminal-black transition-all transform hover:scale-105 hover:rotate-1 cursor-pointer group`}
               >
-                <div className="text-5xl mb-3 group-hover:animate-bounce">{stat.icon}</div>
-                <p className={`text-5xl font-bold text-${stat.color} neon-glow mb-3 group-hover:scale-110 transition-transform`}>
+                <p className={`text-6xl font-bold text-${stat.color} neon-glow mb-4 group-hover:scale-110 transition-transform`}>
                   {stat.value}
                 </p>
-                <p className="text-gray-300 text-lg">{stat.label}</p>
+                <p className="text-gray-300 text-xl font-bold">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* 3D Interactive Section */}
+      <section className="py-24 bg-terminal-black relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+              <span className="text-neon-pink neon-glow">INTERACTIVE</span>{" "}
+              <span className="text-neon-cyan neon-glow">3D</span>{" "}
+              <span className="text-neon-green neon-glow">EXPERIENCE</span>
+            </h2>
+            <p className="text-xl text-gray-300">Explore the future of learning visualization</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="border-2 border-neon-cyan p-6 bg-terminal-black">
+              <p className="text-neon-cyan text-xl font-bold mb-2">INTERACTIVE</p>
+              <p className="text-gray-300">Rotate and explore 3D geometries</p>
+            </div>
+            <div className="border-2 border-neon-pink p-6 bg-terminal-black">
+              <p className="text-neon-pink text-xl font-bold mb-2">DYNAMIC</p>
+              <p className="text-gray-300">Watch objects morph and animate</p>
+            </div>
+            <div className="border-2 border-neon-green p-6 bg-terminal-black">
+              <p className="text-neon-green text-xl font-bold mb-2">FUTURISTIC</p>
+              <p className="text-gray-300">Next-gen learning interface</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section className="py-24 bg-panel-black">
+      <section className="py-24 bg-panel-black relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
@@ -175,22 +221,19 @@ export default function Home() {
                 step: "01",
                 title: "ENTER YOUR TOPIC",
                 description: "Tell us what you want to learn - any subject, any level",
-                color: "neon-cyan",
-                icon: "✍️"
+                color: "neon-cyan"
               },
               {
                 step: "02",
                 title: "AI GENERATES PLAN",
                 description: "AI creates a personalized roadmap with prerequisites, topics, and milestones",
-                color: "neon-green",
-                icon: "🤖"
+                color: "neon-green"
               },
               {
                 step: "03",
                 title: "TRACK PROGRESS",
                 description: "Interactive map, check off items, watch yourself grow",
-                color: "neon-pink",
-                icon: "📈"
+                color: "neon-pink"
               },
             ].map((item, i) => (
               <div
@@ -200,7 +243,6 @@ export default function Home() {
               >
                 <div className={`relative text-7xl font-bold text-${item.color} border-4 border-${item.color} w-40 h-40 flex items-center justify-center flex-shrink-0 group-hover:animate-pulse group-hover:shadow-[0_0_30px_currentColor]`}>
                   {item.step}
-                  <div className="absolute -top-4 -right-4 text-4xl animate-bounce">{item.icon}</div>
                 </div>
                 <div className="flex-1 text-center md:text-left">
                   <h3 className={`text-3xl font-bold text-${item.color} mb-4 neon-glow`}>{item.title}</h3>
@@ -212,23 +254,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-panel-black relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          {[...Array(10)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute border-2 border-neon-cyan animate-pulse"
-              style={{
-                width: `${50 + Math.random() * 100}px`,
-                height: `${50 + Math.random() * 100}px`,
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 2}s`,
-              }}
-            />
-          ))}
+      {/* Solar System - Learning Journey */}
+      <section className="py-24 bg-terminal-black relative overflow-hidden z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+              <span className="text-pixel-yellow neon-glow">YOUR LEARNING</span>{" "}
+              <span className="text-neon-cyan neon-glow">SOLAR SYSTEM</span>
+            </h2>
+            <p className="text-xl text-gray-300">Navigate your educational universe - from beginner to expert</p>
+          </div>
+
+          <div className="border-4 border-pixel-yellow pixel-border bg-panel-black p-4 mb-8">
+            <Suspense fallback={<div className="h-[800px] flex items-center justify-center text-pixel-yellow">Loading...</div>}>
+              <SolarSystemScene />
+            </Suspense>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="border-2 border-neon-cyan p-6 bg-terminal-black">
+              <p className="text-neon-cyan text-xl font-bold mb-2">8 PLANETS</p>
+              <p className="text-gray-300">8 stages of learning mastery</p>
+            </div>
+            <div className="border-2 border-pixel-yellow p-6 bg-terminal-black">
+              <p className="text-pixel-yellow text-xl font-bold mb-2">ASTEROID BELT</p>
+              <p className="text-gray-300">Challenges and practice problems</p>
+            </div>
+            <div className="border-2 border-neon-green p-6 bg-terminal-black">
+              <p className="text-neon-green text-xl font-bold mb-2">INTERACTIVE</p>
+              <p className="text-gray-300">Drag, zoom, and explore your journey</p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-panel-black relative overflow-hidden z-10">
+        {mounted && (
+          <div className="absolute inset-0 opacity-5">
+            {[80, 120, 95, 110, 75, 130, 88, 105, 92, 115].map((size, i) => (
+              <div
+                key={i}
+                className="absolute border-2 border-neon-cyan animate-pulse"
+                style={{
+                  width: `${size}px`,
+                  height: `${size}px`,
+                  left: `${(i * 11) % 90}%`,
+                  top: `${(i * 13) % 80}%`,
+                  animationDelay: `${(i * 0.2) % 2}s`,
+                }}
+              />
+            ))}
+          </div>
+        )}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="border-4 border-neon-cyan pixel-border p-16 bg-terminal-black transform hover:scale-105 transition-all group">
             <h2 className="text-5xl sm:text-6xl font-bold mb-8 animate-pulse">
@@ -258,12 +336,12 @@ export default function Home() {
           <div className="text-center">
             <p className="text-neon-green text-2xl font-bold mb-4 neon-glow">STUDY PLAN GENERATOR</p>
             <p className="text-gray-400 text-lg mb-6">Powered by Gemini AI • Built for continuous learners</p>
-            <div className="flex justify-center gap-4 mb-6">
-              <span className="text-neon-cyan text-3xl animate-pulse">🚀</span>
-              <span className="text-neon-green text-3xl animate-pulse delay-100">🎯</span>
-              <span className="text-neon-pink text-3xl animate-pulse delay-200">💡</span>
+            <div className="flex justify-center gap-6 mb-6">
+              <span className="text-neon-cyan text-2xl font-bold neon-glow">INNOVATE</span>
+              <span className="text-neon-green text-2xl font-bold neon-glow">LEARN</span>
+              <span className="text-neon-pink text-2xl font-bold neon-glow">GROW</span>
             </div>
-            <p className="text-neon-cyan text-base">© 2025 • Made with 💚 for learners worldwide</p>
+            <p className="text-neon-cyan text-base">© 2025 • Built for learners worldwide</p>
           </div>
         </div>
       </footer>

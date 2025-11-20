@@ -13,6 +13,7 @@ export interface FormData {
   topic: string
   difficulty: "beginner" | "intermediate" | "advanced"
   timePerWeek: number
+  timeUnit: "hours" | "days" | "weeks" | "months"
   format: "theory-heavy" | "project-heavy" | "balanced"
 }
 
@@ -20,6 +21,7 @@ export default function StudyForm({ onSubmit, isLoading }: StudyFormProps) {
   const [topic, setTopic] = useState("")
   const [difficulty, setDifficulty] = useState<"beginner" | "intermediate" | "advanced">("intermediate")
   const [timePerWeek, setTimePerWeek] = useState(10)
+  const [timeUnit, setTimeUnit] = useState<"hours" | "days" | "weeks" | "months">("hours")
   const [format, setFormat] = useState<"theory-heavy" | "project-heavy" | "balanced">("balanced")
   const [submitted, setSubmitted] = useState(false)
 
@@ -33,6 +35,7 @@ export default function StudyForm({ onSubmit, isLoading }: StudyFormProps) {
         topic: topic.trim(),
         difficulty,
         timePerWeek,
+        timeUnit,
         format,
       })
     } finally {
@@ -89,17 +92,30 @@ export default function StudyForm({ onSubmit, isLoading }: StudyFormProps) {
           className="border-4 border-neon-cyan pixel-border p-6 bg-panel-black slide-in"
           style={{ animationDelay: "0.2s" }}
         >
-          <label className="text-neon-cyan text-base block mb-4 font-bold">HRS/WEEK:</label>
-          <input
-            type="number"
-            min="1"
-            max="168"
-            value={timePerWeek}
-            onChange={(e) => setTimePerWeek(Math.max(1, Number.parseInt(e.target.value) || 1))}
-            disabled={isLoading}
-            className="w-full text-neon-cyan bg-terminal-black border-2 border-neon-cyan p-3 text-base focus:outline-none focus:border-neon-pink"
-          />
-          <p className="text-neon-cyan text-sm mt-3 opacity-70">hours available per week</p>
+          <label className="text-neon-cyan text-base block mb-4 font-bold">TIME/WEEK:</label>
+          <div className="flex gap-2">
+            <input
+              type="number"
+              min="1"
+              max="168"
+              value={timePerWeek}
+              onChange={(e) => setTimePerWeek(Math.max(1, Number.parseInt(e.target.value) || 1))}
+              disabled={isLoading}
+              className="flex-1 text-neon-cyan bg-terminal-black border-2 border-neon-cyan p-3 text-base focus:outline-none focus:border-neon-pink"
+            />
+            <select
+              value={timeUnit}
+              onChange={(e) => setTimeUnit(e.target.value as typeof timeUnit)}
+              disabled={isLoading}
+              className="text-neon-cyan bg-terminal-black border-2 border-neon-cyan p-3 text-base focus:outline-none focus:border-neon-pink"
+            >
+              <option value="hours">hrs</option>
+              <option value="days">days</option>
+              <option value="weeks">weeks</option>
+              <option value="months">months</option>
+            </select>
+          </div>
+          <p className="text-neon-cyan text-sm mt-3 opacity-70">time available per week</p>
         </div>
 
         {/* Format */}

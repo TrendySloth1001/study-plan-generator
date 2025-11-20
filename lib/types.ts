@@ -21,6 +21,7 @@ export interface StudyPlan {
   title: string
   difficulty: "beginner" | "intermediate" | "advanced"
   timePerWeek: number
+  timeUnit: "hours" | "days" | "weeks" | "months"
   format: "theory-heavy" | "project-heavy" | "balanced"
   prerequisites: StudyTopic[]
   coreTopics: StudyTopic[]

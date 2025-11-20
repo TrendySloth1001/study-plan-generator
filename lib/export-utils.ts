@@ -4,7 +4,7 @@ export function generateMarkdown(plan: StudyPlan): string {
   let markdown = `# ${plan.title}\n\n`
 
   markdown += `**Difficulty:** ${plan.difficulty}  \n`
-  markdown += `**Time Per Week:** ${plan.timePerWeek} hours  \n`
+  markdown += `**Time Per Week:** ${plan.timePerWeek} ${plan.timeUnit || "hours"}  \n`
   markdown += `**Format:** ${plan.format}  \n`
   markdown += `**Estimated Duration:** ${plan.estimatedDuration}  \n\n`
 
@@ -88,7 +88,7 @@ export async function generatePDF(plan: StudyPlan, filename: string) {
     doc.setFontSize(10)
     doc.text(`Difficulty: ${plan.difficulty}`, 20, yPosition)
     yPosition += 7
-    doc.text(`Time Per Week: ${plan.timePerWeek} hours`, 20, yPosition)
+    doc.text(`Time Per Week: ${plan.timePerWeek} ${plan.timeUnit || "hours"}`, 20, yPosition)
     yPosition += 7
     doc.text(`Estimated Duration: ${plan.estimatedDuration}`, 20, yPosition)
     yPosition += 15

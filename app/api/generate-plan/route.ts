@@ -6,6 +6,7 @@ const studyPlanSchema = z.object({
   title: z.string(),
   difficulty: z.enum(["beginner", "intermediate", "advanced"]),
   timePerWeek: z.number(),
+  timeUnit: z.enum(["hours", "days", "weeks", "months"]),
   format: z.enum(["theory-heavy", "project-heavy", "balanced"]),
   prerequisites: z.array(
     z.object({
@@ -45,13 +46,13 @@ const studyPlanSchema = z.object({
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { topic, difficulty, timePerWeek, format } = body
+    const { topic, difficulty, timePerWeek, timeUnit = "hours", format } = body
 
     if (!topic) {
       return Response.json({ error: "Topic is required" }, { status: 400 })
     }
 
-    console.log("[v0] Generating plan for:", topic)
+    console.log("[v0] Generating plan for:", topic, "with", timePerWeek, timeUnit, "per week")
 
     const { object } = await generateObject({
       model: google("gemini-2.5-flash"),
@@ -70,10 +71,16 @@ export async function POST(request: Request) {
       prompt: `Create a detailed study plan for: "${topic}"
       
       Difficulty Level: ${difficulty}
-      Available Time: ${timePerWeek} hours per week
+      Available Time: ${timePerWeek} ${timeUnit} per week
       Learning Format: ${format}
       
-      Generate a realistic, actionable study plan tailored to these parameters. Ensure topics are logically ordered and milestones are measurable.`,
+      IMPORTANT: Adjust the timeline and pacing based on the time unit provided:
+      - If timeUnit is "hours": Schedule around ${timePerWeek} hours per week
+      - If timeUnit is "days": Schedule around ${timePerWeek} days per week (full days)
+      - If timeUnit is "weeks": Schedule the full week (${timePerWeek} weeks per week means intensive study)
+      - If timeUnit is "months": Schedule long-term learning spanning multiple months
+      
+      Generate a realistic, actionable study plan tailored to these parameters. Ensure topics are logically ordered and milestones are measurable. Include timeUnit: "${timeUnit}" in the response.`,
     })
 
     return Response.json(object)

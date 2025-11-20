@@ -1,0 +1,47 @@
+{
+  "sorted_middleware": [
+    "/api/chat/route"
+  ],
+  "middleware": {},
+  "instrumentation": null,
+  "functions": {
+    "/api/chat/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/chat/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_chat_route_actions_65685355.js",
+        "server/edge/chunks/df78d_next_dist_esm_shared_lib_2cdef734._.js",
+        "server/edge/chunks/df78d_next_dist_esm_server_e8cdd568._.js",
+        "server/edge/chunks/df78d_next_dist_esm_2a48eb38._.js",
+        "server/edge/chunks/df78d_next_dist_compiled_289226c9._.js",
+        "server/edge/chunks/df78d_next_dist_15a619e8._.js",
+        "server/edge/chunks/edge-wrapper_dc92c284.js",
+        "server/edge/chunks/4b6e4_@opentelemetry_api_build_esm_df5f8bb8._.js",
+        "server/edge/chunks/518ff_zod_e6db1084._.js",
+        "server/edge/chunks/1c1b2_ai_dist_index_mjs_d4e994df._.js",
+        "server/edge/chunks/node_modules__pnpm_ed031c32._.js",
+        "server/edge/chunks/[root-of-the-server]__9db4bc9a._.js",
+        "server/edge/chunks/turbopack-edge-wrapper_077fd8fa.js"
+      ],
+      "name": "app/api/chat/route",
+      "page": "/api/chat/route",
+      "matchers": [
+        {
+          "regexp": "^/api/chat(?:/)?$",
+          "originalSource": "/api/chat"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "j6d8WUJBCQuGtJ+6YWcAuypqAijdjR/Wyv7pcOCChGw=",
+        "__NEXT_PREVIEW_MODE_ID": "7dd7eb3a8d3d8d909ebb9af509c24d06",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "7d87488845fd8d6f0a1abb1a96f0ad9aeaceb725acb4209299d29bba4617807b",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "d8b58ca21277140618ff796f900cef94407c9037b27561515243553e3f1e22d0"
+      }
+    }
+  }
+}
