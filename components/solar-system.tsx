@@ -3,6 +3,7 @@
 import { useRef, useMemo, useState } from "react"
 import { Canvas, useFrame, useLoader, ThreeEvent } from "@react-three/fiber"
 import { Sphere, OrbitControls, Stars, MeshDistortMaterial, Sparkles, useTexture, Torus, Html } from "@react-three/drei"
+import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postprocessing"
 import * as THREE from "three"
 
 // Sun with corona and surface details
@@ -164,12 +165,18 @@ function Planet({
   const cloudsRef = useRef<THREE.Mesh>(null)
   const atmosphereRef = useRef<THREE.Mesh>(null)
   const [hovered, setHovered] = useState(false)
+  const trailPoints = useRef<THREE.Vector3[]>([])
+  const trailRef = useRef<THREE.Line>(null)
 
-  useFrame((state) => {
-    if (planetRef.current) {
+  useFrame((state, delta) => {
+    // Access time control from global state (will be set by TimeControl component)
+    const timeScale = (window as any).__solarSystemTimeScale || 1
+    const isPaused = (window as any).__solarSystemPaused || false
+    
+    if (!isPaused && planetRef.current) {
       // Realistic elliptical orbit using Kepler's laws
       // Closer planets orbit faster (inverse-square relationship)
-      const time = state.clock.elapsedTime * orbitSpeed
+      const time = state.clock.elapsedTime * orbitSpeed * timeScale
       const eccentricity = 0.08 // Realistic ellipse
       const a = orbitRadius // Semi-major axis
       const b = a * Math.sqrt(1 - eccentricity * eccentricity) // Semi-minor axis
@@ -186,37 +193,87 @@ function Planet({
       
       planetRef.current.position.x = x
       planetRef.current.position.z = z
+      
+      // Record trail points (keep last 200 positions)
+      if (state.clock.elapsedTime % 0.1 < delta) {
+        trailPoints.current.push(new THREE.Vector3(x, 0, z))
+        if (trailPoints.current.length > 200) {
+          trailPoints.current.shift()
+        }
+        
+        // Update trail geometry
+        if (trailRef.current && trailPoints.current.length > 1) {
+          const geometry = new THREE.BufferGeometry().setFromPoints(trailPoints.current)
+          trailRef.current.geometry.dispose()
+          trailRef.current.geometry = geometry
+        }
+      }
     }
+    
     if (meshRef.current) {
       // Realistic rotation with axial tilt
-      meshRef.current.rotation.y = state.clock.elapsedTime * rotationSpeed
+      const timeScale = (window as any).__solarSystemTimeScale || 1
+      const isPaused = (window as any).__solarSystemPaused || false
+      
+      if (!isPaused) {
+        meshRef.current.rotation.y += rotationSpeed * delta * timeScale
+      }
+      
       if (axialTilt) {
         meshRef.current.rotation.z = (axialTilt * Math.PI) / 180
       }
     }
     if (cloudsRef.current) {
-      cloudsRef.current.rotation.y = state.clock.elapsedTime * rotationSpeed * 1.08
+      const timeScale = (window as any).__solarSystemTimeScale || 1
+      const isPaused = (window as any).__solarSystemPaused || false
+      if (!isPaused) {
+        cloudsRef.current.rotation.y += rotationSpeed * 1.08 * delta * timeScale
+      }
     }
     if (atmosphereRef.current) {
-      atmosphereRef.current.rotation.y = state.clock.elapsedTime * rotationSpeed * 0.5
+      const timeScale = (window as any).__solarSystemTimeScale || 1
+      const isPaused = (window as any).__solarSystemPaused || false
+      if (!isPaused) {
+        atmosphereRef.current.rotation.y += rotationSpeed * 0.5 * delta * timeScale
+      }
     }
   })
 
+  // Initialize trail geometry
+  const initialTrailGeometry = useMemo(() => {
+    return new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0)])
+  }, [])
+
   return (
-    <group ref={planetRef}>
-      {/* Data visualization particles when hovered */}
-      {hovered && (
-        <Sparkles
-          count={50}
-          scale={size * 3}
-          size={2}
-          speed={0.4}
-          color={color}
-          opacity={0.6}
-        />
-      )}
+    <>
+      {/* Dynamic orbital trail */}
+      <primitive 
+        object={new THREE.Line(
+          initialTrailGeometry, 
+          new THREE.LineBasicMaterial({
+            color: color,
+            transparent: true,
+            opacity: 0.6,
+            blending: THREE.AdditiveBlending
+          })
+        )} 
+        ref={trailRef}
+      />
       
-      <group>
+      <group ref={planetRef}>
+        {/* Data visualization particles when hovered */}
+        {hovered && (
+          <Sparkles
+            count={50}
+            scale={size * 3}
+            size={2}
+            speed={0.4}
+            color={color}
+            opacity={0.6}
+          />
+        )}
+        
+        <group>
         {/* Main planet with enhanced materials */}
         <mesh 
           ref={meshRef} 
@@ -385,7 +442,8 @@ function Planet({
           </>
         )}
       </group>
-    </group>
+      </group>
+    </>
   )
 }
 
@@ -618,6 +676,38 @@ function ShootingStar() {
   )
 }
 
+// Orbital trail visualization
+function OrbitalTrail({ radius, color, segments = 512 }: { radius: number; color: string; segments?: number }) {
+  const points = useMemo(() => {
+    const pts = []
+    const eccentricity = 0.08
+    const a = radius
+    const b = a * Math.sqrt(1 - eccentricity * eccentricity)
+    
+    for (let i = 0; i <= segments; i++) {
+      const angle = (i / segments) * Math.PI * 2
+      const x = a * Math.cos(angle) * (1 - eccentricity)
+      const z = b * Math.sin(angle)
+      pts.push(new THREE.Vector3(x, 0, z))
+    }
+    return pts
+  }, [radius, segments])
+
+  const geometry = useMemo(() => {
+    return new THREE.BufferGeometry().setFromPoints(points)
+  }, [points])
+
+  const lineMaterial = useMemo(() => {
+    return new THREE.LineBasicMaterial({
+      color: color,
+      transparent: true,
+      opacity: 0.4,
+    })
+  }, [color])
+
+  return <primitive object={new THREE.Line(geometry, lineMaterial)} />
+}
+
 // Holographic grid floor for tech aesthetic
 function HolographicGrid() {
   const gridRef = useRef<THREE.GridHelper>(null)
@@ -728,8 +818,67 @@ function PlanetLabel({ text, position }: { text: string; position: [number, numb
   )
 }
 
+// Time control UI component
+function TimeControl() {
+  const [timeScale, setTimeScale] = useState(1)
+  const [isPaused, setIsPaused] = useState(false)
+  
+  const handleTimeChange = (scale: number) => {
+    setTimeScale(scale)
+    ;(window as any).__solarSystemTimeScale = scale
+  }
+  
+  const togglePause = () => {
+    const newPaused = !isPaused
+    setIsPaused(newPaused)
+    ;(window as any).__solarSystemPaused = newPaused
+  }
+  
+  return (
+    <div className="absolute top-4 left-4 bg-terminal-black/90 border-2 border-neon-cyan p-3 backdrop-blur-sm" style={{ zIndex: 40 }}>
+      <h4 className="text-neon-cyan text-sm font-bold mb-2 neon-glow">TIME CONTROL</h4>
+      
+      <div className="flex items-center gap-2 mb-2">
+        <button
+          onClick={togglePause}
+          className="px-3 py-1 bg-neon-cyan/20 hover:bg-neon-cyan/30 border border-neon-cyan text-neon-cyan text-xs font-bold transition-colors"
+        >
+          {isPaused ? '▶ PLAY' : '⏸ PAUSE'}
+        </button>
+      </div>
+      
+      <div className="space-y-1">
+        <p className="text-gray-400 text-xs mb-1">Speed: {timeScale}x</p>
+        <div className="flex gap-1 flex-wrap">
+          {[0.25, 0.5, 1, 2, 5, 10].map(speed => (
+            <button
+              key={speed}
+              onClick={() => handleTimeChange(speed)}
+              className={`px-2 py-0.5 text-xs font-bold transition-colors ${
+                timeScale === speed
+                  ? 'bg-neon-cyan text-terminal-black'
+                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+              }`}
+            >
+              {speed}x
+            </button>
+          ))}
+        </div>
+        
+        <button
+          onClick={() => handleTimeChange(-1)}
+          className="w-full mt-2 px-2 py-1 bg-neon-pink/20 hover:bg-neon-pink/30 border border-neon-pink text-neon-pink text-xs font-bold transition-colors"
+        >
+          ⏪ REVERSE
+        </button>
+      </div>
+    </div>
+  )
+}
+
 export default function SolarSystemScene() {
   const [selectedPlanet, setSelectedPlanet] = useState<PlanetInfo | null>(null)
+  const [showTrails, setShowTrails] = useState(true)
 
   const planetData: { [key: string]: PlanetInfo } = {
     mercury: {
@@ -1006,6 +1155,20 @@ export default function SolarSystemScene() {
           mass={17.1}
         />
 
+        {/* Static orbital trail paths */}
+        {showTrails && (
+          <>
+            <OrbitalTrail radius={2.5} color="#00e1ff" />
+            <OrbitalTrail radius={4} color="#ff00e6" />
+            <OrbitalTrail radius={5.5} color="#00ff41" />
+            <OrbitalTrail radius={7} color="#ff4444" />
+            <OrbitalTrail radius={10} color="#ffaa00" />
+            <OrbitalTrail radius={12} color="#ffea00" />
+            <OrbitalTrail radius={14} color="#00ffff" />
+            <OrbitalTrail radius={16} color="#4444ff" />
+          </>
+        )}
+
         <OrbitControls
           enableZoom={true}
           enablePan={false}
@@ -1016,7 +1179,23 @@ export default function SolarSystemScene() {
           maxPolarAngle={Math.PI / 2.2}
           minPolarAngle={Math.PI / 6}
         />
+        
+        {/* Bloom Post-Processing */}
+        <EffectComposer>
+          <Bloom
+            intensity={1.5}
+            luminanceThreshold={0.2}
+            luminanceSmoothing={0.9}
+            height={300}
+          />
+          <ChromaticAberration
+            offset={[0.0005, 0.0005] as [number, number]}
+          />
+        </EffectComposer>
       </Canvas>
+      
+      {/* Time Control UI */}
+      <TimeControl />
 
       {/* Tech overlay effects */}
       <div className="absolute inset-0 pointer-events-none">

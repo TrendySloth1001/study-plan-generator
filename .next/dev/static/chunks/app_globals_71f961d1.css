@@ -2040,6 +2040,10 @@
     background-color: var(--color-gray-700);
   }
 
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
+  }
+
   .bg-input {
     background-color: var(--input);
   }
@@ -2062,12 +2066,32 @@
     background-color: var(--neon-cyan);
   }
 
+  .bg-neon-cyan\/20 {
+    background-color: var(--neon-cyan);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-neon-cyan\/20 {
+      background-color: color-mix(in oklab, var(--neon-cyan) 20%, transparent);
+    }
+  }
+
   .bg-neon-green {
     background-color: var(--neon-green);
   }
 
   .bg-neon-pink {
     background-color: var(--neon-pink);
+  }
+
+  .bg-neon-pink\/20 {
+    background-color: var(--neon-pink);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-neon-pink\/20 {
+      background-color: color-mix(in oklab, var(--neon-pink) 20%, transparent);
+    }
   }
 
   .bg-panel-black {
@@ -2115,6 +2139,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-terminal-black\/80 {
       background-color: color-mix(in oklab, var(--terminal-black) 80%, transparent);
+    }
+  }
+
+  .bg-terminal-black\/90 {
+    background-color: var(--terminal-black);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-terminal-black\/90 {
+      background-color: color-mix(in oklab, var(--terminal-black) 90%, transparent);
     }
   }
 
@@ -3464,6 +3498,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-gray-700:hover {
+      background-color: var(--color-gray-700);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-gray-800:hover {
       background-color: var(--color-gray-800);
     }
@@ -3494,6 +3534,18 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-neon-cyan\/30:hover {
+      background-color: var(--neon-cyan);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-neon-cyan\/30:hover {
+        background-color: color-mix(in oklab, var(--neon-cyan) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-neon-green:hover {
       background-color: var(--neon-green);
     }
@@ -3502,6 +3554,18 @@
   @media (hover: hover) {
     .hover\:bg-neon-pink:hover {
       background-color: var(--neon-pink);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-neon-pink\/30:hover {
+      background-color: var(--neon-pink);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-neon-pink\/30:hover {
+        background-color: color-mix(in oklab, var(--neon-pink) 30%, transparent);
+      }
     }
   }
 
