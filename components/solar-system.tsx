@@ -915,7 +915,7 @@ function TimeControl() {
 
 export default function SolarSystemScene({ isFullscreen = false }: { isFullscreen?: boolean }) {
   const [selectedPlanet, setSelectedPlanet] = useState<PlanetInfo | null>(null)
-  const [showTrails, setShowTrails] = useState(true)
+  const [showTrails, setShowTrails] = useState(false)
   const [livePhysics, setLivePhysics] = useState({
     planet: 'Earth',
     orbitRadius: 0,
@@ -1436,7 +1436,7 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
                     <span className="text-neon-green">ACTIVE</span>
                     <span className="text-gray-600 mx-2">|</span>
                     <span className="text-gray-500">MASS:</span>
-                    <span className="text-neon-yellow font-bold">{livePhysics.mass.toFixed(3)} M⊕</span>
+                    <span className="text-neon-green font-bold">{livePhysics.mass.toFixed(3)} M⊕</span>
                   </div>
                 </div>
                 <div className="text-right text-xs text-gray-600 space-y-1">
@@ -1525,18 +1525,18 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
                       </div>
                       <div>
                         <div className="text-gray-500">v_orbital</div>
-                        <div className="text-neon-yellow text-xl font-bold tracking-wider">{livePhysics.velocity.toFixed(5)}</div>
+                        <div className="text-neon-green font-bold text-xl font-bold tracking-wider">{livePhysics.velocity.toFixed(5)}</div>
                         <div className="text-gray-500 text-[10px]">AU/s</div>
                       </div>
                       <div>
                         <div className="text-gray-500">ω_angular</div>
-                        <div className="text-neon-yellow text-xl font-bold tracking-wider">{livePhysics.angularVelocity.toFixed(5)}</div>
+                        <div className="text-neon-green font-bold text-xl font-bold tracking-wider">{livePhysics.angularVelocity.toFixed(5)}</div>
                         <div className="text-gray-500 text-[10px]">rad/s</div>
                       </div>
                       <div>
-                        <div className="text-gray-600">m_relative</div>
-                        <div className="text-gray text-xl font-bold">{livePhysics.mass.toFixed(4)}</div>
-                        <div className="text-gray-600 text-[10px]">M⊕</div>
+                        <div className="text-gray-500">m_relative</div>
+                        <div className="text-neon-pink text-xl font-bold tracking-wider">{livePhysics.mass.toFixed(4)}</div>
+                        <div className="text-gray-500 text-[10px]">M⊕</div>
                       </div>
                       <div>
                         <div className="text-gray-600">F_gravity</div>
@@ -1655,16 +1655,16 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
                   <div className="space-y-2 text-xs">
                     <div className="text-gray-500 mb-2">// Interactive calculations</div>
                     <div className="bg-gray-950 p-2">
-                      <div className="text-gray-600 mb-1">Escape Velocity:</div>
-                      <code className="text-neon-cyan">v_esc = {(Math.sqrt(2 * 6.674e-11 * 1.989e30 * livePhysics.mass / (livePhysics.distance * 1.496e11)) / 1000).toFixed(2)} km/s</code>
+                      <div className="text-gray-400 mb-1">Escape Velocity:</div>
+                      <code className="text-neon-cyan font-bold">v_esc = {(Math.sqrt(2 * 6.674e-11 * 1.989e30 * livePhysics.mass / (livePhysics.distance * 1.496e11)) / 1000).toFixed(2)} km/s</code>
                     </div>
                     <div className="bg-gray-950 p-2">
-                      <div className="text-gray-600 mb-1">Orbital Energy:</div>
-                      <code className="text-neon-yellow">E = -<span className="text-neon-yellow">{livePhysics.gravitationalForce.toExponential(2)}</span> J</code>
+                      <div className="text-gray-400 mb-1">Orbital Energy:</div>
+                      <code className="text-neon-green font-bold">E = -{livePhysics.gravitationalForce.toExponential(2)} J</code>
                     </div>
                     <div className="bg-gray-950 p-2">
-                      <div className="text-gray-600 mb-1">Period Ratio:</div>
-                      <code className="text-neon-green">T/T⊕ = {(livePhysics.orbitalPeriod / 31557600).toFixed(3)}</code>
+                      <div className="text-gray-400 mb-1">Period Ratio:</div>
+                      <code className="text-neon-green font-bold">T/T⊕ = {(livePhysics.orbitalPeriod / 31557600).toFixed(3)}</code>
                     </div>
                   </div>
                 </div>

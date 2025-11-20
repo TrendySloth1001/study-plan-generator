@@ -1,6 +1,7 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
+  "static/chunks/components_solar-system_tsx_f1212dc0._.js",
   "static/chunks/e34b3_react-reconciler_514374a8._.js",
   "static/chunks/dd74e_three_build_three_core_21277b9b.js",
   "static/chunks/dd74e_three_build_three_module_31e54e3e.js",
@@ -11,8 +12,7 @@
   "static/chunks/5a733_maath_dist_20d7ab15._.js",
   "static/chunks/7b341_n8ao_dist_N8AO_e77e189b.js",
   "static/chunks/3bba6_@react-three_postprocessing_dist_index_10ca558e.js",
-  "static/chunks/node_modules__pnpm_9c919d59._.js",
-  "static/chunks/components_solar-system_tsx_f1212dc0._.js"
+  "static/chunks/node_modules__pnpm_9c919d59._.js"
 ],
     source: "dynamic"
 });
