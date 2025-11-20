@@ -15,6 +15,7 @@ export default function AppPage() {
   const [studyPlan, setStudyPlan] = useState<StudyPlan | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [showChat, setShowChat] = useState(false)
+  const [isChatFullscreen, setIsChatFullscreen] = useState(false)
 
   const handleGeneratePlan = async (formData: FormData) => {
     setIsLoading(true)
@@ -178,52 +179,76 @@ export default function AppPage() {
                 >
                   <MessageSquare className="w-12 h-12 text-neon-cyan mx-auto mb-3" />
                   <p className="text-neon-cyan text-xl font-bold">AI CHAT ASSISTANT</p>
-                  <p className="text-gray-300 text-sm mt-2">Click to open intelligent chat with slash commands</p>
+                  <p className="text-gray-300 text-base mt-2">Click to open intelligent chat with @ or / commands</p>
                 </button>
               ) : (
                 <div className="relative slide-in">
                   <button
-                    onClick={() => setShowChat(false)}
+                    onClick={() => {
+                      setShowChat(false)
+                      setIsChatFullscreen(false)
+                    }}
                     className="absolute -top-4 -right-4 z-10 w-10 h-10 border-2 border-neon-pink bg-neon-pink text-terminal-black hover:bg-terminal-black hover:text-neon-pink transition-all flex items-center justify-center font-bold"
                   >
                     <X className="w-5 h-5" />
                   </button>
                   <div className="h-[600px]">
-                    <ChatBot studyPlan={studyPlan} onGeneratePlan={handleChatGenerate} />
+                    <ChatBot 
+                      studyPlan={studyPlan} 
+                      onGeneratePlan={handleChatGenerate}
+                      isFullscreen={isChatFullscreen}
+                      onToggleFullscreen={() => setIsChatFullscreen(!isChatFullscreen)}
+                    />
                   </div>
                 </div>
               )}
 
               {/* Quick Tips */}
-              <div className="mt-8 border-4 border-neon-green pixel-border p-6 bg-panel-black slide-in">
-                <h3 className="text-neon-green text-lg font-bold mb-4">💡 QUICK TIPS</h3>
-                <ul className="space-y-3 text-sm text-gray-300">
-                  <li className="flex gap-2">
-                    <span className="text-neon-cyan">•</span>
-                    <span>Click items on the map to mark them complete</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-neon-cyan">•</span>
-                    <span>Use the chat for quick plan generation</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-neon-cyan">•</span>
-                    <span>Switch between map and list view</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-neon-cyan">•</span>
-                    <span>Export your plan as PDF or text</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-neon-cyan">•</span>
-                    <span>Your progress is saved locally</span>
-                  </li>
-                </ul>
-              </div>
+              {!showChat && (
+                <div className="mt-8 border-4 border-neon-green pixel-border p-6 bg-panel-black slide-in">
+                  <h3 className="text-neon-green text-xl font-bold mb-4">💡 QUICK TIPS</h3>
+                  <ul className="space-y-3 text-base text-gray-300">
+                    <li className="flex gap-2">
+                      <span className="text-neon-cyan">•</span>
+                      <span>Click items on the map to mark them complete</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-neon-cyan">•</span>
+                      <span>Use @ or / in chat for commands</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-neon-cyan">•</span>
+                      <span>Switch between map and list view</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-neon-cyan">•</span>
+                      <span>Export your plan as PDF or JSON</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-neon-cyan">•</span>
+                      <span>Progress saves automatically</span>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </div>
+
+      {/* Fullscreen Chat Overlay */}
+      {isChatFullscreen && showChat && (
+        <div className="fixed inset-0 z-50 bg-terminal-black">
+          <div className="h-full p-4">
+            <ChatBot 
+              studyPlan={studyPlan} 
+              onGeneratePlan={handleChatGenerate}
+              isFullscreen={isChatFullscreen}
+              onToggleFullscreen={() => setIsChatFullscreen(false)}
+            />
+          </div>
+        </div>
+      )}
     </main>
   )
 }

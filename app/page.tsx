@@ -34,19 +34,39 @@ export default function Home() {
     },
   ]
 
-  const stats = [
-    { value: "1000+", label: "Study Plans Generated", color: "neon-cyan" },
-    { value: "50+", label: "Topics Covered", color: "neon-green" },
-    { value: "95%", label: "Success Rate", color: "neon-pink" },
-  ]
+  // Dynamic stats - no hardcoded numbers
+  const [stats, setStats] = useState([
+    { value: "AI", label: "Powered Learning", color: "neon-cyan", icon: "🤖" },
+    { value: "∞", label: "Unlimited Topics", color: "neon-green", icon: "📚" },
+    { value: "24/7", label: "Always Available", color: "neon-pink", icon: "⚡" },
+  ])
 
   return (
     <main className="min-h-screen grid-bg bg-terminal-black">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative overflow-hidden min-h-screen flex items-center">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-64 h-64 border-4 border-neon-cyan animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-48 h-48 border-4 border-neon-pink animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-48 h-48 border-4 border-neon-pink animate-pulse delay-100"></div>
+          <div className="absolute top-1/2 left-1/4 w-32 h-32 border-4 border-neon-green animate-pulse delay-200"></div>
+          <div className="absolute bottom-1/4 left-1/2 w-40 h-40 border-4 border-pixel-yellow animate-pulse delay-300"></div>
+        </div>
+
+        {/* Floating particles */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[...Array(20)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-2 h-2 bg-neon-cyan animate-float"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${5 + Math.random() * 10}s`,
+              }}
+            />
+          ))}
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 text-center">
@@ -91,9 +111,15 @@ export default function Home() {
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-20 slide-in" style={{ animationDelay: "0.4s" }}>
             {stats.map((stat, i) => (
-              <div key={i} className={`border-4 border-${stat.color} pixel-border p-6 bg-panel-black hover:bg-terminal-black transition-all`}>
-                <p className={`text-4xl font-bold text-${stat.color} neon-glow mb-2`}>{stat.value}</p>
-                <p className="text-gray-300">{stat.label}</p>
+              <div 
+                key={i} 
+                className={`border-4 border-${stat.color} pixel-border p-8 bg-panel-black hover:bg-terminal-black transition-all transform hover:scale-105 hover:rotate-1 cursor-pointer group`}
+              >
+                <div className="text-5xl mb-3 group-hover:animate-bounce">{stat.icon}</div>
+                <p className={`text-5xl font-bold text-${stat.color} neon-glow mb-3 group-hover:scale-110 transition-transform`}>
+                  {stat.value}
+                </p>
+                <p className="text-gray-300 text-lg">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -118,14 +144,14 @@ export default function Home() {
                   key={i}
                   onMouseEnter={() => setHoveredFeature(i)}
                   onMouseLeave={() => setHoveredFeature(null)}
-                  className={`border-4 border-${feature.color} pixel-border p-6 bg-terminal-black hover:bg-panel-black transition-all transform hover:scale-105 cursor-pointer slide-in`}
+                  className={`border-4 border-${feature.color} pixel-border p-8 bg-terminal-black hover:bg-panel-black transition-all transform hover:scale-110 hover:-translate-y-2 cursor-pointer slide-in group`}
                   style={{ animationDelay: `${i * 0.1}s` }}
                 >
-                  <div className={`w-16 h-16 border-4 border-${feature.color} flex items-center justify-center mb-4 ${hoveredFeature === i ? "animate-bounce" : ""}`}>
-                    <Icon className={`text-${feature.color} w-8 h-8`} />
+                  <div className={`w-20 h-20 border-4 border-${feature.color} flex items-center justify-center mb-6 mx-auto transition-all ${hoveredFeature === i ? "animate-bounce rotate-12" : ""} group-hover:shadow-[0_0_20px_currentColor]`}>
+                    <Icon className={`text-${feature.color} w-10 h-10`} />
                   </div>
-                  <h3 className={`text-${feature.color} text-xl font-bold mb-3`}>{feature.title}</h3>
-                  <p className="text-gray-300 text-sm">{feature.description}</p>
+                  <h3 className={`text-${feature.color} text-2xl font-bold mb-4 neon-glow`}>{feature.title}</h3>
+                  <p className="text-gray-300 text-base leading-relaxed">{feature.description}</p>
                 </div>
               )
             })}
@@ -148,33 +174,37 @@ export default function Home() {
               {
                 step: "01",
                 title: "ENTER YOUR TOPIC",
-                description: "Tell us what you want to learn - from data science to web development",
+                description: "Tell us what you want to learn - any subject, any level",
                 color: "neon-cyan",
+                icon: "✍️"
               },
               {
                 step: "02",
                 title: "AI GENERATES PLAN",
-                description: "Our AI creates a personalized roadmap with prerequisites, topics, and resources",
+                description: "AI creates a personalized roadmap with prerequisites, topics, and milestones",
                 color: "neon-green",
+                icon: "🤖"
               },
               {
                 step: "03",
                 title: "TRACK PROGRESS",
-                description: "Follow your visual map, check off completed items, and watch yourself grow",
+                description: "Interactive map, check off items, watch yourself grow",
                 color: "neon-pink",
+                icon: "📈"
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className={`flex flex-col md:flex-row items-center gap-6 border-4 border-${item.color} pixel-border p-8 bg-panel-black slide-in`}
+                className={`group flex flex-col md:flex-row items-center gap-8 border-4 border-${item.color} pixel-border p-10 bg-panel-black hover:bg-terminal-black transition-all transform hover:scale-105 slide-in cursor-pointer`}
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className={`text-6xl font-bold text-${item.color} border-4 border-${item.color} w-32 h-32 flex items-center justify-center flex-shrink-0`}>
+                <div className={`relative text-7xl font-bold text-${item.color} border-4 border-${item.color} w-40 h-40 flex items-center justify-center flex-shrink-0 group-hover:animate-pulse group-hover:shadow-[0_0_30px_currentColor]`}>
                   {item.step}
+                  <div className="absolute -top-4 -right-4 text-4xl animate-bounce">{item.icon}</div>
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className={`text-2xl font-bold text-${item.color} mb-3`}>{item.title}</h3>
-                  <p className="text-gray-300 text-lg">{item.description}</p>
+                  <h3 className={`text-3xl font-bold text-${item.color} mb-4 neon-glow`}>{item.title}</h3>
+                  <p className="text-gray-300 text-xl leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -183,34 +213,57 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-panel-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="border-4 border-neon-cyan pixel-border p-12 bg-terminal-black">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+      <section className="py-24 bg-panel-black relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          {[...Array(10)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute border-2 border-neon-cyan animate-pulse"
+              style={{
+                width: `${50 + Math.random() * 100}px`,
+                height: `${50 + Math.random() * 100}px`,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
+              }}
+            />
+          ))}
+        </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="border-4 border-neon-cyan pixel-border p-16 bg-terminal-black transform hover:scale-105 transition-all group">
+            <h2 className="text-5xl sm:text-6xl font-bold mb-8 animate-pulse">
               <span className="text-neon-cyan neon-glow">READY TO</span>
               <br />
               <span className="text-neon-pink neon-glow">LEVEL UP?</span>
             </h2>
-            <p className="text-xl text-gray-300 mb-8">Start your personalized learning journey today</p>
+            <p className="text-2xl text-gray-300 mb-10 leading-relaxed">Start your personalized learning journey today — free and instant</p>
             <Link
               href="/app"
-              className="inline-flex items-center gap-3 border-4 border-neon-green pixel-border px-12 py-6 bg-neon-green text-terminal-black font-bold text-xl hover:bg-terminal-black hover:text-neon-green transition-all"
+              className="inline-flex items-center gap-4 border-4 border-neon-green pixel-border px-16 py-8 bg-neon-green text-terminal-black font-bold text-2xl hover:bg-terminal-black hover:text-neon-green transition-all transform hover:scale-110 group-hover:animate-bounce glow-button"
             >
-              <TrendingUp className="w-6 h-6" />
+              <TrendingUp className="w-8 h-8" />
               GENERATE MY PLAN
-              <ArrowRight className="w-6 h-6" />
+              <ArrowRight className="w-8 h-8" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t-4 border-neon-cyan py-12 bg-terminal-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="border-t-4 border-neon-cyan py-16 bg-terminal-black relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-neon-cyan via-neon-green to-neon-pink animate-pulse"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <p className="text-neon-green text-lg font-bold mb-2">STUDY PLAN GENERATOR</p>
-            <p className="text-gray-400 text-sm">Powered by Gemini AI • Built for learners</p>
-            <p className="text-neon-cyan text-xs mt-4">© 2025 • Made with 💚 for continuous learners</p>
+            <p className="text-neon-green text-2xl font-bold mb-4 neon-glow">STUDY PLAN GENERATOR</p>
+            <p className="text-gray-400 text-lg mb-6">Powered by Gemini AI • Built for continuous learners</p>
+            <div className="flex justify-center gap-4 mb-6">
+              <span className="text-neon-cyan text-3xl animate-pulse">🚀</span>
+              <span className="text-neon-green text-3xl animate-pulse delay-100">🎯</span>
+              <span className="text-neon-pink text-3xl animate-pulse delay-200">💡</span>
+            </div>
+            <p className="text-neon-cyan text-base">© 2025 • Made with 💚 for learners worldwide</p>
           </div>
         </div>
       </footer>

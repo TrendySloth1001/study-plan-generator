@@ -143,7 +143,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: "VT323", monospace;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 18px;
   }
 
   h1,
@@ -154,6 +155,7 @@
   h6 {
     font-family: "Press Start 2P", cursive;
     letter-spacing: 0.1em;
+    line-height: 1.5;
   }
 
   /* CRT scanline effect */
@@ -537,4 +539,43 @@ textarea::placeholder {
 
 .glow-button:hover::before {
   left: 100%;
+}
+
+/* Floating animation for particles */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-100vh) translateX(50px);
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-200vh) translateX(0);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float 10s linear infinite;
+}
+
+/* Delay utilities for animations */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
 }
