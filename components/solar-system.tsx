@@ -913,7 +913,7 @@ function TimeControl() {
   )
 }
 
-export default function SolarSystemScene() {
+export default function SolarSystemScene({ isFullscreen = false }: { isFullscreen?: boolean }) {
   const [selectedPlanet, setSelectedPlanet] = useState<PlanetInfo | null>(null)
   const [showTrails, setShowTrails] = useState(true)
   const [livePhysics, setLivePhysics] = useState({
@@ -1040,13 +1040,8 @@ export default function SolarSystemScene() {
     }
   }
 
-  const isFullscreen = typeof window !== 'undefined' && window.location.pathname === '/solar-system-fullscreen'
-  const containerClass = isFullscreen 
-    ? 'w-screen h-screen fixed inset-0' 
-    : 'w-full h-[600px] md:h-[800px] relative'
-
   return (
-    <div className={containerClass}>
+    <div className={isFullscreen ? 'w-screen h-screen fixed inset-0' : 'w-full h-[600px] md:h-[800px] relative'}>
       <Canvas 
         camera={{ position: [0, 15, 15], fov: 60 }}
         shadows
@@ -1065,13 +1060,7 @@ export default function SolarSystemScene() {
           shadow-camera-bottom={-20}
         />
         <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
-        <SpaceNebula />
         <HolographicGrid />
-        
-        {/* Shooting stars for dynamic effect */}
-        <ShootingStar />
-        <ShootingStar />
-        <ShootingStar />
 
         {/* Sun */}
         <Sun />
@@ -1402,14 +1391,15 @@ export default function SolarSystemScene() {
         </div>
       </div>
       
-      {/* Enhanced Fullscreen Planet Info Panel */}
+      {/* Enhanced Fullscreen Planet Info Panel - Nerdy Playground */}
       {selectedPlanet && isFullscreen && (
-        <div className="absolute inset-0 bg-terminal-black/80 backdrop-blur-md z-[60] flex items-center justify-center p-4 animate-in fade-in duration-300">
+        <div className="absolute inset-0 bg-black/90 backdrop-blur-lg z-[60] flex items-center justify-center p-4 animate-in fade-in duration-300">
           <div 
-            className="w-full max-w-6xl h-[90vh] bg-terminal-black/95 border-2 p-6 rounded-lg overflow-y-auto"
+            className="w-full max-w-7xl h-[95vh] bg-black/95 border-2 p-8 rounded-none overflow-y-auto font-mono"
             style={{
-              boxShadow: `0 0 40px ${selectedPlanet.color}60`,
+              boxShadow: `0 0 60px ${selectedPlanet.color}80, inset 0 0 100px ${selectedPlanet.color}10`,
               borderColor: selectedPlanet.color,
+              background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)',
             }}
           >
             {/* Close Button */}
@@ -1422,173 +1412,260 @@ export default function SolarSystemScene() {
               </svg>
             </button>
             
-            {/* Header */}
-            <div className="flex items-center gap-4 mb-6 pb-4 border-b" style={{ borderColor: `${selectedPlanet.color}40` }}>
-              <div 
-                className="w-8 h-8 rounded-full animate-pulse"
-                style={{ backgroundColor: selectedPlanet.color, boxShadow: `0 0 20px ${selectedPlanet.color}` }}
-              ></div>
-              <div>
-                <h2 
-                  className="text-4xl font-bold mb-1"
-                  style={{ color: selectedPlanet.color }}
-                >
-                  {selectedPlanet.name}
-                </h2>
-                <p className="text-gray-400 text-lg">{selectedPlanet.stage}</p>
+            {/* Header - Terminal Style */}
+            <div className="mb-6 pb-4 border-b-2 border-dashed" style={{ borderColor: `${selectedPlanet.color}60` }}>
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-gray-500 text-sm">&gt;&gt;&gt;</span>
+                    <h2 
+                      className="text-5xl font-bold tracking-wider uppercase glitch"
+                      style={{ 
+                        color: selectedPlanet.color,
+                        textShadow: `0 0 10px ${selectedPlanet.color}, 0 0 20px ${selectedPlanet.color}40`
+                      }}
+                    >
+                      {selectedPlanet.name.split(' - ')[0]}
+                    </h2>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm">
+                    <span className="text-gray-600">CLASSIFICATION:</span>
+                    <span className="text-neon-cyan">{selectedPlanet.stage}</span>
+                    <span className="text-gray-600 mx-2">|</span>
+                    <span className="text-gray-600">STATUS:</span>
+                    <span className="text-neon-green">ACTIVE</span>
+                    <span className="text-gray-600 mx-2">|</span>
+                    <span className="text-gray-500">MASS:</span>
+                    <span className="text-neon-yellow font-bold">{livePhysics.mass.toFixed(3)} M⊕</span>
+                  </div>
+                </div>
+                <div className="text-right text-xs text-gray-600 space-y-1">
+                  <div>SYSTEM: SOLAR-EDU-01</div>
+                  <div>COORDS: [{livePhysics.position.x.toFixed(2)}, {livePhysics.position.z.toFixed(2)}]</div>
+                  <div>TIME: {livePhysics.time.toFixed(1)}s</div>
+                </div>
               </div>
             </div>
             
-            {/* Content Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* Left Column - Learning Info */}
-              <div className="space-y-6">
-                <div className="bg-gray-900/50 p-4 rounded-lg border" style={{ borderColor: `${selectedPlanet.color}30` }}>
-                  <h3 className="text-xl font-bold text-neon-cyan mb-3">Learning Journey</h3>
-                  <p className="text-gray-200 leading-relaxed mb-4">{selectedPlanet.description}</p>
-                  
-                  <div className="space-y-3">
-                    <h4 className="text-sm font-bold text-neon-yellow uppercase tracking-wider">Key Insights:</h4>
+            {/* Content Grid - Playground Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+              {/* Column 1 - System Info */}
+              <div className="space-y-4">
+                {/* Terminal Output */}
+                <div className="bg-black border border-neon-green/30 p-4">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-neon-green/20">
+                    <span className="text-neon-green text-xs">●</span>
+                    <span className="text-neon-green text-xs font-bold">SYSTEM_LOG.txt</span>
+                  </div>
+                  <div className="space-y-2 text-xs">
+                    <div className="text-gray-500">&gt; Initiating planetary scan...</div>
+                    <div className="text-neon-cyan">&gt; Object: {selectedPlanet.name.split(' - ')[0]}</div>
+                    <div className="text-gray-400">&gt; Stage: {selectedPlanet.stage}</div>
+                    <div className="text-gray-500">---</div>
                     {selectedPlanet.facts.map((fact, idx) => (
-                      <div 
-                        key={idx} 
-                        className="flex items-start gap-3 text-gray-300 p-2 bg-black/30 rounded animate-in slide-in-from-left duration-300"
-                        style={{ animationDelay: `${idx * 100}ms` }}
-                      >
-                        <span className="text-neon-cyan text-xl">•</span>
-                        <span>{fact}</span>
+                      <div key={idx} className="text-gray-300 pl-4">
+                        <span className="text-neon-yellow">→</span> {fact}
                       </div>
                     ))}
+                    <div className="text-gray-500 mt-2">---</div>
+                    <div className="text-neon-green">&gt; Scan complete ✓</div>
                   </div>
                 </div>
-                
-                {/* Visual Stats */}
-                <div className="bg-gray-900/50 p-4 rounded-lg border" style={{ borderColor: `${selectedPlanet.color}30` }}>
-                  <h3 className="text-xl font-bold text-neon-pink mb-3">Visual Properties</h3>
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center p-2 bg-black/30 rounded">
-                      <span className="text-gray-400">Color Signature:</span>
-                      <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded" style={{ backgroundColor: selectedPlanet.color }}></div>
-                        <code className="text-neon-cyan font-mono text-sm">{selectedPlanet.color}</code>
-                      </div>
-                    </div>
-                    <div className="flex justify-between items-center p-2 bg-black/30 rounded">
-                      <span className="text-gray-400">Glow Intensity:</span>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <div key={i} className="w-3 h-8 rounded" style={{ 
-                            backgroundColor: i < 3 ? selectedPlanet.color : '#333',
-                            opacity: i < 3 ? 1 - (i * 0.2) : 0.3
-                          }}></div>
-                        ))}
+
+                {/* Hex Color Code */}
+                <div className="bg-black border p-4" style={{ borderColor: `${selectedPlanet.color}40` }}>
+                  <div className="text-xs text-gray-500 mb-2">COLOR_SIGNATURE</div>
+                  <div className="flex items-center gap-3">
+                    <div 
+                      className="w-16 h-16 border-2" 
+                      style={{ 
+                        backgroundColor: selectedPlanet.color,
+                        borderColor: selectedPlanet.color,
+                        boxShadow: `0 0 20px ${selectedPlanet.color}`
+                      }}
+                    ></div>
+                    <div>
+                      <code className="text-2xl font-bold" style={{ color: selectedPlanet.color }}>
+                        {selectedPlanet.color}
+                      </code>
+                      <div className="text-xs text-gray-500 mt-1">
+                        RGB({parseInt(selectedPlanet.color.slice(1,3), 16)}, {parseInt(selectedPlanet.color.slice(3,5), 16)}, {parseInt(selectedPlanet.color.slice(5,7), 16)})
                       </div>
                     </div>
                   </div>
+                </div>
+
+                {/* Description */}
+                <div className="bg-black border border-gray-700 p-4">
+                  <div className="text-xs text-gray-500 mb-2">DESCRIPTION</div>
+                  <p className="text-sm text-gray-300 leading-relaxed">{selectedPlanet.description}</p>
                 </div>
               </div>
               
-              {/* Right Column - Physics & Math */}
-              <div className="space-y-6">
-                {/* Live Physics Data */}
-                <div className="bg-gray-900/50 p-4 rounded-lg border border-neon-green/30">
-                  <h3 className="text-xl font-bold text-neon-green mb-3 flex items-center gap-2">
-                    <span className="animate-pulse">⚡</span>
-                    Live Physics Data
-                  </h3>
-                  <div className="font-mono text-sm space-y-2">
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-black/50 p-2 rounded">
-                        <div className="text-gray-500 text-xs">Orbit Radius</div>
-                        <div className="text-neon-cyan text-lg">{livePhysics.orbitRadius.toFixed(2)} AU</div>
+              {/* Column 2 - Live Physics Telemetry */}
+              <div className="space-y-4">
+                {/* Real-time Telemetry */}
+                <div className="bg-black border border-neon-green p-4">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-neon-green/20">
+                    <span className="text-neon-green animate-pulse">◉</span>
+                    <span className="text-neon-green text-xs font-bold">LIVE_TELEMETRY</span>
+                    <span className="text-xs text-gray-600 ml-auto">100Hz</span>
+                  </div>
+                  <div className="space-y-3 text-xs">
+                    <div className="grid grid-cols-2 gap-3">
+                      <div>
+                        <div className="text-gray-600">r_orbit</div>
+                        <div className="text-neon-cyan text-xl font-bold">{livePhysics.orbitRadius.toFixed(3)}</div>
+                        <div className="text-gray-600 text-[10px]">AU</div>
                       </div>
-                      <div className="bg-black/50 p-2 rounded">
-                        <div className="text-gray-500 text-xs">Current Distance</div>
-                        <div className="text-neon-cyan text-lg">{livePhysics.distance.toFixed(3)} AU</div>
+                      <div>
+                        <div className="text-gray-600">d_current</div>
+                        <div className="text-neon-cyan text-xl font-bold">{livePhysics.distance.toFixed(3)}</div>
+                        <div className="text-gray-600 text-[10px]">AU</div>
                       </div>
-                      <div className="bg-black/50 p-2 rounded">
-                        <div className="text-gray-500 text-xs">Velocity</div>
-                        <div className="text-neon-yellow text-lg">{livePhysics.velocity.toFixed(4)} AU/s</div>
+                      <div>
+                        <div className="text-gray-500">v_orbital</div>
+                        <div className="text-neon-yellow text-xl font-bold tracking-wider">{livePhysics.velocity.toFixed(5)}</div>
+                        <div className="text-gray-500 text-[10px]">AU/s</div>
                       </div>
-                      <div className="bg-black/50 p-2 rounded">
-                        <div className="text-gray-500 text-xs">Angular Velocity</div>
-                        <div className="text-neon-yellow text-lg">{livePhysics.angularVelocity.toFixed(4)} rad/s</div>
+                      <div>
+                        <div className="text-gray-500">ω_angular</div>
+                        <div className="text-neon-yellow text-xl font-bold tracking-wider">{livePhysics.angularVelocity.toFixed(5)}</div>
+                        <div className="text-gray-500 text-[10px]">rad/s</div>
                       </div>
-                      <div className="bg-black/50 p-2 rounded">
-                        <div className="text-gray-500 text-xs">Mass</div>
-                        <div className="text-neon-pink text-lg">{livePhysics.mass.toFixed(3)} M⊕</div>
+                      <div>
+                        <div className="text-gray-600">m_relative</div>
+                        <div className="text-gray text-xl font-bold">{livePhysics.mass.toFixed(4)}</div>
+                        <div className="text-gray-600 text-[10px]">M⊕</div>
                       </div>
-                      <div className="bg-black/50 p-2 rounded">
-                        <div className="text-gray-500 text-xs">Position (x, z)</div>
-                        <div className="text-neon-pink text-sm">({livePhysics.position.x.toFixed(1)}, {livePhysics.position.z.toFixed(1)})</div>
+                      <div>
+                        <div className="text-gray-600">F_gravity</div>
+                        <div className="text-neon-pink text-xl font-bold">{livePhysics.gravitationalForce.toExponential(2)}</div>
+                        <div className="text-gray-600 text-[10px]">N</div>
+                      </div>
+                    </div>
+                    
+                    <div className="border-t border-gray-800 pt-2 mt-2">
+                      <div className="text-gray-600 mb-1">POSITION_VECTOR</div>
+                      <div className="bg-gray-900/50 p-2 font-mono">
+                        <span className="text-gray-500">[</span>
+                        <span className="text-neon-cyan">{livePhysics.position.x.toFixed(3)}</span>
+                        <span className="text-gray-500">, </span>
+                        <span className="text-neon-cyan">{livePhysics.position.y.toFixed(3)}</span>
+                        <span className="text-gray-500">, </span>
+                        <span className="text-neon-cyan">{livePhysics.position.z.toFixed(3)}</span>
+                        <span className="text-gray-500">]</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                
-                {/* Mathematical Formulas */}
-                <div className="bg-gray-900/50 p-4 rounded-lg border border-neon-yellow/30">
-                  <h3 className="text-xl font-bold text-neon-yellow mb-3 flex items-center gap-2">
-                    <span>∫</span>
-                    Orbital Mathematics
-                  </h3>
-                  <div className="space-y-4 text-sm">
-                    <div className="bg-black/50 p-3 rounded">
-                      <div className="text-gray-400 mb-1">Gravitational Force:</div>
-                      <code className="text-neon-green block mb-1">F = G × (M × m) / r²</code>
-                      <div className="text-neon-cyan">F = {livePhysics.gravitationalForce.toExponential(3)} N</div>
-                    </div>
-                    
-                    <div className="bg-black/50 p-3 rounded">
-                      <div className="text-gray-400 mb-1">Orbital Period (Kepler&apos;s 3rd Law):</div>
-                      <code className="text-neon-green block mb-1">T² ∝ r³</code>
-                      <div className="text-neon-cyan">T = {livePhysics.orbitalPeriod.toFixed(2)} seconds</div>
-                    </div>
-                    
-                    <div className="bg-black/50 p-3 rounded">
-                      <div className="text-gray-400 mb-1">Orbital Speed (Kepler&apos;s 2nd Law):</div>
-                      <code className="text-neon-green block mb-1">v ∝ 1/√r</code>
-                      <div className="text-neon-cyan">v = {livePhysics.velocity.toFixed(4)} AU/s</div>
-                    </div>
-                    
-                    <div className="bg-black/50 p-3 rounded">
-                      <div className="text-gray-400 mb-1">Elliptical Orbit:</div>
-                      <code className="text-neon-green block mb-1">e = {livePhysics.eccentricity}</code>
-                      <div className="text-gray-500 text-xs mt-2">
-                        x = a × cos(t) × (1 - e)<br/>
-                        z = b × sin(t)<br/>
-                        where b = a × √(1 - e²)
-                      </div>
-                    </div>
-                    
-                    <div className="bg-black/50 p-3 rounded">
-                      <div className="text-gray-400 mb-1">Constants:</div>
-                      <div className="text-gray-500 text-xs space-y-1">
-                        <div>G = 6.674 × 10⁻¹¹ m³/kg·s²</div>
-                        <div>M☉ = 1.989 × 10³⁰ kg</div>
-                        <div>1 AU = 1.496 × 10⁸ km</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Orbital Diagram */}
-                <div className="bg-gray-900/50 p-4 rounded-lg border" style={{ borderColor: `${selectedPlanet.color}30` }}>
-                  <h3 className="text-xl font-bold mb-3" style={{ color: selectedPlanet.color }}>Orbital Path</h3>
-                  <div className="relative w-full aspect-square bg-black/50 rounded flex items-center justify-center">
-                    {/* Simple orbital visualization */}
-                    <div className="absolute w-3/4 h-3/4 border-2 border-dashed border-gray-600 rounded-full"></div>
-                    <div className="absolute w-4 h-4 bg-yellow-400 rounded-full shadow-lg" style={{ boxShadow: '0 0 20px #ffd700' }}></div>
+
+                {/* Orbital Visualization */}
+                <div className="bg-black border p-4" style={{ borderColor: `${selectedPlanet.color}40` }}>
+                  <div className="text-xs text-gray-500 mb-3">ORBITAL_PATH</div>
+                  <div className="relative w-full aspect-square bg-gray-950 border border-gray-800">
+                    <div className="absolute w-3/4 h-3/4 border border-dashed border-gray-700 rounded-full" style={{ left: '12.5%', top: '12.5%' }}></div>
+                    <div className="absolute w-2 h-2 bg-yellow-500 rounded-full" style={{ left: 'calc(50% - 4px)', top: 'calc(50% - 4px)', boxShadow: '0 0 10px #ffd700' }}></div>
                     <div 
-                      className="absolute w-3 h-3 rounded-full transition-all duration-100"
+                      className="absolute w-2 h-2 rounded-full transition-all duration-100"
                       style={{ 
                         backgroundColor: selectedPlanet.color,
-                        left: `${50 + (livePhysics.position.x / livePhysics.orbitRadius) * 35}%`,
-                        top: `${50 + (livePhysics.position.z / livePhysics.orbitRadius) * 35}%`,
-                        boxShadow: `0 0 10px ${selectedPlanet.color}`
+                        left: `calc(50% + ${(livePhysics.position.x / livePhysics.orbitRadius) * 37.5}% - 4px)`,
+                        top: `calc(50% + ${(livePhysics.position.z / livePhysics.orbitRadius) * 37.5}% - 4px)`,
+                        boxShadow: `0 0 8px ${selectedPlanet.color}`
                       }}
                     ></div>
-                    <div className="absolute bottom-2 right-2 text-xs text-gray-500">Real-time position</div>
+                  </div>
+                  <div className="mt-2 text-[10px] text-gray-600 text-center">REAL-TIME TRACKING</div>
+                </div>
+              </div>
+                
+              {/* Column 3 - Equations & Constants */}
+              <div className="space-y-4">
+                {/* Code-style Equations */}
+                <div className="bg-black border border-neon-yellow/30 p-4">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-neon-yellow/20">
+                    <span className="text-neon-yellow">λ</span>
+                    <span className="text-neon-yellow text-xs font-bold">ORBITAL_MECHANICS.py</span>
+                  </div>
+                  <div className="space-y-3 text-xs">
+                    <div className="bg-gray-950 p-2 border-l-2 border-neon-green">
+                      <div className="text-gray-600 mb-1"># Gravitational Force</div>
+                      <code className="text-gray-400">F = <span className="text-neon-green">G</span> * (<span className="text-neon-cyan">M</span> * <span className="text-neon-cyan">m</span>) / <span className="text-neon-yellow">r</span>²</code>
+                      <div className="text-gray-600 mt-1 text-[10px]">&gt; {livePhysics.gravitationalForce.toExponential(3)} N</div>
+                    </div>
+                    
+                    <div className="bg-gray-950 p-2 border-l-2 border-neon-cyan">
+                      <div className="text-gray-600 mb-1"># Kepler&apos;s 3rd Law</div>
+                      <code className="text-gray-400">T² ∝ <span className="text-neon-yellow">r</span>³</code>
+                      <div className="text-gray-600 mt-1 text-[10px]">&gt; T = {livePhysics.orbitalPeriod.toFixed(2)} s</div>
+                    </div>
+                    
+                    <div className="bg-gray-950 p-2 border-l-2 border-neon-pink">
+                      <div className="text-gray-600 mb-1"># Orbital Velocity</div>
+                      <code className="text-gray-400">v = √(<span className="text-neon-green">G</span> * <span className="text-neon-cyan">M</span> / <span className="text-neon-yellow">r</span>)</code>
+                      <div className="text-gray-600 mt-1 text-[10px]">&gt; v ∝ 1/√r</div>
+                    </div>
+                    
+                    <div className="bg-gray-950 p-2 border-l-2 border-neon-yellow">
+                      <div className="text-gray-600 mb-1"># Elliptical Path</div>
+                      <code className="text-gray-400 text-[10px]">
+                        x = a * cos(t) * (1 - e)<br/>
+                        z = b * sin(t)<br/>
+                        b = a * √(1 - e²)
+                      </code>
+                      <div className="text-gray-600 mt-1 text-[10px]">&gt; e = {livePhysics.eccentricity}</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Constants Table */}
+                <div className="bg-black border border-gray-700 p-4">
+                  <div className="text-xs text-gray-500 mb-3">PHYSICAL_CONSTANTS</div>
+                  <div className="space-y-2 text-xs font-mono">
+                    <div className="flex justify-between border-b border-gray-800 pb-1">
+                      <span className="text-gray-600">G</span>
+                      <span className="text-gray-400">6.674e-11 m³/kg·s²</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-800 pb-1">
+                      <span className="text-gray-600">M☉</span>
+                      <span className="text-gray-400">1.989e30 kg</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-800 pb-1">
+                      <span className="text-gray-600">1 AU</span>
+                      <span className="text-gray-400">1.496e8 km</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-800 pb-1">
+                      <span className="text-gray-600">M⊕</span>
+                      <span className="text-gray-400">5.972e24 kg</span>
+                    </div>
+                    <div className="flex justify-between border-b border-gray-800 pb-1">
+                      <span className="text-gray-600">e</span>
+                      <span className="text-gray-400">{livePhysics.eccentricity}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Interactive Playground Section */}
+                <div className="bg-black border border-neon-pink/30 p-4">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-neon-pink/20">
+                    <span className="text-neon-pink">⚙</span>
+                    <span className="text-neon-pink text-xs font-bold">PLAYGROUND</span>
+                  </div>
+                  <div className="space-y-2 text-xs">
+                    <div className="text-gray-500 mb-2">// Interactive calculations</div>
+                    <div className="bg-gray-950 p-2">
+                      <div className="text-gray-600 mb-1">Escape Velocity:</div>
+                      <code className="text-neon-cyan">v_esc = {(Math.sqrt(2 * 6.674e-11 * 1.989e30 * livePhysics.mass / (livePhysics.distance * 1.496e11)) / 1000).toFixed(2)} km/s</code>
+                    </div>
+                    <div className="bg-gray-950 p-2">
+                      <div className="text-gray-600 mb-1">Orbital Energy:</div>
+                      <code className="text-neon-yellow">E = -<span className="text-neon-yellow">{livePhysics.gravitationalForce.toExponential(2)}</span> J</code>
+                    </div>
+                    <div className="bg-gray-950 p-2">
+                      <div className="text-gray-600 mb-1">Period Ratio:</div>
+                      <code className="text-neon-green">T/T⊕ = {(livePhysics.orbitalPeriod / 31557600).toFixed(3)}</code>
+                    </div>
                   </div>
                 </div>
               </div>

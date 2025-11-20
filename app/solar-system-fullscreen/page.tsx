@@ -19,7 +19,7 @@ export default function FullscreenSolarSystem() {
       </Link>
       
       {/* Solar System in Fullscreen */}
-      <SolarSystemScene />
+      <SolarSystemScene isFullscreen={true} />
     </div>
   )
 }
