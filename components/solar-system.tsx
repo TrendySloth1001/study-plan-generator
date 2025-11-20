@@ -6,6 +6,8 @@ import { Canvas, useFrame, useLoader, ThreeEvent } from "@react-three/fiber"
 import { Sphere, OrbitControls, Stars, MeshDistortMaterial, Sparkles, useTexture, Torus, Html } from "@react-three/drei"
 import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postprocessing"
 import * as THREE from "three"
+import { detailedPlanetData } from "@/lib/planet-data"
+import { extendedPlanetData } from "@/lib/planet-data-extended"
 
 // Sun with corona and surface details
 function Sun() {
@@ -946,6 +948,36 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
     return () => clearInterval(interval)
   }, [])
 
+  // Merge comprehensive planet data from both files
+  const allPlanetData = { ...detailedPlanetData, ...extendedPlanetData }
+  
+  // Extract mission data from comprehensive planet information
+  const getMissionData = (planetKey: string) => {
+    const planet = allPlanetData[planetKey]
+    if (!planet) return null
+    
+    return {
+      missions: planet.missions.map(m => ({
+        name: m.name,
+        year: m.year,
+        status: m.status,
+        achievement: m.achievement,
+        agency: m.agency,
+        type: m.type
+      })),
+      discoveries: planet.discoveries.map(d => `${d.discovery} (${d.year}): ${d.significance}`),
+      nextMission: planet.futureExploration.plannedMissions[0] || "Future missions under consideration",
+      physicalData: planet.physicalData,
+      orbitalData: planet.orbitalData,
+      atmosphere: planet.atmosphere,
+      structure: planet.structure,
+      satellites: planet.satellites,
+      scientificImportance: planet.scientificImportance,
+      interestingFacts: planet.interestingFacts,
+      earthComparison: planet.earthComparison
+    }
+  }
+
   const planetData: { [key: string]: PlanetInfo } = {
     mercury: {
       name: "Mercury - Beginner Stage",
@@ -1462,8 +1494,8 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
               </div>
             </div>
             
-            {/* Content Grid - Playground Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            {/* Content Grid - Enhanced with Missions */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
               {/* Column 1 - System Info */}
               <div className="space-y-4">
                 {/* Terminal Output */}
@@ -1683,6 +1715,987 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
                     </div>
                   </div>
                 </div>
+              </div>
+              
+              {/* Column 4 - Missions & Discoveries */}
+              <div className="space-y-4">
+                {/* Space Missions - Enhanced Timeline */}
+                <div className="bg-gradient-to-br from-black via-purple-950/10 to-black border border-purple-400/30 p-4 relative overflow-hidden">
+                  {/* Animated background */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-3xl animate-pulse"></div>
+                  
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-purple-500/20 relative z-10">
+                    <span className="text-purple-400 text-lg animate-pulse">🚀</span>
+                    <span className="text-purple-400 text-xs font-bold tracking-wider">SPACE_MISSIONS_TIMELINE</span>
+                    <div className="ml-auto flex items-center gap-1">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full animate-ping"></div>
+                      <span className="text-purple-400 text-[8px]">LIVE</span>
+                    </div>
+                  </div>
+                  
+                  <div className="relative max-h-80 overflow-y-auto custom-scrollbar">
+                    {/* Timeline line */}
+                    <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-400 via-purple-500 to-transparent"></div>
+                    
+                    <div className="space-y-4 text-xs pl-8 relative z-10">
+                      {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.missions.map((mission: any, idx: number) => (
+                        <div 
+                          key={idx} 
+                          className="relative group animate-in slide-in-from-left"
+                          style={{ animationDelay: `${idx * 100}ms` }}
+                        >
+                          {/* Timeline dot */}
+                          <div className="absolute -left-[18px] top-2 w-3 h-3 bg-purple-400 rounded-full border-2 border-black animate-pulse group-hover:scale-150 transition-transform duration-300"
+                            style={{ animationDelay: `${idx * 200}ms` }}
+                          ></div>
+                          
+                          <div className="bg-gradient-to-r from-gray-950 to-gray-900 p-3 border border-purple-400/30 hover:border-purple-400 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20 cursor-pointer">
+                            <div className="flex items-center justify-between mb-2">
+                              <span className="text-purple-400 font-bold flex items-center gap-1">
+                                <span className="text-purple-400/50">▸</span>
+                                {mission.name}
+                              </span>
+                              <span className="text-gray-600 text-[10px] bg-gray-800 px-2 py-0.5 rounded">{mission.year}</span>
+                            </div>
+                            <div className="text-gray-400 text-[10px] mb-1 flex items-center gap-2">
+                              <span className="text-purple-400/70">●</span>
+                              {mission.agency ? `${mission.status} - ${mission.agency}` : mission.status}
+                            </div>
+                            <div className="text-gray-300 text-[10px] flex items-start gap-1 bg-black/30 p-2 rounded">
+                              <span className="text-neon-green">✓</span>
+                              <span>{mission.achievement}</span>
+                            </div>
+                            {mission.type && (
+                              <div className="text-gray-600 text-[9px] mt-2 flex items-center gap-1">
+                                <div className="w-full h-px bg-gradient-to-r from-purple-400/20 to-transparent"></div>
+                                <span className="text-purple-400/50 whitespace-nowrap">Type: {mission.type}</span>
+                              </div>
+                            )}
+                            {/* Progress indicator */}
+                            <div className="mt-2 h-1 bg-gray-800 rounded-full overflow-hidden">
+                              <div 
+                                className="h-full bg-gradient-to-r from-purple-400 to-pink-400"
+                                style={{ 
+                                  width: `${Math.min(100, (idx + 1) * 15)}%`,
+                                  animation: 'shimmer 2s infinite'
+                                }}
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Major Discoveries */}
+                <div className="bg-black border border-neon-cyan/30 p-4">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-neon-cyan/20">
+                    <span className="text-neon-cyan">🔬</span>
+                    <span className="text-neon-cyan text-xs font-bold">DISCOVERIES</span>
+                  </div>
+                  <div className="space-y-2 text-xs">
+                    {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.discoveries.map((discovery: string, idx: number) => (
+                      <div 
+                        key={idx} 
+                        className="bg-gray-950 p-2 flex items-start gap-2 animate-in fade-in"
+                        style={{ animationDelay: `${idx * 150}ms` }}
+                      >
+                        <span className="text-neon-cyan">▸</span>
+                        <span className="text-gray-300">{discovery}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Next Mission */}
+                <div className="bg-black border border-neon-yellow/30 p-4">
+                  <div className="flex items-center gap-2 mb-3 pb-2 border-b border-neon-yellow/20">
+                    <span className="text-neon-yellow animate-pulse">🛸</span>
+                    <span className="text-neon-green font-bold">NEXT_MISSION</span>
+                  </div>
+                  <div className="text-xs">
+                    <div className="bg-gray-950 p-3 border-l-2 border-neon-yellow">
+                      <div className="text-xs text-gray-300">
+                        {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.nextMission}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Visual Stats Animation */}
+                <div className="bg-black border p-4" style={{ borderColor: `${selectedPlanet.color}40` }}>
+                  <div className="text-xs text-gray-500 mb-3">LIVE_STATS</div>
+                  <div className="space-y-3">
+                    <div>
+                      <div className="flex justify-between text-[10px] mb-1">
+                        <span className="text-gray-400">Rotation Speed</span>
+                        <span className="text-neon-cyan">{(Math.random() * 100).toFixed(1)}%</span>
+                      </div>
+                      <div className="h-2 bg-gray-900 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-neon-cyan to-neon-green animate-pulse"
+                          style={{ 
+                            width: `${Math.random() * 100}%`,
+                            boxShadow: '0 0 10px currentColor'
+                          }}
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-[10px] mb-1">
+                        <span className="text-gray-400">Orbital Progress</span>
+                        <span className="text-neon-yellow">{((livePhysics.time % livePhysics.orbitalPeriod) / livePhysics.orbitalPeriod * 100).toFixed(1)}%</span>
+                      </div>
+                      <div className="h-2 bg-gray-900 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-neon-yellow to-neon-pink transition-all duration-1000"
+                          style={{ 
+                            width: `${(livePhysics.time % livePhysics.orbitalPeriod) / livePhysics.orbitalPeriod * 100}%`,
+                            boxShadow: '0 0 10px currentColor'
+                          }}
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-[10px] mb-1">
+                        <span className="text-gray-400">Energy Level</span>
+                        <span className="text-neon-green">{(livePhysics.velocity * 1000).toFixed(0)} kJ</span>
+                      </div>
+                      <div className="h-2 bg-gray-900 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-neon-green to-neon-cyan animate-pulse"
+                          style={{ 
+                            width: `${(livePhysics.velocity / 0.02) * 100}%`,
+                            boxShadow: '0 0 10px currentColor'
+                          }}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Additional Comprehensive Data Sections */}
+            <div className="mt-6 space-y-4">
+              {/* Physical & Orbital Data */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {/* Physical Characteristics - Enhanced with Animations */}
+                <div className="bg-gradient-to-br from-black via-gray-900 to-black border border-neon-cyan/30 p-6 hover:border-neon-cyan/60 transition-all duration-500 group">
+                  <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-cyan/20">
+                    <span className="text-neon-cyan text-xl animate-pulse">⚛️</span>
+                    <span className="text-neon-cyan text-sm font-bold tracking-wider glitch">PHYSICAL_CHARACTERISTICS</span>
+                    <div className="ml-auto flex gap-1">
+                      <div className="w-2 h-2 bg-neon-cyan rounded-full animate-pulse"></div>
+                      <div className="w-2 h-2 bg-neon-cyan rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                      <div className="w-2 h-2 bg-neon-cyan rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3 text-xs">
+                    {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.physicalData && (
+                      <>
+                        {Object.entries(getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.physicalData).map(([key, value], idx) => (
+                          <div 
+                            key={idx} 
+                            className="bg-gradient-to-r from-gray-950 to-gray-900 p-3 border-l-2 border-neon-cyan/50 hover:border-neon-cyan hover:scale-105 transition-all duration-300 cursor-pointer animate-in slide-in-from-bottom"
+                            style={{ 
+                              animationDelay: `${idx * 80}ms`,
+                              boxShadow: '0 0 15px rgba(0, 225, 255, 0.1)'
+                            }}
+                          >
+                            <div className="text-gray-500 mb-1 capitalize text-[10px] flex items-center gap-1">
+                              <span className="text-neon-cyan">▸</span>
+                              {key.replace(/([A-Z])/g, ' $1').trim()}
+                            </div>
+                            <div className="text-neon-cyan font-bold text-sm flex items-center justify-between">
+                              <span>{value}</span>
+                              <span className="text-neon-cyan/30 text-xs">◆</span>
+                            </div>
+                            {/* Progress bar animation */}
+                            <div className="mt-2 h-1 bg-gray-800 rounded-full overflow-hidden">
+                              <div 
+                                className="h-full bg-gradient-to-r from-neon-cyan to-neon-green"
+                                style={{ 
+                                  width: `${(idx + 1) * 10}%`,
+                                  animation: 'shimmer 2s infinite'
+                                }}
+                              ></div>
+                            </div>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                {/* Orbital Characteristics - Enhanced with Orbit Visualization */}
+                <div className="bg-gradient-to-br from-black via-gray-900 to-black border border-neon-yellow/30 p-6 hover:border-neon-yellow/60 transition-all duration-500 group relative overflow-hidden">
+                  {/* Animated background orbits */}
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-neon-yellow rounded-full animate-spin" style={{ animationDuration: '20s' }}></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 border border-neon-yellow/60 rounded-full animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
+                  </div>
+                  
+                  <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-yellow/20 relative z-10">
+                    <span className="text-neon-yellow text-xl animate-spin" style={{ animationDuration: '3s' }}>🌐</span>
+                    <span className="text-neon-yellow text-sm font-bold tracking-wider">ORBITAL_CHARACTERISTICS</span>
+                    <div className="ml-auto">
+                      <div className="flex items-center gap-1">
+                        <div className="w-1 h-4 bg-neon-yellow animate-pulse"></div>
+                        <div className="w-1 h-6 bg-neon-yellow animate-pulse" style={{ animationDelay: '0.1s' }}></div>
+                        <div className="w-1 h-5 bg-neon-yellow animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+                        <div className="w-1 h-7 bg-neon-yellow animate-pulse" style={{ animationDelay: '0.3s' }}></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3 text-xs relative z-10">
+                    {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.orbitalData && (
+                      <>
+                        {Object.entries(getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.orbitalData).map(([key, value], idx) => (
+                          <div 
+                            key={idx} 
+                            className="bg-gradient-to-br from-gray-950 to-gray-900/80 p-3 border-l-2 border-neon-yellow/50 hover:border-neon-yellow hover:scale-105 transition-all duration-300 cursor-pointer backdrop-blur-sm animate-in slide-in-from-right"
+                            style={{ 
+                              animationDelay: `${idx * 80}ms`,
+                              boxShadow: '0 0 15px rgba(255, 234, 0, 0.1)'
+                            }}
+                          >
+                            <div className="text-gray-500 mb-1 capitalize text-[10px] flex items-center gap-1">
+                              <span className="text-neon-yellow">◉</span>
+                              {key.replace(/([A-Z])/g, ' $1').trim()}
+                            </div>
+                            <div className="text-neon-yellow font-bold text-sm">{value}</div>
+                            {/* Circular progress indicator */}
+                            <div className="mt-2 flex items-center gap-2">
+                              <div className="flex-1 h-1 bg-gray-800 rounded-full overflow-hidden">
+                                <div 
+                                  className="h-full bg-gradient-to-r from-neon-yellow via-neon-pink to-neon-yellow"
+                                  style={{ 
+                                    width: `${Math.min(100, (idx + 1) * 15)}%`,
+                                    animation: 'shimmer 3s infinite'
+                                  }}
+                                ></div>
+                              </div>
+                              <span className="text-neon-yellow text-[8px]">●</span>
+                            </div>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Atmosphere & Structure */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {/* Atmosphere - Enhanced with Gas Visualization */}
+                <div className="bg-gradient-to-br from-black via-pink-950/10 to-black border border-neon-pink/30 p-6 hover:border-neon-pink/60 transition-all duration-500 relative overflow-hidden group">
+                  {/* Floating particles animation */}
+                  <div className="absolute inset-0 opacity-20">
+                    {[...Array(8)].map((_, i) => (
+                      <div 
+                        key={i}
+                        className="absolute w-2 h-2 bg-neon-pink rounded-full"
+                        style={{
+                          left: `${Math.random() * 100}%`,
+                          top: `${Math.random() * 100}%`,
+                          animation: `float ${3 + Math.random() * 4}s infinite ease-in-out`,
+                          animationDelay: `${Math.random() * 2}s`
+                        }}
+                      ></div>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-pink/20 relative z-10">
+                    <span className="text-neon-pink text-xl animate-bounce" style={{ animationDuration: '2s' }}>☁️</span>
+                    <span className="text-neon-pink text-sm font-bold tracking-wider">ATMOSPHERE</span>
+                    <div className="ml-auto flex gap-1">
+                      {[...Array(3)].map((_, i) => (
+                        <div key={i} className="w-8 h-1 bg-neon-pink/30 rounded-full overflow-hidden">
+                          <div 
+                            className="h-full bg-neon-pink"
+                            style={{ 
+                              width: '40%',
+                              animation: 'slide 1.5s infinite ease-in-out',
+                              animationDelay: `${i * 0.2}s`
+                            }}
+                          ></div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.atmosphere && (
+                    <div className="space-y-3 text-xs relative z-10">
+                      <div>
+                        <div className="text-gray-500 mb-2 flex items-center gap-2">
+                          <span>Composition</span>
+                          <div className="flex-1 h-px bg-gradient-to-r from-neon-pink to-transparent"></div>
+                        </div>
+                        <div className="space-y-2">
+                          {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.atmosphere.composition.map((comp: string, idx: number) => {
+                            const percentage = parseInt(comp.match(/\d+/)?.[0] || '0')
+                            return (
+                              <div 
+                                key={idx} 
+                                className="bg-gradient-to-r from-gray-950 to-gray-900 p-3 border-l-2 border-neon-pink/50 hover:border-neon-pink transition-all duration-300 animate-in fade-in"
+                                style={{ animationDelay: `${idx * 100}ms` }}
+                              >
+                                <div className="flex items-center justify-between mb-2">
+                                  <span className="text-neon-pink font-bold">{comp}</span>
+                                  <span className="text-neon-pink/60 text-[10px]">●●●</span>
+                                </div>
+                                {/* Visual percentage bar */}
+                                <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                  <div 
+                                    className="h-full bg-gradient-to-r from-neon-pink via-pink-400 to-neon-pink transition-all duration-1000"
+                                    style={{ 
+                                      width: `${percentage || (100 - idx * 10)}%`,
+                                      boxShadow: '0 0 10px rgba(255, 0, 230, 0.5)',
+                                      animation: 'pulse-glow 2s infinite'
+                                    }}
+                                  ></div>
+                                </div>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-2">
+                        <div className="bg-gray-950 p-3">
+                          <div className="text-gray-500 mb-1">Pressure</div>
+                          <div className="text-neon-pink font-bold">{getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.atmosphere.pressure}</div>
+                        </div>
+                        <div className="bg-gray-950 p-3">
+                          <div className="text-gray-500 mb-1">Temperature</div>
+                          <div className="text-neon-pink font-bold">{getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.atmosphere.temperature}</div>
+                        </div>
+                      </div>
+                      {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.atmosphere.weatherPatterns && (
+                        <div>
+                          <div className="text-gray-500 mb-2">Weather Patterns</div>
+                          <div className="space-y-1">
+                            {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.atmosphere.weatherPatterns?.map((pattern: string, idx: number) => (
+                              <div key={idx} className="bg-gray-950 p-2 text-gray-300 text-[11px]">▸ {pattern}</div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+
+                {/* Structure - Enhanced with Layer Visualization */}
+                <div className="bg-gradient-to-br from-black via-green-950/10 to-black border border-neon-green/30 p-6 relative overflow-hidden group">
+                  {/* Animated concentric circles for layers */}
+                  <div className="absolute inset-0 opacity-10">
+                    {[...Array(4)].map((_, i) => (
+                      <div 
+                        key={i}
+                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-neon-green rounded-full"
+                        style={{
+                          width: `${(i + 1) * 60}px`,
+                          height: `${(i + 1) * 60}px`,
+                          animation: `pulse ${2 + i * 0.5}s infinite ease-in-out`,
+                          animationDelay: `${i * 0.3}s`
+                        }}
+                      ></div>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-green/20 relative z-10">
+                    <span className="text-neon-green text-xl animate-pulse">🏔️</span>
+                    <span className="text-neon-green text-sm font-bold tracking-wider">STRUCTURE_&_COMPOSITION</span>
+                    <div className="ml-auto">
+                      <div className="flex gap-1">
+                        {[...Array(4)].map((_, i) => (
+                          <div 
+                            key={i}
+                            className="w-2 h-6 bg-neon-green/30 rounded-full"
+                            style={{
+                              animation: 'pulse 1.5s infinite',
+                              animationDelay: `${i * 0.2}s`,
+                              opacity: 0.3 + (i * 0.2)
+                            }}
+                          ></div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.structure && (
+                    <div className="space-y-4 text-xs relative z-10">
+                      {/* Surface Features with Cards */}
+                      <div>
+                        <div className="text-gray-500 mb-3 flex items-center gap-2">
+                          <span className="text-neon-green">▸</span>
+                          <span className="font-bold">Surface Features</span>
+                          <div className="flex-1 h-px bg-gradient-to-r from-neon-green/50 to-transparent"></div>
+                        </div>
+                        <div className="space-y-2 max-h-48 overflow-y-auto custom-scrollbar">
+                          {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.structure.surfaceFeatures.map((feature: string, idx: number) => (
+                            <div 
+                              key={idx} 
+                              className="bg-gradient-to-r from-gray-950 to-gray-900 p-3 border-l-2 border-neon-green/50 hover:border-neon-green transition-all duration-300 hover:translate-x-1 cursor-pointer animate-in slide-in-from-left group"
+                              style={{ animationDelay: `${idx * 60}ms` }}
+                            >
+                              <div className="flex items-start gap-2">
+                                <span className="text-neon-green mt-0.5">•</span>
+                                <span className="text-gray-300 text-[11px] flex-1">{feature}</span>
+                                <div className="w-1 h-1 bg-neon-green rounded-full animate-ping opacity-0 group-hover:opacity-100"></div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Interior Layers with Depth Visualization */}
+                      <div>
+                        <div className="text-gray-500 mb-3 flex items-center gap-2">
+                          <span className="text-neon-green">▸</span>
+                          <span className="font-bold">Interior Layers</span>
+                          <div className="flex-1 h-px bg-gradient-to-r from-neon-green/50 to-transparent"></div>
+                        </div>
+                        <div className="space-y-2">
+                          {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.structure.interiorLayers.map((layer: string, idx: number) => (
+                            <div 
+                              key={idx} 
+                              className="relative bg-gradient-to-r from-gray-950 to-gray-900 p-3 border border-neon-green/30 hover:border-neon-green transition-all duration-300 animate-in fade-in"
+                              style={{ 
+                                animationDelay: `${idx * 100}ms`,
+                                marginLeft: `${idx * 8}px`,
+                                boxShadow: `0 0 ${(idx + 1) * 5}px rgba(0, 255, 65, ${0.1 + idx * 0.05})`
+                              }}
+                            >
+                              <div className="flex items-center gap-3">
+                                <div className="flex-shrink-0 w-8 h-8 bg-neon-green/20 rounded-full flex items-center justify-center border border-neon-green/50 animate-pulse"
+                                  style={{ animationDelay: `${idx * 0.2}s` }}
+                                >
+                                  <span className="text-neon-green font-bold text-xs">{idx + 1}</span>
+                                </div>
+                                <span className="text-neon-green text-[11px] flex-1">{layer}</span>
+                                {/* Depth indicator */}
+                                <div className="flex flex-col gap-0.5">
+                                  {[...Array(idx + 1)].map((_, i) => (
+                                    <div key={i} className="w-4 h-0.5 bg-neon-green/50"></div>
+                                  ))}
+                                </div>
+                              </div>
+                              {/* Progress bar showing depth */}
+                              <div className="mt-2 h-1 bg-gray-800 rounded-full overflow-hidden">
+                                <div 
+                                  className="h-full bg-gradient-to-r from-neon-green to-neon-cyan"
+                                  style={{ 
+                                    width: `${25 + idx * 25}%`,
+                                    animation: 'shimmer 3s infinite'
+                                  }}
+                                ></div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Magnetic Field with Field Lines */}
+                      <div className="relative bg-gradient-to-br from-gray-950 to-gray-900 p-4 border-2 border-neon-green/30 hover:border-neon-green transition-all duration-500">
+                        <div className="text-gray-500 mb-2 flex items-center gap-2">
+                          <span className="text-neon-green text-lg">⚡</span>
+                          <span className="font-bold">Magnetic Field</span>
+                        </div>
+                        <div className="text-neon-green font-bold text-sm animate-neon-pulse">
+                          {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.structure.magneticField}
+                        </div>
+                        {/* Field strength indicator */}
+                        <div className="mt-3 flex gap-1">
+                          {[...Array(10)].map((_, i) => (
+                            <div 
+                              key={i}
+                              className="flex-1 h-8 bg-neon-green/20 rounded-full relative overflow-hidden"
+                              style={{
+                                animation: 'pulse 2s infinite',
+                                animationDelay: `${i * 0.1}s`
+                              }}
+                            >
+                              <div 
+                                className="absolute bottom-0 left-0 right-0 bg-neon-green"
+                                style={{ 
+                                  height: `${Math.random() * 100}%`,
+                                  animation: 'pulse-glow 1.5s infinite',
+                                  animationDelay: `${i * 0.15}s`
+                                }}
+                              ></div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Moons & Satellites - Enhanced with Orbital Animation */}
+              {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.satellites && getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.satellites.moonCount > 0 && (
+                <div className="bg-gradient-to-br from-black via-purple-950/10 to-black border border-purple-400/30 p-6 relative overflow-hidden">
+                  {/* Animated orbital rings */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-purple-400 rounded-full animate-spin" style={{ animationDuration: '30s' }}></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-purple-400/60 rounded-full animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}></div>
+                  </div>
+
+                  <div className="flex items-center gap-2 mb-4 pb-3 border-b border-purple-400/20 relative z-10">
+                    <span className="text-purple-400 text-xl animate-bounce" style={{ animationDuration: '3s' }}>🌙</span>
+                    <span className="text-purple-400 text-sm font-bold tracking-wider">MOONS_&_SATELLITES</span>
+                    <div className="ml-auto flex items-center gap-3">
+                      <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 bg-purple-400 rounded-full animate-ping"></div>
+                        <span className="text-purple-400 text-xs font-bold">{getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.satellites.moonCount}</span>
+                      </div>
+                      <span className="text-gray-600 text-xs">satellites detected</span>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs relative z-10">
+                    {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.satellites.majorMoons?.map((moon: any, idx: number) => (
+                      <div 
+                        key={idx} 
+                        className="group relative bg-gradient-to-br from-gray-950 to-gray-900 p-4 border border-purple-400/30 hover:border-purple-400 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 cursor-pointer animate-in fade-in"
+                        style={{ 
+                          animationDelay: `${idx * 150}ms`,
+                          transform: 'translateZ(0)'
+                        }}
+                      >
+                        {/* Holographic shimmer effect */}
+                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                          style={{
+                            background: 'linear-gradient(45deg, transparent 30%, rgba(168, 85, 247, 0.1) 50%, transparent 70%)',
+                            backgroundSize: '200% 200%',
+                            animation: 'shimmer 2s infinite'
+                          }}
+                        ></div>
+
+                        {/* Moon icon with orbit */}
+                        <div className="relative mb-3 flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <div className="relative">
+                              <div className="w-8 h-8 bg-purple-400/20 rounded-full flex items-center justify-center border border-purple-400/50 animate-pulse">
+                                <span className="text-lg">🌙</span>
+                              </div>
+                              <div className="absolute inset-0 border border-purple-400/30 rounded-full animate-ping"></div>
+                            </div>
+                            <div className="text-purple-400 font-bold text-sm">{moon.name}</div>
+                          </div>
+                          <div className="text-[8px] text-gray-600 bg-gray-800 px-2 py-1 rounded">#{idx + 1}</div>
+                        </div>
+
+                        {/* Data bars */}
+                        <div className="space-y-3 mb-3">
+                          <div>
+                            <div className="flex items-center justify-between mb-1">
+                              <span className="text-gray-500 text-[10px]">Diameter</span>
+                              <span className="text-neon-cyan text-[10px] font-bold">{moon.diameter}</span>
+                            </div>
+                            <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
+                              <div 
+                                className="h-full bg-gradient-to-r from-neon-cyan to-purple-400"
+                                style={{ 
+                                  width: `${50 + idx * 10}%`,
+                                  animation: 'shimmer 3s infinite'
+                                }}
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Description with scan effect */}
+                        <div className="relative bg-black/30 p-3 rounded border border-purple-400/10">
+                          <div className="text-gray-300 text-[11px] leading-relaxed relative z-10">{moon.description}</div>
+                          {/* Scan line */}
+                          <div 
+                            className="absolute left-0 top-0 w-full h-0.5 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-0 group-hover:opacity-100"
+                            style={{ animation: 'scan-line 2s infinite' }}
+                          ></div>
+                        </div>
+
+                        {/* Bottom status bar */}
+                        <div className="mt-3 pt-2 border-t border-purple-400/10 flex items-center justify-between">
+                          <div className="flex gap-1">
+                            {[...Array(3)].map((_, i) => (
+                              <div 
+                                key={i}
+                                className="w-1 h-3 bg-purple-400/30 rounded-full animate-pulse"
+                                style={{ animationDelay: `${i * 0.2}s` }}
+                              ></div>
+                            ))}
+                          </div>
+                          <span className="text-[8px] text-purple-400/50">ACTIVE</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.satellites.rings && (
+                    <div className="mt-4 bg-gray-950 p-4 border-l-2 border-purple-400">
+                      <div className="text-purple-400 font-bold mb-2">Ring System</div>
+                      <div className="text-gray-300 text-[11px]">{getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.satellites.rings?.description}</div>
+                      <div className="text-gray-500 text-[11px] mt-1">Composition: {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.satellites.rings?.composition}</div>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Scientific Importance - Enhanced with Hexagonal Grid */}
+              <div className="bg-gradient-to-br from-black via-cyan-950/10 to-black border border-neon-cyan/30 p-6 relative overflow-hidden">
+                {/* Animated data streams */}
+                <div className="absolute inset-0 opacity-10">
+                  {[...Array(5)].map((_, i) => (
+                    <div 
+                      key={i}
+                      className="absolute w-px h-20 bg-gradient-to-b from-neon-cyan to-transparent"
+                      style={{
+                        left: `${20 + i * 20}%`,
+                        animation: `data-stream ${2 + i * 0.5}s infinite ease-in-out`,
+                        animationDelay: `${i * 0.3}s`
+                      }}
+                    ></div>
+                  ))}
+                </div>
+
+                <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-cyan/20 relative z-10">
+                  <span className="text-neon-cyan text-xl animate-pulse">🔬</span>
+                  <span className="text-neon-cyan text-sm font-bold tracking-wider">SCIENTIFIC_IMPORTANCE</span>
+                  <div className="ml-auto flex items-center gap-2">
+                    <div className="text-[8px] text-neon-cyan font-mono bg-cyan-950/30 px-2 py-1 rounded border border-neon-cyan/30">
+                      HIGH PRIORITY
+                    </div>
+                    <div className="flex gap-0.5">
+                      {[...Array(5)].map((_, i) => (
+                        <div 
+                          key={i}
+                          className="w-1 h-4 bg-neon-cyan rounded-full"
+                          style={{ 
+                            opacity: 0.2 + (i * 0.2),
+                            animation: 'pulse 1s infinite',
+                            animationDelay: `${i * 0.1}s`
+                          }}
+                        ></div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs relative z-10">
+                  {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.scientificImportance.map((item: string, idx: number) => (
+                    <div 
+                      key={idx} 
+                      className="group relative"
+                    >
+                      <div className="relative bg-gradient-to-r from-gray-950 to-gray-900 p-4 border-l-4 border-neon-cyan/50 hover:border-neon-cyan transition-all duration-500 cursor-pointer animate-in slide-in-from-left hover:translate-x-2"
+                        style={{ 
+                          animationDelay: `${idx * 100}ms`,
+                          boxShadow: '0 0 20px rgba(0, 225, 255, 0.1)'
+                        }}
+                      >
+                        {/* Hexagonal badge */}
+                        <div className="absolute -top-3 -left-3 w-8 h-8 flex items-center justify-center">
+                          <svg viewBox="0 0 100 100" className="w-full h-full animate-spin" style={{ animationDuration: '20s' }}>
+                            <polygon 
+                              points="50 1 95 25 95 75 50 99 5 75 5 25" 
+                              fill="rgba(0, 225, 255, 0.1)" 
+                              stroke="rgb(0, 225, 255)" 
+                              strokeWidth="2"
+                            />
+                          </svg>
+                          <span className="absolute text-neon-cyan font-bold text-xs">{idx + 1}</span>
+                        </div>
+
+                        {/* Priority indicator bars */}
+                        <div className="absolute top-2 right-2 flex flex-col gap-1">
+                          {[...Array(3)].map((_, i) => (
+                            <div 
+                              key={i}
+                              className="w-8 h-0.5 bg-neon-cyan/30 rounded-full overflow-hidden"
+                            >
+                              <div 
+                                className="h-full bg-neon-cyan animate-pulse"
+                                style={{ 
+                                  width: `${100 - i * 20}%`,
+                                  animationDelay: `${i * 0.2}s`
+                                }}
+                              ></div>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="flex items-start gap-3 pt-6">
+                          {/* Animated icon */}
+                          <div className="relative mt-1">
+                            <span className="text-neon-cyan text-2xl animate-pulse">✦</span>
+                            <div className="absolute inset-0 animate-ping opacity-20">
+                              <span className="text-neon-cyan text-2xl">✦</span>
+                            </div>
+                          </div>
+                          
+                          <div className="flex-1">
+                            <span className="text-gray-300 leading-relaxed">{item}</span>
+                            
+                            {/* Progress bar */}
+                            <div className="mt-3 h-1 bg-gray-800 rounded-full overflow-hidden">
+                              <div 
+                                className="h-full bg-gradient-to-r from-neon-cyan via-neon-green to-neon-cyan"
+                                style={{ 
+                                  width: `${60 + idx * 5}%`,
+                                  animation: 'shimmer 3s infinite'
+                                }}
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Hover effect overlay */}
+                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                          style={{
+                            background: 'linear-gradient(90deg, transparent, rgba(0, 225, 255, 0.05), transparent)',
+                            animation: 'slide 2s infinite'
+                          }}
+                        ></div>
+
+                        {/* Corner decorations */}
+                        <div className="absolute bottom-2 right-2 w-4 h-4 border-r border-b border-neon-cyan/30 group-hover:border-neon-cyan transition-colors"></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Interesting Facts - Enhanced with Card Animations */}
+              <div className="bg-gradient-to-br from-black via-gray-900 to-black border p-6 relative overflow-hidden" style={{ borderColor: `${selectedPlanet.color}60` }}>
+                {/* Animated background pattern */}
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute top-0 left-0 w-full h-full" 
+                    style={{ 
+                      backgroundImage: `radial-gradient(circle at 50% 50%, ${selectedPlanet.color} 1px, transparent 1px)`,
+                      backgroundSize: '30px 30px',
+                      animation: 'float 20s infinite ease-in-out'
+                    }}
+                  ></div>
+                </div>
+
+                <div className="flex items-center gap-2 mb-4 pb-3 border-b relative z-10" style={{ borderColor: `${selectedPlanet.color}40` }}>
+                  <span style={{ color: selectedPlanet.color, animationDuration: '10s' }} className="text-xl animate-spin">💫</span>
+                  <span style={{ color: selectedPlanet.color }} className="text-sm font-bold tracking-wider animate-neon-pulse">FASCINATING_FACTS</span>
+                  <div className="ml-auto flex items-center gap-2">
+                    <div className="text-xs text-gray-500">
+                      {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.interestingFacts.length} facts
+                    </div>
+                    <div className="flex gap-1">
+                      {[...Array(3)].map((_, i) => (
+                        <div 
+                          key={i}
+                          className="w-2 h-2 rounded-full animate-pulse"
+                          style={{ 
+                            backgroundColor: selectedPlanet.color,
+                            animationDelay: `${i * 0.3}s`
+                          }}
+                        ></div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs relative z-10">
+                  {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.interestingFacts.map((fact: string, idx: number) => (
+                    <div 
+                      key={idx} 
+                      className="group relative perspective-1000"
+                      style={{ animationDelay: `${idx * 50}ms` }}
+                    >
+                      <div className="relative bg-gradient-to-br from-gray-950 to-gray-900 p-4 border-l-2 rounded-r-lg transition-all duration-500 hover:scale-110 hover:rotate-1 hover:shadow-2xl cursor-pointer animate-in slide-in-from-bottom"
+                        style={{ 
+                          borderColor: selectedPlanet.color,
+                          boxShadow: `0 0 20px ${selectedPlanet.color}20`,
+                          animationDelay: `${idx * 80}ms`
+                        }}
+                      >
+                        {/* Glowing corner */}
+                        <div 
+                          className="absolute top-0 right-0 w-8 h-8 opacity-20 animate-pulse"
+                          style={{ 
+                            background: `radial-gradient(circle at top right, ${selectedPlanet.color}, transparent)`,
+                            animationDelay: `${idx * 0.1}s`
+                          }}
+                        ></div>
+
+                        {/* Fact number badge */}
+                        <div 
+                          className="absolute -top-2 -left-2 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold border-2 border-black animate-pulse"
+                          style={{ 
+                            backgroundColor: selectedPlanet.color,
+                            color: '#000'
+                          }}
+                        >
+                          {idx + 1}
+                        </div>
+
+                        {/* Scan line effect */}
+                        <div 
+                          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                          style={{
+                            background: `linear-gradient(to bottom, transparent 0%, ${selectedPlanet.color}10 50%, transparent 100%)`,
+                            animation: 'scan-line 2s infinite'
+                          }}
+                        ></div>
+
+                        <span className="text-gray-300 relative z-10 leading-relaxed">{fact}</span>
+
+                        {/* Bottom accent bar */}
+                        <div className="absolute bottom-0 left-0 right-0 h-1 overflow-hidden">
+                          <div 
+                            className="h-full transform -translate-x-full group-hover:translate-x-0 transition-transform duration-1000"
+                            style={{ 
+                              background: `linear-gradient(90deg, transparent, ${selectedPlanet.color}, transparent)`
+                            }}
+                          ></div>
+                        </div>
+
+                        {/* Corner decorations */}
+                        <div className="absolute top-1 left-1 w-2 h-2 border-t border-l opacity-30" style={{ borderColor: selectedPlanet.color }}></div>
+                        <div className="absolute bottom-1 right-1 w-2 h-2 border-b border-r opacity-30" style={{ borderColor: selectedPlanet.color }}></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Earth Comparison - Enhanced with Circular Gauges */}
+              <div className="bg-gradient-to-br from-black via-green-950/10 to-black border border-neon-green/30 p-6 relative overflow-hidden">
+                {/* Animated grid background */}
+                <div className="absolute inset-0 opacity-5"
+                  style={{
+                    backgroundImage: 'linear-gradient(rgba(0, 255, 65, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 65, 0.2) 1px, transparent 1px)',
+                    backgroundSize: '30px 30px',
+                    animation: 'float 15s infinite ease-in-out'
+                  }}
+                ></div>
+
+                <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-green/20 relative z-10">
+                  <div className="relative">
+                    <span className="text-neon-green text-xl">🌍</span>
+                    <div className="absolute inset-0 animate-ping opacity-30">
+                      <span className="text-neon-green text-xl">🌍</span>
+                    </div>
+                  </div>
+                  <span className="text-neon-green text-sm font-bold tracking-wider">EARTH_COMPARISON_ANALYSIS</span>
+                  <div className="ml-auto flex items-center gap-2">
+                    <div className="text-[8px] text-neon-green font-mono bg-green-950/30 px-2 py-1 rounded border border-neon-green/30 animate-pulse">
+                      BASELINE: 1.0 EARTH
+                    </div>
+                  </div>
+                </div>
+                
+                {getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())?.earthComparison && (
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-xs relative z-10">
+                    {Object.entries(getMissionData(selectedPlanet.name.split(' - ')[0].toLowerCase())!.earthComparison).map(([key, value], idx) => (
+                      <div 
+                        key={idx} 
+                        className="group relative"
+                      >
+                        <div className="bg-gradient-to-br from-gray-950 to-gray-900 p-5 text-center border border-neon-green/20 hover:border-neon-green transition-all duration-500 hover:scale-110 cursor-pointer animate-in zoom-in"
+                          style={{ 
+                            animationDelay: `${idx * 100}ms`,
+                            boxShadow: '0 0 20px rgba(0, 255, 65, 0.1)'
+                          }}
+                        >
+                          {/* Circular gauge */}
+                          <div className="relative w-20 h-20 mx-auto mb-3">
+                            {/* Outer ring */}
+                            <svg className="w-full h-full transform -rotate-90">
+                              <circle 
+                                cx="40" 
+                                cy="40" 
+                                r="35" 
+                                fill="none" 
+                                stroke="rgba(0, 255, 65, 0.1)" 
+                                strokeWidth="4"
+                              />
+                              <circle 
+                                cx="40" 
+                                cy="40" 
+                                r="35" 
+                                fill="none" 
+                                stroke="rgb(0, 255, 65)" 
+                                strokeWidth="4"
+                                strokeDasharray={`${(idx + 1) * 40} 220`}
+                                className="transition-all duration-1000"
+                                style={{ 
+                                  animation: 'pulse-glow 2s infinite',
+                                  animationDelay: `${idx * 0.2}s`
+                                }}
+                              />
+                            </svg>
+                            
+                            {/* Center icon/number */}
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="text-center">
+                                <div className="text-neon-green text-2xl font-bold animate-pulse">{idx + 1}</div>
+                              </div>
+                            </div>
+
+                            {/* Rotating ring effect */}
+                            <div className="absolute inset-0 border-2 border-neon-green/20 rounded-full animate-spin opacity-0 group-hover:opacity-100 transition-opacity"
+                              style={{ animationDuration: '3s' }}
+                            ></div>
+                          </div>
+
+                          {/* Label */}
+                          <div className="text-gray-500 mb-2 capitalize text-[10px] uppercase tracking-wider">
+                            {key.replace(/([A-Z])/g, ' $1').trim()}
+                          </div>
+                          
+                          {/* Value with glow */}
+                          <div className="relative">
+                            <div className="text-neon-green font-bold text-sm leading-tight px-2 py-1 rounded"
+                              style={{ 
+                                textShadow: '0 0 10px rgba(0, 255, 65, 0.5)',
+                                animation: 'neon-pulse 2s infinite',
+                                animationDelay: `${idx * 0.3}s`
+                              }}
+                            >
+                              {value}
+                            </div>
+                          </div>
+
+                          {/* Data bars */}
+                          <div className="mt-3 space-y-1">
+                            {[...Array(3)].map((_, i) => (
+                              <div key={i} className="h-0.5 bg-gray-800 rounded-full overflow-hidden">
+                                <div 
+                                  className="h-full bg-gradient-to-r from-neon-green to-neon-cyan"
+                                  style={{ 
+                                    width: `${100 - i * 20}%`,
+                                    animation: 'shimmer 3s infinite',
+                                    animationDelay: `${i * 0.3}s`
+                                  }}
+                                ></div>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Corner accents */}
+                          <div className="absolute top-1 left-1 w-3 h-3 border-t-2 border-l-2 border-neon-green/30 group-hover:border-neon-green transition-colors"></div>
+                          <div className="absolute bottom-1 right-1 w-3 h-3 border-b-2 border-r-2 border-neon-green/30 group-hover:border-neon-green transition-colors"></div>
+
+                          {/* Scan effect */}
+                          <div 
+                            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+                            style={{
+                              background: 'linear-gradient(to bottom, transparent, rgba(0, 255, 65, 0.1), transparent)',
+                              animation: 'scan-line 2s infinite'
+                            }}
+                          ></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>

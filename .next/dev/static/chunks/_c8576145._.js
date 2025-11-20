@@ -69,17 +69,17 @@ function Sun() {
                         toneMapped: false
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 34,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 33,
+                lineNumber: 35,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -97,17 +97,17 @@ function Sun() {
                         side: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BackSide"]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 50,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 49,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -125,17 +125,17 @@ function Sun() {
                         side: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BackSide"]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 62,
+                        lineNumber: 64,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 61,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 60,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$drei$40$10$2e$7$2e$7_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$dom$40$19$2e$2$2e$0_$5f$494b0c2c358427dacb4dd748a0365e43$2f$node_modules$2f40$react$2d$three$2f$drei$2f$core$2f$Sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Sparkles"], {
@@ -147,7 +147,7 @@ function Sun() {
                 opacity: 0.8
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 72,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$drei$40$10$2e$7$2e$7_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$dom$40$19$2e$2$2e$0_$5f$494b0c2c358427dacb4dd748a0365e43$2f$node_modules$2f40$react$2d$three$2f$drei$2f$core$2f$Sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Sparkles"], {
@@ -159,7 +159,7 @@ function Sun() {
                 opacity: 0.6
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 75,
+                lineNumber: 77,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -177,7 +177,7 @@ function Sun() {
                         ]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 79,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
@@ -188,13 +188,13 @@ function Sun() {
                         side: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BackSide"]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 80,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 78,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -212,7 +212,7 @@ function Sun() {
                         ]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 89,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
@@ -223,13 +223,13 @@ function Sun() {
                         side: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BackSide"]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 90,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 88,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -247,7 +247,7 @@ function Sun() {
                         ]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 99,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
@@ -258,13 +258,13 @@ function Sun() {
                         side: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BackSide"]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 100,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 98,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pointLight", {
@@ -280,7 +280,7 @@ function Sun() {
                 castShadow: true
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 110,
+                lineNumber: 112,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pointLight", {
@@ -295,7 +295,7 @@ function Sun() {
                 decay: 2
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 111,
+                lineNumber: 113,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pointLight", {
@@ -310,13 +310,13 @@ function Sun() {
                 decay: 2
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 112,
+                lineNumber: 114,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 31,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }
@@ -427,7 +427,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                         opacity: 0.6
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 257,
+                        lineNumber: 259,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("group", {
@@ -477,7 +477,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                         roughness: 0.95
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 297,
+                                        lineNumber: 299,
                                         columnNumber: 15
                                     }, this) : // Gas giant or Earth-like with distortion
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$drei$40$10$2e$7$2e$7_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$dom$40$19$2e$2$2e$0_$5f$494b0c2c358427dacb4dd748a0365e43$2f$node_modules$2f40$react$2d$three$2f$drei$2f$core$2f$MeshDistortMaterial$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MeshDistortMaterial"], {
@@ -490,17 +490,17 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                         speed: hovered ? 1.2 : 0.6
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 306,
+                                        lineNumber: 308,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 294,
+                                    lineNumber: 296,
                                     columnNumber: 11
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 269,
+                                lineNumber: 271,
                                 columnNumber: 9
                             }, this),
                             hasStripes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -519,17 +519,17 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                         metalness: 0.0
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 323,
+                                        lineNumber: 325,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 322,
+                                    lineNumber: 324,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 321,
+                                lineNumber: 323,
                                 columnNumber: 11
                             }, this),
                             hasCraters && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -548,17 +548,17 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                         metalness: 0.0
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 338,
+                                        lineNumber: 340,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 337,
+                                    lineNumber: 339,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 336,
+                                lineNumber: 338,
                                 columnNumber: 11
                             }, this),
                             hasClouds && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -576,17 +576,17 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                         roughness: 0.9
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 353,
+                                        lineNumber: 355,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 352,
+                                    lineNumber: 354,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 351,
+                                lineNumber: 353,
                                 columnNumber: 11
                             }, this),
                             hasAtmosphere && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -607,17 +607,17 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 blending: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AdditiveBlending"]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 368,
+                                                lineNumber: 370,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 367,
+                                            lineNumber: 369,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 366,
+                                        lineNumber: 368,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -635,17 +635,17 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 blending: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AdditiveBlending"]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 380,
+                                                lineNumber: 382,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 379,
+                                            lineNumber: 381,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 378,
+                                        lineNumber: 380,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -669,7 +669,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 397,
+                                                lineNumber: 399,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshStandardMaterial", {
@@ -681,13 +681,13 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 metalness: 0.2
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 398,
+                                                lineNumber: 400,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 396,
+                                        lineNumber: 398,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -700,7 +700,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 409,
+                                                lineNumber: 411,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshStandardMaterial", {
@@ -711,13 +711,13 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 roughness: 0.8
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 410,
+                                                lineNumber: 412,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 408,
+                                        lineNumber: 410,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("mesh", {
@@ -730,7 +730,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 ]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 420,
+                                                lineNumber: 422,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshStandardMaterial", {
@@ -741,19 +741,19 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                                 roughness: 0.9
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 421,
+                                                lineNumber: 423,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 419,
+                                        lineNumber: 421,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 394,
+                                lineNumber: 396,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pointLight", {
@@ -767,7 +767,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                 distance: size * 3
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 433,
+                                lineNumber: 435,
                                 columnNumber: 9
                             }, this),
                             moons && moons > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -779,7 +779,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                         index: 0
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 438,
+                                        lineNumber: 440,
                                         columnNumber: 13
                                     }, this),
                                     moons > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Moon, {
@@ -789,7 +789,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                                         index: 1
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 439,
+                                        lineNumber: 441,
                                         columnNumber: 27
                                     }, this)
                                 ]
@@ -797,13 +797,13 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 267,
+                        lineNumber: 269,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 254,
+                lineNumber: 256,
                 columnNumber: 7
             }, this),
             hovered && tooltipPos && ("TURBOPACK compile-time value", "object") !== 'undefined' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$drei$40$10$2e$7$2e$7_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$dom$40$19$2e$2$2e$0_$5f$494b0c2c358427dacb4dd748a0365e43$2f$node_modules$2f40$react$2d$three$2f$drei$2f$web$2f$Html$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Html"], {
@@ -829,7 +829,7 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                             children: info.name.split(' - ')[0]
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 454,
+                            lineNumber: 456,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -840,18 +840,18 @@ function Planet({ size, color, orbitRadius, orbitSpeed, rotationSpeed, hasRing, 
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 465,
+                            lineNumber: 467,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 448,
+                    lineNumber: 450,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 447,
+                lineNumber: 449,
                 columnNumber: 9
             }, this)
         ]
@@ -902,22 +902,22 @@ function Moon({ parentRadius, speed, distance, index = 0 }) {
                     metalness: 0.1
                 }, void 0, false, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 510,
+                    lineNumber: 512,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 509,
+                lineNumber: 511,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/solar-system.tsx",
-            lineNumber: 508,
+            lineNumber: 510,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 507,
+        lineNumber: 509,
         columnNumber: 5
     }, this);
 }
@@ -958,7 +958,7 @@ function OrbitRing({ radius, opacity = 0.25 }) {
                 object: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Line"](geometry, material)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 547,
+                lineNumber: 549,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$drei$40$10$2e$7$2e$7_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$dom$40$19$2e$2$2e$0_$5f$494b0c2c358427dacb4dd748a0365e43$2f$node_modules$2f40$react$2d$three$2f$drei$2f$core$2f$shapes$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Torus"], {
@@ -979,12 +979,12 @@ function OrbitRing({ radius, opacity = 0.25 }) {
                     opacity: opacity * 0.3
                 }, void 0, false, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 550,
+                    lineNumber: 552,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 549,
+                lineNumber: 551,
                 columnNumber: 7
             }, this),
             [
@@ -1007,7 +1007,7 @@ function OrbitRing({ radius, opacity = 0.25 }) {
                             ]
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 559,
+                            lineNumber: 561,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
@@ -1016,19 +1016,19 @@ function OrbitRing({ radius, opacity = 0.25 }) {
                             opacity: opacity * 2
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 560,
+                            lineNumber: 562,
                             columnNumber: 11
                         }, this)
                     ]
                 }, idx, true, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 555,
+                    lineNumber: 557,
                     columnNumber: 9
                 }, this))
         ]
     }, void 0, true, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 546,
+        lineNumber: 548,
         columnNumber: 5
     }, this);
 }
@@ -1120,7 +1120,7 @@ function AsteroidBelt() {
                         ]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 628,
+                        lineNumber: 630,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("icosahedronGeometry", {
                         args: [
@@ -1129,7 +1129,7 @@ function AsteroidBelt() {
                         ]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 630,
+                        lineNumber: 632,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshStandardMaterial", {
@@ -1140,18 +1140,18 @@ function AsteroidBelt() {
                         emissiveIntensity: 0.1
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 632,
+                        lineNumber: 634,
                         columnNumber: 11
                     }, this)
                 ]
             }, i, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 619,
+                lineNumber: 621,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 617,
+        lineNumber: 619,
         columnNumber: 5
     }, this);
 }
@@ -1202,14 +1202,14 @@ function ShootingStar() {
                         ]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 681,
+                        lineNumber: 683,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
                         color: "#ffffff"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 682,
+                        lineNumber: 684,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("pointLight", {
@@ -1218,13 +1218,13 @@ function ShootingStar() {
                         color: "#88ccff"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 683,
+                        lineNumber: 685,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 680,
+                lineNumber: 682,
                 columnNumber: 7
             }, this),
             Array.from({
@@ -1248,7 +1248,7 @@ function ShootingStar() {
                             ]
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 694,
+                            lineNumber: 696,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
@@ -1258,20 +1258,20 @@ function ShootingStar() {
                             blending: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AdditiveBlending"]
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 695,
+                            lineNumber: 697,
                             columnNumber: 13
                         }, this)
                     ]
                 }, i, true, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 693,
+                    lineNumber: 695,
                     columnNumber: 11
                 }, this);
             })
         ]
     }, void 0, true, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 678,
+        lineNumber: 680,
         columnNumber: 5
     }, this);
 }
@@ -1324,7 +1324,7 @@ function OrbitalTrail({ radius, color, segments = 512 }) {
         object: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Line"](geometry, lineMaterial)
     }, void 0, false, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 737,
+        lineNumber: 739,
         columnNumber: 10
     }, this);
 }
@@ -1364,7 +1364,7 @@ function HolographicGrid() {
         ]
     }, void 0, false, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 762,
+        lineNumber: 764,
         columnNumber: 10
     }, this);
 }
@@ -1473,7 +1473,7 @@ function SpaceNebula() {
                         ]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 826,
+                        lineNumber: 828,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
@@ -1483,19 +1483,19 @@ function SpaceNebula() {
                         blending: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$three$40$0$2e$181$2e$2$2f$node_modules$2f$three$2f$build$2f$three$2e$core$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AdditiveBlending"]
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 827,
+                        lineNumber: 829,
                         columnNumber: 13
                     }, this)
                 ]
             }, i, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 825,
+                lineNumber: 827,
                 columnNumber: 11
             }, this);
         })
     }, void 0, false, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 812,
+        lineNumber: 814,
         columnNumber: 5
     }, this);
 }
@@ -1518,7 +1518,7 @@ function PlanetLabel({ text, position }) {
                 ]
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 844,
+                lineNumber: 846,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meshBasicMaterial", {
@@ -1527,13 +1527,13 @@ function PlanetLabel({ text, position }) {
                 opacity: 0.8
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 845,
+                lineNumber: 847,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 843,
+        lineNumber: 845,
         columnNumber: 5
     }, this);
 }
@@ -1568,7 +1568,7 @@ function TimeControl({ isFullscreen = false }) {
                         children: "TIME CONTROL"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 873,
+                        lineNumber: 875,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1576,13 +1576,13 @@ function TimeControl({ isFullscreen = false }) {
                         children: isMinimized ? '▼' : '▲'
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 874,
+                        lineNumber: 876,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 869,
+                lineNumber: 871,
                 columnNumber: 7
             }, this),
             !isMinimized && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1599,12 +1599,12 @@ function TimeControl({ isFullscreen = false }) {
                             children: isPaused ? '▶ PLAY' : '⏸ PAUSE'
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 882,
+                            lineNumber: 884,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 881,
+                        lineNumber: 883,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1619,7 +1619,7 @@ function TimeControl({ isFullscreen = false }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 891,
+                                lineNumber: 893,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1643,12 +1643,12 @@ function TimeControl({ isFullscreen = false }) {
                                         ]
                                     }, speed, true, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 894,
+                                        lineNumber: 896,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 892,
+                                lineNumber: 894,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1660,25 +1660,25 @@ function TimeControl({ isFullscreen = false }) {
                                 children: "⏪ REVERSE"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 908,
+                                lineNumber: 910,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 890,
+                        lineNumber: 892,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 880,
+                lineNumber: 882,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 868,
+        lineNumber: 870,
         columnNumber: 5
     }, this);
 }
@@ -1721,6 +1721,228 @@ function SolarSystemScene({ isFullscreen = false }) {
             })["SolarSystemScene.useEffect"];
         }
     }["SolarSystemScene.useEffect"], []);
+    // Mission data for each planet
+    const missionData = {
+        mercury: {
+            missions: [
+                {
+                    name: "Mariner 10",
+                    year: "1974-1975",
+                    status: "First to visit",
+                    achievement: "Mapped 45% of surface"
+                },
+                {
+                    name: "MESSENGER",
+                    year: "2011-2015",
+                    status: "Orbiter",
+                    achievement: "Discovered water ice at poles"
+                },
+                {
+                    name: "BepiColombo",
+                    year: "2018-Present",
+                    status: "En route",
+                    achievement: "Arriving 2025"
+                }
+            ],
+            discoveries: [
+                "Water ice in polar craters",
+                "Magnetic field",
+                "Shrinking core"
+            ],
+            nextMission: "Future sample return mission planned for 2030s"
+        },
+        venus: {
+            missions: [
+                {
+                    name: "Venera 7",
+                    year: "1970",
+                    status: "First landing",
+                    achievement: "Survived 23 minutes on surface"
+                },
+                {
+                    name: "Magellan",
+                    year: "1990-1994",
+                    status: "Orbiter",
+                    achievement: "Mapped 98% of surface with radar"
+                },
+                {
+                    name: "Akatsuki",
+                    year: "2015-Present",
+                    status: "Active orbiter",
+                    achievement: "Studying atmosphere"
+                },
+                {
+                    name: "DAVINCI+",
+                    year: "2029",
+                    status: "Planned",
+                    achievement: "Will probe atmosphere"
+                }
+            ],
+            discoveries: [
+                "Active volcanism",
+                "Greenhouse effect",
+                "Retrograde rotation cause"
+            ],
+            nextMission: "VERITAS orbiter to create global topographic map"
+        },
+        earth: {
+            missions: [
+                {
+                    name: "Apollo Program",
+                    year: "1969-1972",
+                    status: "Moon missions",
+                    achievement: "12 humans walked on Moon"
+                },
+                {
+                    name: "ISS",
+                    year: "1998-Present",
+                    status: "Active",
+                    achievement: "20+ years of continuous habitation"
+                },
+                {
+                    name: "Artemis",
+                    year: "2024+",
+                    status: "Ongoing",
+                    achievement: "Return to Moon"
+                }
+            ],
+            discoveries: [
+                "Ozone layer",
+                "Van Allen belts",
+                "Climate patterns"
+            ],
+            nextMission: "Artemis II crewed lunar flyby in 2025"
+        },
+        mars: {
+            missions: [
+                {
+                    name: "Viking 1 & 2",
+                    year: "1976",
+                    status: "First successful landings",
+                    achievement: "Searched for life"
+                },
+                {
+                    name: "Curiosity",
+                    year: "2012-Present",
+                    status: "Active rover",
+                    achievement: "Found evidence of ancient water"
+                },
+                {
+                    name: "Perseverance",
+                    year: "2021-Present",
+                    status: "Active rover",
+                    achievement: "Collecting samples for return"
+                },
+                {
+                    name: "Ingenuity",
+                    year: "2021-Present",
+                    status: "First Mars helicopter",
+                    achievement: "40+ flights"
+                }
+            ],
+            discoveries: [
+                "Ancient river systems",
+                "Underground ice",
+                "Organic molecules",
+                "Methane variations"
+            ],
+            nextMission: "Mars Sample Return mission ~2030s"
+        },
+        jupiter: {
+            missions: [
+                {
+                    name: "Pioneer 10",
+                    year: "1973",
+                    status: "First flyby",
+                    achievement: "Discovered radiation belts"
+                },
+                {
+                    name: "Voyager 1 & 2",
+                    year: "1979",
+                    status: "Flybys",
+                    achievement: "Discovered active volcanism on Io"
+                },
+                {
+                    name: "Galileo",
+                    year: "1995-2003",
+                    status: "Orbiter",
+                    achievement: "Studied moons in detail"
+                },
+                {
+                    name: "Juno",
+                    year: "2016-Present",
+                    status: "Active orbiter",
+                    achievement: "Studying interior structure"
+                }
+            ],
+            discoveries: [
+                "Europa's subsurface ocean",
+                "Jupiter's core mysteries",
+                "Extreme auroras"
+            ],
+            nextMission: "Europa Clipper launch 2024, arrives 2030"
+        },
+        saturn: {
+            missions: [
+                {
+                    name: "Pioneer 11",
+                    year: "1979",
+                    status: "First flyby",
+                    achievement: "Confirmed ring structure"
+                },
+                {
+                    name: "Voyager 1 & 2",
+                    year: "1980-1981",
+                    status: "Flybys",
+                    achievement: "Detailed ring photos"
+                },
+                {
+                    name: "Cassini-Huygens",
+                    year: "2004-2017",
+                    status: "Orbiter & lander",
+                    achievement: "13 years orbiting, landed on Titan"
+                }
+            ],
+            discoveries: [
+                "Titan's methane lakes",
+                "Enceladus water geysers",
+                "Hexagon storm"
+            ],
+            nextMission: "Dragonfly rotorcraft to Titan, launch 2027"
+        },
+        uranus: {
+            missions: [
+                {
+                    name: "Voyager 2",
+                    year: "1986",
+                    status: "Only visitor",
+                    achievement: "Discovered 10 new moons, 2 new rings"
+                }
+            ],
+            discoveries: [
+                "Extreme tilt cause unknown",
+                "Unique magnetic field",
+                "Dark spots"
+            ],
+            nextMission: "Uranus Orbiter and Probe proposed for 2030s launch"
+        },
+        neptune: {
+            missions: [
+                {
+                    name: "Voyager 2",
+                    year: "1989",
+                    status: "Only visitor",
+                    achievement: "Discovered Great Dark Spot & 6 moons"
+                }
+            ],
+            discoveries: [
+                "Supersonic winds",
+                "Triton's geysers",
+                "Dynamic atmosphere"
+            ],
+            nextMission: "No confirmed missions yet - furthest planet"
+        }
+    };
     const planetData = {
         mercury: {
             name: "Mercury - Beginner Stage",
@@ -1853,7 +2075,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         intensity: 0.2
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1070,
+                        lineNumber: 1147,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("directionalLight", {
@@ -1873,7 +2095,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         "shadow-camera-bottom": -20
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1071,
+                        lineNumber: 1148,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$drei$40$10$2e$7$2e$7_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$dom$40$19$2e$2$2e$0_$5f$494b0c2c358427dacb4dd748a0365e43$2f$node_modules$2f40$react$2d$three$2f$drei$2f$core$2f$Stars$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Stars"], {
@@ -1886,66 +2108,66 @@ function SolarSystemScene({ isFullscreen = false }) {
                         speed: 1
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1083,
+                        lineNumber: 1160,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HolographicGrid, {}, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1084,
+                        lineNumber: 1161,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Sun, {}, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1087,
+                        lineNumber: 1164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         radius: 2.5
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1090,
+                        lineNumber: 1167,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         radius: 4
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1091,
+                        lineNumber: 1168,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         radius: 5.5
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1092,
+                        lineNumber: 1169,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         radius: 7
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1093,
+                        lineNumber: 1170,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         radius: 10
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1094,
+                        lineNumber: 1171,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         radius: 12
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1095,
+                        lineNumber: 1172,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitRing, {
                         radius: 14
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1096,
+                        lineNumber: 1173,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -1962,7 +2184,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 0.055
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1100,
+                        lineNumber: 1177,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -1980,7 +2202,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 0.815
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1115,
+                        lineNumber: 1192,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -1999,7 +2221,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 1.0
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1131,
+                        lineNumber: 1208,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -2017,12 +2239,12 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 0.107
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1148,
+                        lineNumber: 1225,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AsteroidBelt, {}, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1164,
+                        lineNumber: 1241,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -2042,7 +2264,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 317.8
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1167,
+                        lineNumber: 1244,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -2063,7 +2285,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 95.2
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1185,
+                        lineNumber: 1262,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -2080,7 +2302,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 14.5
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1204,
+                        lineNumber: 1281,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Planet, {
@@ -2098,7 +2320,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         mass: 17.1
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1219,
+                        lineNumber: 1296,
                         columnNumber: 9
                     }, this),
                     showTrails && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2108,7 +2330,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#00e1ff"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1237,
+                                lineNumber: 1314,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitalTrail, {
@@ -2116,7 +2338,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#ff00e6"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1238,
+                                lineNumber: 1315,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitalTrail, {
@@ -2124,7 +2346,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#00ff41"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1239,
+                                lineNumber: 1316,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitalTrail, {
@@ -2132,7 +2354,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#ff4444"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1240,
+                                lineNumber: 1317,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitalTrail, {
@@ -2140,7 +2362,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#ffaa00"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1241,
+                                lineNumber: 1318,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitalTrail, {
@@ -2148,7 +2370,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#ffea00"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1242,
+                                lineNumber: 1319,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitalTrail, {
@@ -2156,7 +2378,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#00ffff"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1243,
+                                lineNumber: 1320,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OrbitalTrail, {
@@ -2164,7 +2386,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 color: "#4444ff"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1244,
+                                lineNumber: 1321,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -2180,7 +2402,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         minPolarAngle: Math.PI / 6
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1248,
+                        lineNumber: 1325,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$postprocessing$40$3$2e$0$2e$4_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$do_39d7f7f1b11cbfd3b636dcd5aaa83797$2f$node_modules$2f40$react$2d$three$2f$postprocessing$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EffectComposer"], {
@@ -2192,7 +2414,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 height: 300
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1261,
+                                lineNumber: 1338,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$react$2d$three$2b$postprocessing$40$3$2e$0$2e$4_$40$react$2d$three$2b$fiber$40$9$2e$4$2e$0_$40$types$2b$react$40$19$2e$2$2e$6_react$2d$do_39d7f7f1b11cbfd3b636dcd5aaa83797$2f$node_modules$2f40$react$2d$three$2f$postprocessing$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ChromaticAberration"], {
@@ -2202,26 +2424,26 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 ]
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1267,
+                                lineNumber: 1344,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1260,
+                        lineNumber: 1337,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 1066,
+                lineNumber: 1143,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TimeControl, {
                 isFullscreen: isFullscreen
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 1274,
+                lineNumber: 1351,
                 columnNumber: 7
             }, this),
             !isFullscreen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2246,12 +2468,12 @@ function SolarSystemScene({ isFullscreen = false }) {
                                     d: "M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 1282,
+                                    lineNumber: 1359,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1281,
+                                lineNumber: 1358,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2259,23 +2481,23 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 children: "FULLSCREEN"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1284,
+                                lineNumber: 1361,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1280,
+                        lineNumber: 1357,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 1279,
+                    lineNumber: 1356,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 1278,
+                lineNumber: 1355,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2285,34 +2507,34 @@ function SolarSystemScene({ isFullscreen = false }) {
                         className: "absolute top-4 left-4 w-16 h-16 border-t-2 border-l-2 border-neon-cyan opacity-50"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1293,
+                        lineNumber: 1370,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-neon-cyan opacity-50"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1294,
+                        lineNumber: 1371,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-neon-cyan opacity-50"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1295,
+                        lineNumber: 1372,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-4 right-4 w-16 h-16 border-b-2 border-r-2 border-neon-cyan opacity-50"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1296,
+                        lineNumber: 1373,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 1291,
+                lineNumber: 1368,
                 columnNumber: 7
             }, this),
             selectedPlanet && !isFullscreen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2338,17 +2560,17 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 d: "M6 18L18 6M6 6l12 12"
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1314,
+                                lineNumber: 1391,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 1313,
+                            lineNumber: 1390,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1309,
+                        lineNumber: 1386,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2361,7 +2583,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1319,
+                                lineNumber: 1396,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2372,13 +2594,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                 children: selectedPlanet.name
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1323,
+                                lineNumber: 1400,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1318,
+                        lineNumber: 1395,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2391,7 +2613,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Learning Stage"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1333,
+                                        lineNumber: 1410,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2399,13 +2621,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: selectedPlanet.stage
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1334,
+                                        lineNumber: 1411,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1332,
+                                lineNumber: 1409,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2415,7 +2637,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Description"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1338,
+                                        lineNumber: 1415,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2423,13 +2645,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: selectedPlanet.description
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1339,
+                                        lineNumber: 1416,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1337,
+                                lineNumber: 1414,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2439,7 +2661,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Key Insights"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1343,
+                                        lineNumber: 1420,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2458,7 +2680,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: "•"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1351,
+                                                        lineNumber: 1428,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2466,30 +2688,30 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: fact
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1357,
+                                                        lineNumber: 1434,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, idx, true, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 1346,
+                                                lineNumber: 1423,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1344,
+                                        lineNumber: 1421,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1342,
+                                lineNumber: 1419,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1331,
+                        lineNumber: 1408,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2499,18 +2721,18 @@ function SolarSystemScene({ isFullscreen = false }) {
                             children: "Click on other planets to explore different stages of your learning journey"
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 1365,
+                            lineNumber: 1442,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1364,
+                        lineNumber: 1441,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 1301,
+                lineNumber: 1378,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2524,7 +2746,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                         children: "YOUR LEARNING JOURNEY - Click Planets to Learn More"
                     }, void 0, false, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1372,
+                        lineNumber: 1449,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2537,7 +2759,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#00e1ff]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1375,
+                                        lineNumber: 1452,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2545,13 +2767,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Beginner"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1376,
+                                        lineNumber: 1453,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1374,
+                                lineNumber: 1451,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2561,7 +2783,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#ff00e6]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1379,
+                                        lineNumber: 1456,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2569,13 +2791,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Foundation"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1380,
+                                        lineNumber: 1457,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1378,
+                                lineNumber: 1455,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2585,7 +2807,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#00ff41]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1383,
+                                        lineNumber: 1460,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2593,13 +2815,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Core Learning"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1384,
+                                        lineNumber: 1461,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1382,
+                                lineNumber: 1459,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2609,7 +2831,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#ff4444]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1387,
+                                        lineNumber: 1464,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2617,13 +2839,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Practice"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1388,
+                                        lineNumber: 1465,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1386,
+                                lineNumber: 1463,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2633,7 +2855,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#ffaa00]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1391,
+                                        lineNumber: 1468,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2641,13 +2863,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Advanced"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1392,
+                                        lineNumber: 1469,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1390,
+                                lineNumber: 1467,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2657,7 +2879,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#ffea00]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1395,
+                                        lineNumber: 1472,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2665,13 +2887,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Mastery"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1396,
+                                        lineNumber: 1473,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1394,
+                                lineNumber: 1471,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2681,7 +2903,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#00ffff]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1399,
+                                        lineNumber: 1476,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2689,13 +2911,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Specialization"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1400,
+                                        lineNumber: 1477,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1398,
+                                lineNumber: 1475,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2705,7 +2927,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         className: "w-3 h-3 rounded-full bg-[#4444ff]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1403,
+                                        lineNumber: 1480,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2713,25 +2935,25 @@ function SolarSystemScene({ isFullscreen = false }) {
                                         children: "Expertise"
                                     }, void 0, false, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1404,
+                                        lineNumber: 1481,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1402,
+                                lineNumber: 1479,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/solar-system.tsx",
-                        lineNumber: 1373,
+                        lineNumber: 1450,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 1371,
+                lineNumber: 1448,
                 columnNumber: 7
             }, this),
             selectedPlanet && isFullscreen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2759,17 +2981,17 @@ function SolarSystemScene({ isFullscreen = false }) {
                                     d: "M6 18L18 6M6 6l12 12"
                                 }, void 0, false, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 1426,
+                                    lineNumber: 1503,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1425,
+                                lineNumber: 1502,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 1421,
+                            lineNumber: 1498,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2790,7 +3012,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: ">>>"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1435,
+                                                        lineNumber: 1512,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2802,13 +3024,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: selectedPlanet.name.split(' - ')[0]
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1436,
+                                                        lineNumber: 1513,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 1434,
+                                                lineNumber: 1511,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2819,7 +3041,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: "CLASSIFICATION:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1447,
+                                                        lineNumber: 1524,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2827,7 +3049,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: selectedPlanet.stage
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1448,
+                                                        lineNumber: 1525,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2835,7 +3057,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: "|"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1449,
+                                                        lineNumber: 1526,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2843,7 +3065,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: "STATUS:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1450,
+                                                        lineNumber: 1527,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2851,7 +3073,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: "ACTIVE"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1451,
+                                                        lineNumber: 1528,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2859,7 +3081,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: "|"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1452,
+                                                        lineNumber: 1529,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2867,7 +3089,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         children: "MASS:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1453,
+                                                        lineNumber: 1530,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2878,19 +3100,19 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/solar-system.tsx",
-                                                        lineNumber: 1454,
+                                                        lineNumber: 1531,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 1446,
+                                                lineNumber: 1523,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1433,
+                                        lineNumber: 1510,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2900,7 +3122,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                 children: "SYSTEM: SOLAR-EDU-01"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 1458,
+                                                lineNumber: 1535,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2913,7 +3135,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 1459,
+                                                lineNumber: 1536,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2924,28 +3146,28 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/solar-system.tsx",
-                                                lineNumber: 1460,
+                                                lineNumber: 1537,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/solar-system.tsx",
-                                        lineNumber: 1457,
+                                        lineNumber: 1534,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/solar-system.tsx",
-                                lineNumber: 1432,
+                                lineNumber: 1509,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 1431,
+                            lineNumber: 1508,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 lg:grid-cols-3 gap-4",
+                            className: "grid grid-cols-1 lg:grid-cols-4 gap-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-4",
@@ -2961,7 +3183,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "●"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1472,
+                                                            lineNumber: 1549,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2969,13 +3191,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "SYSTEM_LOG.txt"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1473,
+                                                            lineNumber: 1550,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1471,
+                                                    lineNumber: 1548,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2986,7 +3208,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "> Initiating planetary scan..."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1476,
+                                                            lineNumber: 1553,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2997,7 +3219,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1477,
+                                                            lineNumber: 1554,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3008,7 +3230,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1478,
+                                                            lineNumber: 1555,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3016,7 +3238,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "---"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1479,
+                                                            lineNumber: 1556,
                                                             columnNumber: 21
                                                         }, this),
                                                         selectedPlanet.facts.map((fact, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3027,7 +3249,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                         children: "→"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/solar-system.tsx",
-                                                                        lineNumber: 1482,
+                                                                        lineNumber: 1559,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     " ",
@@ -3035,7 +3257,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                 ]
                                                             }, idx, true, {
                                                                 fileName: "[project]/components/solar-system.tsx",
-                                                                lineNumber: 1481,
+                                                                lineNumber: 1558,
                                                                 columnNumber: 23
                                                             }, this)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3043,7 +3265,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "---"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1485,
+                                                            lineNumber: 1562,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3051,19 +3273,19 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "> Scan complete ✓"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1486,
+                                                            lineNumber: 1563,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1475,
+                                                    lineNumber: 1552,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1470,
+                                            lineNumber: 1547,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3077,7 +3299,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                     children: "COLOR_SIGNATURE"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1492,
+                                                    lineNumber: 1569,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3092,7 +3314,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1494,
+                                                            lineNumber: 1571,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3105,7 +3327,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: selectedPlanet.color
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1503,
+                                                                    lineNumber: 1580,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3121,25 +3343,25 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1506,
+                                                                    lineNumber: 1583,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1502,
+                                                            lineNumber: 1579,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1493,
+                                                    lineNumber: 1570,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1491,
+                                            lineNumber: 1568,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3150,7 +3372,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                     children: "DESCRIPTION"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1515,
+                                                    lineNumber: 1592,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3158,19 +3380,19 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                     children: selectedPlanet.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1516,
+                                                    lineNumber: 1593,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1514,
+                                            lineNumber: 1591,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 1468,
+                                    lineNumber: 1545,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3187,7 +3409,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "◉"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1525,
+                                                            lineNumber: 1602,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3195,7 +3417,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "LIVE_TELEMETRY"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1526,
+                                                            lineNumber: 1603,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3203,13 +3425,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "100Hz"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1527,
+                                                            lineNumber: 1604,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1524,
+                                                    lineNumber: 1601,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3225,7 +3447,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "r_orbit"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1532,
+                                                                            lineNumber: 1609,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3233,7 +3455,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.orbitRadius.toFixed(3)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1533,
+                                                                            lineNumber: 1610,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3241,13 +3463,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "AU"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1534,
+                                                                            lineNumber: 1611,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1531,
+                                                                    lineNumber: 1608,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3257,7 +3479,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "d_current"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1537,
+                                                                            lineNumber: 1614,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3265,7 +3487,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.distance.toFixed(3)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1538,
+                                                                            lineNumber: 1615,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3273,13 +3495,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "AU"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1539,
+                                                                            lineNumber: 1616,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1536,
+                                                                    lineNumber: 1613,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3289,7 +3511,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "v_orbital"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1542,
+                                                                            lineNumber: 1619,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3297,7 +3519,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.velocity.toFixed(5)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1543,
+                                                                            lineNumber: 1620,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3305,13 +3527,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "AU/s"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1544,
+                                                                            lineNumber: 1621,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1541,
+                                                                    lineNumber: 1618,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3321,7 +3543,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "ω_angular"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1547,
+                                                                            lineNumber: 1624,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3329,7 +3551,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.angularVelocity.toFixed(5)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1548,
+                                                                            lineNumber: 1625,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3337,13 +3559,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "rad/s"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1549,
+                                                                            lineNumber: 1626,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1546,
+                                                                    lineNumber: 1623,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3353,7 +3575,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "m_relative"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1552,
+                                                                            lineNumber: 1629,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3361,7 +3583,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.mass.toFixed(4)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1553,
+                                                                            lineNumber: 1630,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3369,13 +3591,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "M⊕"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1554,
+                                                                            lineNumber: 1631,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1551,
+                                                                    lineNumber: 1628,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3385,7 +3607,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "F_gravity"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1557,
+                                                                            lineNumber: 1634,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3393,7 +3615,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.gravitationalForce.toExponential(2)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1558,
+                                                                            lineNumber: 1635,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3401,19 +3623,19 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "N"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1559,
+                                                                            lineNumber: 1636,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1556,
+                                                                    lineNumber: 1633,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1530,
+                                                            lineNumber: 1607,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3424,7 +3646,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "POSITION_VECTOR"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1564,
+                                                                    lineNumber: 1641,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3435,7 +3657,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "["
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1566,
+                                                                            lineNumber: 1643,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3443,7 +3665,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.position.x.toFixed(3)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1567,
+                                                                            lineNumber: 1644,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3451,7 +3673,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: ", "
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1568,
+                                                                            lineNumber: 1645,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3459,7 +3681,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.position.y.toFixed(3)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1569,
+                                                                            lineNumber: 1646,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3467,7 +3689,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: ", "
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1570,
+                                                                            lineNumber: 1647,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3475,7 +3697,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: livePhysics.position.z.toFixed(3)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1571,
+                                                                            lineNumber: 1648,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3483,31 +3705,31 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "]"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1572,
+                                                                            lineNumber: 1649,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1565,
+                                                                    lineNumber: 1642,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1563,
+                                                            lineNumber: 1640,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1529,
+                                                    lineNumber: 1606,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1523,
+                                            lineNumber: 1600,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3521,7 +3743,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                     children: "ORBITAL_PATH"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1580,
+                                                    lineNumber: 1657,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3535,7 +3757,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1582,
+                                                            lineNumber: 1659,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3547,7 +3769,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1583,
+                                                            lineNumber: 1660,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3560,13 +3782,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1584,
+                                                            lineNumber: 1661,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1581,
+                                                    lineNumber: 1658,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3574,19 +3796,19 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                     children: "REAL-TIME TRACKING"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1594,
+                                                    lineNumber: 1671,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1579,
+                                            lineNumber: 1656,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 1521,
+                                    lineNumber: 1598,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3603,7 +3825,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "λ"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1603,
+                                                            lineNumber: 1680,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3611,13 +3833,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "ORBITAL_MECHANICS.py"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1604,
+                                                            lineNumber: 1681,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1602,
+                                                    lineNumber: 1679,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3631,7 +3853,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "# Gravitational Force"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1608,
+                                                                    lineNumber: 1685,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
@@ -3643,7 +3865,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "G"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1609,
+                                                                            lineNumber: 1686,
                                                                             columnNumber: 59
                                                                         }, this),
                                                                         " * (",
@@ -3652,7 +3874,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "M"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1609,
+                                                                            lineNumber: 1686,
                                                                             columnNumber: 105
                                                                         }, this),
                                                                         " * ",
@@ -3661,7 +3883,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "m"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1609,
+                                                                            lineNumber: 1686,
                                                                             columnNumber: 149
                                                                         }, this),
                                                                         ") / ",
@@ -3670,14 +3892,14 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "r"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1609,
+                                                                            lineNumber: 1686,
                                                                             columnNumber: 194
                                                                         }, this),
                                                                         "²"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1609,
+                                                                    lineNumber: 1686,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3689,13 +3911,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1610,
+                                                                    lineNumber: 1687,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1607,
+                                                            lineNumber: 1684,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3706,7 +3928,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "# Kepler's 3rd Law"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1614,
+                                                                    lineNumber: 1691,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
@@ -3718,14 +3940,14 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "r"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1615,
+                                                                            lineNumber: 1692,
                                                                             columnNumber: 60
                                                                         }, this),
                                                                         "³"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1615,
+                                                                    lineNumber: 1692,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3737,13 +3959,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1616,
+                                                                    lineNumber: 1693,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1613,
+                                                            lineNumber: 1690,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3754,7 +3976,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "# Orbital Velocity"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1620,
+                                                                    lineNumber: 1697,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
@@ -3766,7 +3988,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "G"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1621,
+                                                                            lineNumber: 1698,
                                                                             columnNumber: 61
                                                                         }, this),
                                                                         " * ",
@@ -3775,7 +3997,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "M"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1621,
+                                                                            lineNumber: 1698,
                                                                             columnNumber: 106
                                                                         }, this),
                                                                         " / ",
@@ -3784,14 +4006,14 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                             children: "r"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1621,
+                                                                            lineNumber: 1698,
                                                                             columnNumber: 150
                                                                         }, this),
                                                                         ")"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1621,
+                                                                    lineNumber: 1698,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3799,13 +4021,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "> v ∝ 1/√r"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1622,
+                                                                    lineNumber: 1699,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1619,
+                                                            lineNumber: 1696,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3816,7 +4038,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "# Elliptical Path"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1626,
+                                                                    lineNumber: 1703,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
@@ -3825,20 +4047,20 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                         "x = a * cos(t) * (1 - e)",
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1628,
+                                                                            lineNumber: 1705,
                                                                             columnNumber: 49
                                                                         }, this),
                                                                         "z = b * sin(t)",
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                             fileName: "[project]/components/solar-system.tsx",
-                                                                            lineNumber: 1629,
+                                                                            lineNumber: 1706,
                                                                             columnNumber: 39
                                                                         }, this),
                                                                         "b = a * √(1 - e²)"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1627,
+                                                                    lineNumber: 1704,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3849,25 +4071,25 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1632,
+                                                                    lineNumber: 1709,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1625,
+                                                            lineNumber: 1702,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1606,
+                                                    lineNumber: 1683,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1601,
+                                            lineNumber: 1678,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3878,7 +4100,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                     children: "PHYSICAL_CONSTANTS"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1639,
+                                                    lineNumber: 1716,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3892,7 +4114,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "G"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1642,
+                                                                    lineNumber: 1719,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3900,13 +4122,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "6.674e-11 m³/kg·s²"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1643,
+                                                                    lineNumber: 1720,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1641,
+                                                            lineNumber: 1718,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3917,7 +4139,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "M☉"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1646,
+                                                                    lineNumber: 1723,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3925,13 +4147,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "1.989e30 kg"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1647,
+                                                                    lineNumber: 1724,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1645,
+                                                            lineNumber: 1722,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3942,7 +4164,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "1 AU"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1650,
+                                                                    lineNumber: 1727,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3950,13 +4172,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "1.496e8 km"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1651,
+                                                                    lineNumber: 1728,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1649,
+                                                            lineNumber: 1726,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3967,7 +4189,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "M⊕"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1654,
+                                                                    lineNumber: 1731,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3975,13 +4197,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "5.972e24 kg"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1655,
+                                                                    lineNumber: 1732,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1653,
+                                                            lineNumber: 1730,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3992,7 +4214,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "e"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1658,
+                                                                    lineNumber: 1735,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4000,25 +4222,25 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: livePhysics.eccentricity
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1659,
+                                                                    lineNumber: 1736,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1657,
+                                                            lineNumber: 1734,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1640,
+                                                    lineNumber: 1717,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1638,
+                                            lineNumber: 1715,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4032,7 +4254,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "⚙"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1667,
+                                                            lineNumber: 1744,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4040,13 +4262,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "PLAYGROUND"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1668,
+                                                            lineNumber: 1745,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1666,
+                                                    lineNumber: 1743,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4057,7 +4279,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                             children: "// Interactive calculations"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1671,
+                                                            lineNumber: 1748,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4068,7 +4290,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "Escape Velocity:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1673,
+                                                                    lineNumber: 1750,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
@@ -4080,13 +4302,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1674,
+                                                                    lineNumber: 1751,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1672,
+                                                            lineNumber: 1749,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4097,7 +4319,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "Orbital Energy:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1677,
+                                                                    lineNumber: 1754,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
@@ -4109,13 +4331,13 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1678,
+                                                                    lineNumber: 1755,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1676,
+                                                            lineNumber: 1753,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4126,7 +4348,7 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     children: "Period Ratio:"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1681,
+                                                                    lineNumber: 1758,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
@@ -4137,54 +4359,476 @@ function SolarSystemScene({ isFullscreen = false }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/solar-system.tsx",
-                                                                    lineNumber: 1682,
+                                                                    lineNumber: 1759,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/solar-system.tsx",
-                                                            lineNumber: 1680,
+                                                            lineNumber: 1757,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/solar-system.tsx",
-                                                    lineNumber: 1670,
+                                                    lineNumber: 1747,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/solar-system.tsx",
-                                            lineNumber: 1665,
+                                            lineNumber: 1742,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/solar-system.tsx",
-                                    lineNumber: 1599,
+                                    lineNumber: 1676,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "space-y-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-black border border-neon-purple/30 p-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 mb-3 pb-2 border-b border-purple-500/20",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-purple-400",
+                                                            children: "🚀"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1770,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-purple-400 text-xs font-bold",
+                                                            children: "SPACE_MISSIONS"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1771,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1769,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "space-y-3 text-xs max-h-80 overflow-y-auto custom-scrollbar",
+                                                    children: missionData[selectedPlanet.name.split(' - ')[0].toLowerCase()]?.missions.map((mission, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "bg-gray-950 p-3 border-l-2 border-purple-400 animate-in slide-in-from-left",
+                                                            style: {
+                                                                animationDelay: `${idx * 100}ms`
+                                                            },
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center justify-between mb-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-purple-400 font-bold",
+                                                                            children: mission.name
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1781,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-gray-600 text-[10px]",
+                                                                            children: mission.year
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1782,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1780,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-gray-500 text-[10px] mb-1",
+                                                                    children: mission.status
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1784,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-gray-300 text-[10px]",
+                                                                    children: [
+                                                                        "✓ ",
+                                                                        mission.achievement
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1785,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, idx, true, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1775,
+                                                            columnNumber: 23
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1773,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/solar-system.tsx",
+                                            lineNumber: 1768,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-black border border-neon-cyan/30 p-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 mb-3 pb-2 border-b border-neon-cyan/20",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-neon-cyan",
+                                                            children: "🔬"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1794,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-neon-cyan text-xs font-bold",
+                                                            children: "DISCOVERIES"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1795,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1793,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "space-y-2 text-xs",
+                                                    children: missionData[selectedPlanet.name.split(' - ')[0].toLowerCase()]?.discoveries.map((discovery, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "bg-gray-950 p-2 flex items-start gap-2 animate-in fade-in",
+                                                            style: {
+                                                                animationDelay: `${idx * 150}ms`
+                                                            },
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-neon-cyan",
+                                                                    children: "▸"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1804,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-gray-300",
+                                                                    children: discovery
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1805,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, idx, true, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1799,
+                                                            columnNumber: 23
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1797,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/solar-system.tsx",
+                                            lineNumber: 1792,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-black border border-neon-yellow/30 p-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 mb-3 pb-2 border-b border-neon-yellow/20",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-neon-yellow animate-pulse",
+                                                            children: "🛸"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1814,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-neon-green font-bold",
+                                                            children: "NEXT_MISSION"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1815,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1813,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-xs",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "bg-gray-950 p-3 border-l-2 border-neon-yellow",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "ext-xs text-gray-500 font-bold",
+                                                            children: missionData[selectedPlanet.name.split(' - ')[0].toLowerCase()]?.nextMission
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1819,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/solar-system.tsx",
+                                                        lineNumber: 1818,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1817,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/solar-system.tsx",
+                                            lineNumber: 1812,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-black border p-4",
+                                            style: {
+                                                borderColor: `${selectedPlanet.color}40`
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-xs text-gray-500 mb-3",
+                                                    children: "LIVE_STATS"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1828,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "space-y-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex justify-between text-[10px] mb-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-gray-400",
+                                                                            children: "Rotation Speed"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1832,
+                                                                            columnNumber: 25
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-neon-cyan",
+                                                                            children: [
+                                                                                (Math.random() * 100).toFixed(1),
+                                                                                "%"
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1833,
+                                                                            columnNumber: 25
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1831,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "h-2 bg-gray-900 rounded-full overflow-hidden",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "h-full bg-gradient-to-r from-neon-cyan to-neon-green animate-pulse",
+                                                                        style: {
+                                                                            width: `${Math.random() * 100}%`,
+                                                                            boxShadow: '0 0 10px currentColor'
+                                                                        }
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/solar-system.tsx",
+                                                                        lineNumber: 1836,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1835,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1830,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex justify-between text-[10px] mb-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-gray-400",
+                                                                            children: "Orbital Progress"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1847,
+                                                                            columnNumber: 25
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-neon-yellow",
+                                                                            children: [
+                                                                                (livePhysics.time % livePhysics.orbitalPeriod / livePhysics.orbitalPeriod * 100).toFixed(1),
+                                                                                "%"
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1848,
+                                                                            columnNumber: 25
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1846,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "h-2 bg-gray-900 rounded-full overflow-hidden",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "h-full bg-gradient-to-r from-neon-yellow to-neon-pink transition-all duration-1000",
+                                                                        style: {
+                                                                            width: `${livePhysics.time % livePhysics.orbitalPeriod / livePhysics.orbitalPeriod * 100}%`,
+                                                                            boxShadow: '0 0 10px currentColor'
+                                                                        }
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/solar-system.tsx",
+                                                                        lineNumber: 1851,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1850,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1845,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex justify-between text-[10px] mb-1",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-gray-400",
+                                                                            children: "Energy Level"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1862,
+                                                                            columnNumber: 25
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-neon-green",
+                                                                            children: [
+                                                                                (livePhysics.velocity * 1000).toFixed(0),
+                                                                                " kJ"
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/components/solar-system.tsx",
+                                                                            lineNumber: 1863,
+                                                                            columnNumber: 25
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1861,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "h-2 bg-gray-900 rounded-full overflow-hidden",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$opentelemetry$2b$api$40$1$2e$9$2e$0_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "h-full bg-gradient-to-r from-neon-green to-neon-cyan animate-pulse",
+                                                                        style: {
+                                                                            width: `${livePhysics.velocity / 0.02 * 100}%`,
+                                                                            boxShadow: '0 0 10px currentColor'
+                                                                        }
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/solar-system.tsx",
+                                                                        lineNumber: 1866,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/solar-system.tsx",
+                                                                    lineNumber: 1865,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/solar-system.tsx",
+                                                            lineNumber: 1860,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/solar-system.tsx",
+                                                    lineNumber: 1829,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/solar-system.tsx",
+                                            lineNumber: 1827,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/solar-system.tsx",
+                                    lineNumber: 1766,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/solar-system.tsx",
-                            lineNumber: 1466,
+                            lineNumber: 1543,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/solar-system.tsx",
-                    lineNumber: 1412,
+                    lineNumber: 1489,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/solar-system.tsx",
-                lineNumber: 1411,
+                lineNumber: 1488,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/solar-system.tsx",
-        lineNumber: 1065,
+        lineNumber: 1142,
         columnNumber: 5
     }, this);
 }
