@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useMemo, useState } from "react"
+import React, { useRef, useMemo, useState } from "react"
 import { Canvas, useFrame, useLoader, ThreeEvent } from "@react-three/fiber"
 import { Sphere, OrbitControls, Stars, MeshDistortMaterial, Sparkles, useTexture, Torus, Html } from "@react-three/drei"
 import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postprocessing"
@@ -822,6 +822,7 @@ function PlanetLabel({ text, position }: { text: string; position: [number, numb
 function TimeControl() {
   const [timeScale, setTimeScale] = useState(1)
   const [isPaused, setIsPaused] = useState(false)
+  const [isMinimized, setIsMinimized] = useState(false)
   
   const handleTimeChange = (scale: number) => {
     setTimeScale(scale)
@@ -835,25 +836,35 @@ function TimeControl() {
   }
   
   return (
-    <div className="absolute top-4 left-4 bg-terminal-black/90 border-2 border-neon-cyan p-3 backdrop-blur-sm" style={{ zIndex: 40 }}>
-      <h4 className="text-neon-cyan text-sm font-bold mb-2 neon-glow">TIME CONTROL</h4>
-      
-      <div className="flex items-center gap-2 mb-2">
-        <button
-          onClick={togglePause}
-          className="px-3 py-1 bg-neon-cyan/20 hover:bg-neon-cyan/30 border border-neon-cyan text-neon-cyan text-xs font-bold transition-colors"
-        >
-          {isPaused ? '▶ PLAY' : '⏸ PAUSE'}
+    <div className="absolute top-4 left-4 bg-terminal-black/90 border-2 border-neon-cyan backdrop-blur-sm transition-all duration-300" style={{ zIndex: 40 }}>
+      <div 
+        className="flex items-center justify-between p-3 cursor-pointer"
+        onClick={() => setIsMinimized(!isMinimized)}
+      >
+        <h4 className="text-neon-cyan text-sm font-bold neon-glow">TIME CONTROL</h4>
+        <button className="text-neon-cyan text-xs hover:text-white transition-colors ml-2">
+          {isMinimized ? '▼' : '▲'}
         </button>
       </div>
       
-      <div className="space-y-1">
-        <p className="text-gray-400 text-xs mb-1">Speed: {timeScale}x</p>
-        <div className="flex gap-1 flex-wrap">
-          {[0.25, 0.5, 1, 2, 5, 10].map(speed => (
-            <button
-              key={speed}
-              onClick={() => handleTimeChange(speed)}
+      {!isMinimized && (
+        <div className="px-3 pb-3">
+          <div className="flex items-center gap-2 mb-2">
+          <button
+            onClick={(e) => { e.stopPropagation(); togglePause(); }}
+            className="px-3 py-1 bg-neon-cyan/20 hover:bg-neon-cyan/30 border border-neon-cyan text-neon-cyan text-xs font-bold transition-colors"
+          >
+            {isPaused ? '▶ PLAY' : '⏸ PAUSE'}
+          </button>
+        </div>
+        
+        <div className="space-y-1">
+          <p className="text-gray-400 text-xs mb-1">Speed: {timeScale}x</p>
+          <div className="flex gap-1 flex-wrap">
+            {[0.25, 0.5, 1, 2, 5, 10].map(speed => (
+              <button
+                key={speed}
+                onClick={(e) => { e.stopPropagation(); handleTimeChange(speed); }}
               className={`px-2 py-0.5 text-xs font-bold transition-colors ${
                 timeScale === speed
                   ? 'bg-neon-cyan text-terminal-black'
@@ -865,13 +876,15 @@ function TimeControl() {
           ))}
         </div>
         
-        <button
-          onClick={() => handleTimeChange(-1)}
-          className="w-full mt-2 px-2 py-1 bg-neon-pink/20 hover:bg-neon-pink/30 border border-neon-pink text-neon-pink text-xs font-bold transition-colors"
-        >
-          ⏪ REVERSE
-        </button>
-      </div>
+          <button
+            onClick={(e) => { e.stopPropagation(); handleTimeChange(-1); }}
+            className="w-full mt-2 px-2 py-1 bg-neon-pink/20 hover:bg-neon-pink/30 border border-neon-pink text-neon-pink text-xs font-bold transition-colors"
+          >
+            ⏪ REVERSE
+          </button>
+        </div>
+        </div>
+      )}
     </div>
   )
 }
