@@ -294,36 +294,80 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Enhanced Stats with Glass Morphism */}
+          {/* Enhanced Stats with Consistent Design */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 slide-in" style={{ animationDelay: "0.4s" }}>
-            {stats.map((stat, i) => (
-              <div 
-                key={i} 
-                className="group relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border-2 border-white/10 p-10 rounded-2xl hover:border-neon-cyan/50 transition-all transform hover:scale-105 hover:-translate-y-2 cursor-pointer shadow-xl"
-                style={{
-                  boxShadow: stat.color === 'neon-cyan' ? '0 0 30px rgba(0, 225, 255, 0.1)' : stat.color === 'neon-green' ? '0 0 30px rgba(0, 255, 65, 0.1)' : '0 0 30px rgba(255, 0, 230, 0.1)'
-                }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-cyan/5 to-neon-green/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-                <p className={`relative text-7xl font-black mb-4 group-hover:scale-110 transition-transform`}
-                  style={{
-                    background: stat.color === 'neon-cyan' ? 'linear-gradient(135deg, #00e1ff, #00b8d4)' : stat.color === 'neon-green' ? 'linear-gradient(135deg, #00ff41, #00cc33)' : 'linear-gradient(135deg, #ff00e6, #cc00b8)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    filter: 'drop-shadow(0 0 20px currentColor)'
-                  }}
+            {stats.map((stat, i) => {
+              const colors = {
+                'neon-cyan': { from: '#00e1ff', to: '#00b8d4', shadow: 'rgba(0, 225, 255, 0.3)' },
+                'neon-green': { from: '#00ff41', to: '#00cc33', shadow: 'rgba(0, 255, 65, 0.3)' },
+                'neon-pink': { from: '#ff00e6', to: '#cc00b8', shadow: 'rgba(255, 0, 230, 0.3)' }
+              }
+              const color = colors[stat.color as keyof typeof colors]
+              
+              return (
+                <div
+                  key={i}
+                  onMouseEnter={() => setHoveredFeature(i + 20)}
+                  onMouseLeave={() => setHoveredFeature(null)}
+                  className="group relative slide-in"
+                  style={{ animationDelay: `${i * 0.1}s` }}
                 >
-                  {stat.value}
-                </p>
-                <p className="relative text-gray-300 text-xl font-semibold tracking-wide">{stat.label}</p>
-              </div>
-            ))}
+                  {/* Glow effect on hover */}
+                  <div 
+                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
+                    style={{ background: `linear-gradient(135deg, ${color.from}, ${color.to})` }}
+                  ></div>
+                  
+                  {/* Main card */}
+                  <div className="relative bg-black border-2 rounded-3xl p-10 transition-all duration-300 group-hover:border-opacity-100 text-center"
+                       style={{ borderColor: hoveredFeature === i + 20 ? color.from : 'rgba(255, 255, 255, 0.1)' }}>
+                    
+                    {/* Corner accent */}
+                    <div className="absolute top-0 right-0 w-24 h-24 opacity-20 overflow-hidden rounded-tr-3xl">
+                      <div className="absolute inset-0" style={{
+                        background: `linear-gradient(135deg, ${color.from}, transparent)`,
+                      }}></div>
+                    </div>
+
+                    <div className="relative">
+                      {/* Value */}
+                      <p 
+                        className="text-8xl font-black mb-6 transition-all duration-300 group-hover:scale-110"
+                        style={{
+                          color: hoveredFeature === i + 20 ? color.from : '#ffffff',
+                          textShadow: hoveredFeature === i + 20 ? `0 0 30px ${color.shadow}` : 'none'
+                        }}
+                      >
+                        {stat.value}
+                      </p>
+                      
+                      {/* Label */}
+                      <p className="text-gray-400 text-xl font-semibold tracking-wide group-hover:text-gray-300 transition-colors">
+                        {stat.label}
+                      </p>
+                      
+                      {/* Hover indicator */}
+                      <div className="mt-6 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: color.from }}></div>
+                        <div className="h-px w-20 bg-gradient-to-r from-current to-transparent" style={{ color: color.from }}></div>
+                      </div>
+                    </div>
+
+                    {/* Number badge */}
+                    <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full border-2 flex items-center justify-center font-black text-lg opacity-20 group-hover:opacity-100 transition-opacity"
+                         style={{ borderColor: color.from, color: color.from }}>
+                      {i + 1}
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
 
       {/* How It Works - Visual Demos */}
-      <section className="py-32 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+      <section id="demo" className="py-32 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-neon-cyan to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-neon-pink to-transparent"></div>
@@ -564,7 +608,7 @@ export default function Home() {
       </section>
 
       {/* Enhanced Features Section */}
-      <section className="py-32 bg-gradient-to-b from-black via-gray-900 to-black relative z-10 overflow-hidden">
+      <section id="features" className="py-32 bg-gradient-to-b from-black via-gray-900 to-black relative z-10 overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-10 w-72 h-72 bg-neon-cyan/30 rounded-full blur-3xl animate-pulse"></div>
@@ -684,66 +728,126 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Enhanced How It Works Section */}
-      <section className="py-32 bg-gradient-to-b from-black via-gray-900 to-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 tracking-tight">
-              <span className="bg-gradient-to-r from-neon-green via-emerald-400 to-neon-green bg-clip-text text-transparent drop-shadow-2xl">HOW IT WORKS</span>
-            </h2>
-            <p className="text-2xl text-gray-400 font-light">Get started in 3 simple steps</p>
+      {/* How It Works Section */}
+      <section id="how-it-works" className="py-32 bg-gradient-to-b from-black via-gray-900 to-black relative z-10 overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 right-10 w-72 h-72 bg-neon-green/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-10 w-96 h-96 bg-neon-cyan/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-1/2 right-1/3 w-80 h-80 bg-neon-pink/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          {/* Title with decorative elements */}
+          <div className="text-center mb-20 relative">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-px bg-gradient-to-r from-transparent via-neon-green to-transparent opacity-30"></div>
+            
+            <div className="inline-block relative">
+              {/* Floating icons around title */}
+              <div className="absolute -left-20 top-1/2 -translate-y-1/2 w-12 h-12 border-2 border-neon-green/30 rounded-lg rotate-12 animate-float"></div>
+              <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-12 h-12 border-2 border-neon-cyan/30 rounded-lg -rotate-12 animate-float" style={{animationDelay: '1s'}}></div>
+              
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 tracking-tight relative">
+                <span className="bg-gradient-to-r from-neon-green via-neon-cyan to-neon-pink bg-clip-text text-transparent drop-shadow-2xl">
+                  HOW IT WORKS
+                </span>
+              </h2>
+            </div>
+            
+            <div className="relative inline-block mt-4">
+              <div className="absolute inset-0 bg-gradient-to-r from-neon-green/20 to-neon-cyan/20 blur-xl"></div>
+              <p className="text-2xl text-gray-300 font-light relative px-8 py-2 border-l-4 border-r-4 border-neon-green/50">
+                Get started in <span className="text-neon-cyan font-bold">3 simple steps</span>
+              </p>
+            </div>
           </div>
 
-          <div className="space-y-10">
+          {/* Steps Grid with Enhanced Design */}
+          <div className="grid grid-cols-1 gap-8">
             {[
               {
                 step: "01",
                 title: "ENTER YOUR TOPIC",
                 description: "Tell us what you want to learn - any subject, any level. Our AI understands context and creates a comprehensive curriculum tailored to your needs.",
-                color: { from: '#00e1ff', to: '#00b8d4', name: 'neon-cyan' }
+                color: { from: '#00e1ff', to: '#00b8d4', shadow: 'rgba(0, 225, 255, 0.3)' }
               },
               {
                 step: "02",
                 title: "AI GENERATES PLAN",
                 description: "Gemini AI analyzes your topic and creates a personalized roadmap with prerequisites, core concepts, advanced topics, practice exercises, and weekly milestones.",
-                color: { from: '#00ff41', to: '#00cc33', name: 'neon-green' }
+                color: { from: '#00ff41', to: '#00cc33', shadow: 'rgba(0, 255, 65, 0.3)' }
               },
               {
                 step: "03",
                 title: "TRACK PROGRESS",
                 description: "Visualize your journey on an interactive 3D map, mark topics complete, chat with AI for help, and watch your knowledge tree grow as you learn.",
-                color: { from: '#ff00e6', to: '#cc00b8', name: 'neon-pink' }
+                color: { from: '#ff00e6', to: '#cc00b8', shadow: 'rgba(255, 0, 230, 0.3)' }
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="group relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border-2 border-white/10 p-10 rounded-2xl hover:border-white/30 transition-all transform hover:scale-[1.02] hover:-translate-y-2 slide-in cursor-pointer shadow-xl overflow-hidden"
-                style={{ animationDelay: `${i * 0.1}s` }}
+                onMouseEnter={() => setHoveredFeature(i + 10)}
+                onMouseLeave={() => setHoveredFeature(null)}
+                className="group relative slide-in"
+                style={{ animationDelay: `${i * 0.15}s` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                {/* Glow effect on hover */}
+                <div 
+                  className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
+                  style={{ background: `linear-gradient(135deg, ${item.color.from}, ${item.color.to})` }}
+                ></div>
                 
-                <div className="relative flex flex-col md:flex-row items-center gap-10">
-                  <div 
-                    className="relative text-7xl font-black w-32 h-32 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-all"
-                    style={{
-                      background: `linear-gradient(135deg, ${item.color.from}, ${item.color.to})`,
-                      boxShadow: `0 10px 40px ${item.color.from}50`
-                    }}
-                  >
-                    <span className="text-white drop-shadow-2xl">{item.step}</span>
+                {/* Main card */}
+                <div className="relative bg-black border-2 rounded-3xl p-10 transition-all duration-300 group-hover:border-opacity-100"
+                     style={{ borderColor: hoveredFeature === i + 10 ? item.color.from : 'rgba(255, 255, 255, 0.1)' }}>
+                  
+                  {/* Corner accent */}
+                  <div className="absolute top-0 left-0 w-24 h-24 opacity-20 overflow-hidden rounded-tl-3xl">
+                    <div className="absolute inset-0" style={{
+                      background: `linear-gradient(135deg, ${item.color.from}, transparent)`,
+                    }}></div>
                   </div>
-                  <div className="flex-1 text-center md:text-left">
-                    <h3 
-                      className="text-4xl font-black mb-4 tracking-wide"
-                      style={{
-                        background: `linear-gradient(135deg, ${item.color.from}, ${item.color.to})`,
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
-                      }}
-                    >
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-300 text-xl leading-relaxed">{item.description}</p>
+
+                  <div className="relative flex flex-col md:flex-row items-start gap-8">
+                    {/* Step Number Container */}
+                    <div className="flex-shrink-0">
+                      <div 
+                        className="w-32 h-32 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+                        style={{
+                          background: hoveredFeature === i + 10 ? `linear-gradient(135deg, ${item.color.from}, ${item.color.to})` : 'rgba(255, 255, 255, 0.05)',
+                          boxShadow: hoveredFeature === i + 10 ? `0 10px 40px ${item.color.shadow}` : 'none'
+                        }}
+                      >
+                        <span className="text-6xl font-black text-white drop-shadow-lg">{item.step}</span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1">
+                      <h3 
+                        className="text-4xl font-black mb-4 tracking-wide transition-all duration-300"
+                        style={{
+                          color: hoveredFeature === i + 10 ? item.color.from : '#ffffff',
+                          textShadow: hoveredFeature === i + 10 ? `0 0 20px ${item.color.shadow}` : 'none'
+                        }}
+                      >
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-400 text-xl leading-relaxed group-hover:text-gray-300 transition-colors">
+                        {item.description}
+                      </p>
+                      
+                      {/* Hover indicator */}
+                      <div className="mt-6 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="w-2 h-2 rounded-full" style={{ backgroundColor: item.color.from }}></div>
+                        <div className="h-px flex-1 bg-gradient-to-r from-current to-transparent" style={{ color: item.color.from }}></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Progress indicator */}
+                  <div className="absolute bottom-6 right-6 flex items-center gap-2 opacity-20 group-hover:opacity-100 transition-opacity">
+                    <span className="text-sm font-bold" style={{ color: item.color.from }}>STEP {item.step}</span>
                   </div>
                 </div>
               </div>
@@ -753,14 +857,37 @@ export default function Home() {
       </section>
 
       {/* Solar System - Learning Journey */}
-      <section className="py-24 bg-terminal-black relative overflow-hidden z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-              <span className="text-pixel-yellow neon-glow">YOUR LEARNING</span>{" "}
-              <span className="text-neon-cyan neon-glow">SOLAR SYSTEM</span>
-            </h2>
-            <p className="text-xl text-gray-300">Navigate your educational universe - from beginner to expert</p>
+      <section className="py-32 bg-gradient-to-b from-black via-gray-900 to-black relative z-10 overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-pixel-yellow/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-cyan/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-neon-pink/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          {/* Title with decorative elements */}
+          <div className="text-center mb-12 relative">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-px bg-gradient-to-r from-transparent via-pixel-yellow to-transparent opacity-30"></div>
+            
+            <div className="inline-block relative">
+              {/* Floating icons around title */}
+              <div className="absolute -left-20 top-1/2 -translate-y-1/2 w-12 h-12 border-2 border-pixel-yellow/30 rounded-lg rotate-12 animate-float"></div>
+              <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-12 h-12 border-2 border-neon-cyan/30 rounded-lg -rotate-12 animate-float" style={{animationDelay: '1s'}}></div>
+              
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 tracking-tight relative">
+                <span className="bg-gradient-to-r from-pixel-yellow via-neon-cyan to-neon-pink bg-clip-text text-transparent drop-shadow-2xl">
+                  YOUR LEARNING SOLAR SYSTEM
+                </span>
+              </h2>
+            </div>
+            
+            <div className="relative inline-block mt-4">
+              <div className="absolute inset-0 bg-gradient-to-r from-pixel-yellow/20 to-neon-cyan/20 blur-xl"></div>
+              <p className="text-2xl text-gray-300 font-light relative px-8 py-2 border-l-4 border-r-4 border-pixel-yellow/50">
+                Navigate your educational universe - from <span className="text-neon-cyan font-bold">beginner to expert</span>
+              </p>
+            </div>
           </div>
 
           <div className="border-4 border-pixel-yellow pixel-border bg-panel-black p-4 mb-8">
