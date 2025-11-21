@@ -5,8 +5,8 @@ import { Check, Circle, Lock, MapPin, Trophy, BookOpen, Target, Award, Clock, Ca
 import type { StudyPlan, ProgressEntry, TrackedProgress } from "@/lib/types"
 import dynamic from "next/dynamic"
 
-const Roadmap3D = dynamic(() => import("@/components/roadmap-3d"), { ssr: false })
-const EnhancedCanvas = dynamic(() => import("@/components/enhanced-canvas"), { ssr: false })
+const Roadmap3DEnhanced = dynamic(() => import("@/components/roadmap-3d-enhanced"), { ssr: false })
+const SuperEnhancedCanvas = dynamic(() => import("@/components/super-enhanced-canvas"), { ssr: false })
 
 export default function EnhancedStudyMap({ studyPlan }: { studyPlan: StudyPlan }) {
   const [progress, setProgress] = useState<TrackedProgress>({})
@@ -209,7 +209,7 @@ export default function EnhancedStudyMap({ studyPlan }: { studyPlan: StudyPlan }
       {/* Interactive Canvas View */}
       {viewMode === "canvas" && (
         <div className="slide-in">
-          <EnhancedCanvas 
+          <SuperEnhancedCanvas 
             studyPlan={studyPlan} 
             progress={progress} 
             onToggleProgress={toggleProgress} 
@@ -220,7 +220,7 @@ export default function EnhancedStudyMap({ studyPlan }: { studyPlan: StudyPlan }
       {/* 3D Roadmap View */}
       {viewMode === "3d" && (
         <div className="slide-in">
-          <Roadmap3D 
+          <Roadmap3DEnhanced 
             studyPlan={studyPlan} 
             progress={simpleProgress} 
             onToggleProgress={toggleProgress} 

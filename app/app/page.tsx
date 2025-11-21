@@ -6,7 +6,7 @@ import EnhancedStudyMap from "@/components/enhanced-study-map"
 import ChatBot from "@/components/chat-bot"
 import LoadingAnimation from "@/components/loading-animation"
 import ExportButtons from "@/components/export-buttons"
-import SettingsPanel from "@/components/settings-panel"
+import EnhancedSettingsPanel from "@/components/enhanced-settings-panel"
 import type { StudyPlan } from "@/lib/types"
 import { MessageSquare, X, Home, Clock, Calendar, Target, Settings } from "lucide-react"
 import Link from "next/link"
@@ -335,7 +335,7 @@ export default function AppPage() {
 
       {/* Settings Panel */}
       {showSettings && studyPlan && (
-        <SettingsPanel 
+        <EnhancedSettingsPanel 
           studyPlanTitle={studyPlan.title} 
           onClose={() => setShowSettings(false)} 
         />
