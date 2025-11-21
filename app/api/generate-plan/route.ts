@@ -45,6 +45,16 @@ const studyPlanSchema = z.object({
 
 export async function POST(request: Request) {
   try {
+    // Validate API key exists
+    const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY
+    if (!apiKey || apiKey === 'your_api_key_here' || apiKey.includes('example')) {
+      console.error("[v0] API key not configured properly")
+      return Response.json({ 
+        error: "API key not configured. Please set GOOGLE_GENERATIVE_AI_API_KEY in your .env file.",
+        details: "See URGENT_API_KEY_FIX.md for setup instructions"
+      }, { status: 500 })
+    }
+
     const body = await request.json()
     const { topic, difficulty, timePerWeek, timeUnit = "hours", format } = body
 
