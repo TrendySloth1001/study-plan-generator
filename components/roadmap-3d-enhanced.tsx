@@ -589,10 +589,15 @@ export default function Roadmap3DEnhanced({ studyPlan, progress, onToggleProgres
           enablePan={true} 
           enableZoom={true} 
           enableRotate={true} 
-          maxDistance={40} 
-          minDistance={5}
+          maxDistance={100} 
+          minDistance={2}
           autoRotate={false}
           autoRotateSpeed={0.5}
+          zoomSpeed={0.6}
+          panSpeed={0.5}
+          rotateSpeed={0.4}
+          enableDamping={true}
+          dampingFactor={0.15}
         />
       </Canvas>
 

@@ -13,8 +13,42 @@ export interface ProgressStep {
 
 export interface Resource {
   title: string
-  type: "book" | "course" | "article" | "video" | "project"
+  type: "book" | "course" | "article" | "video" | "project" | "documentation"
   url?: string
+}
+
+export interface LeafNode {
+  id: string
+  title: string
+  description: string
+  difficulty: "beginner" | "intermediate" | "advanced"
+  completed?: boolean
+}
+
+export interface Subtopic {
+  id: string
+  title: string
+  description: string
+  duration: string
+  resources: Resource[]
+  leafNodes: LeafNode[]
+  completed?: boolean
+}
+
+export interface Branch {
+  id: string
+  title: string
+  description: string
+  subtopics: Subtopic[]
+  completed?: boolean
+}
+
+export interface BranchStructure {
+  mainTopic: string
+  branches: Branch[]
+  prerequisites: string[]
+  estimatedTime: string
+  skillLevel: "beginner" | "intermediate" | "advanced"
 }
 
 export interface ProgressEntry {

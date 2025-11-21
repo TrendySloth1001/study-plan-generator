@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       )
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" })
 
     const prompts: Record<string, string> = {
       explain: `Explain "${topic}" in a clear, concise way suitable for a study plan. Context: ${context}. Provide a 2-3 sentence explanation focusing on key concepts and practical applications.`,
