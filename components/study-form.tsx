@@ -3,6 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
+import { ChevronDown, ChevronUp, Sparkles } from "lucide-react"
 
 interface StudyFormProps {
   onSubmit: (formData: FormData) => Promise<void>
@@ -15,6 +16,12 @@ export interface FormData {
   timePerWeek: number
   timeUnit: "hours" | "days" | "weeks" | "months"
   format: "theory-heavy" | "project-heavy" | "balanced"
+  learningStyle?: "visual" | "auditory" | "kinesthetic" | "reading"
+  goals?: string
+  deadline?: string
+  includeProjects?: boolean
+  includeCertifications?: boolean
+  dailyReminders?: boolean
 }
 
 export default function StudyForm({ onSubmit, isLoading }: StudyFormProps) {
@@ -24,6 +31,15 @@ export default function StudyForm({ onSubmit, isLoading }: StudyFormProps) {
   const [timeUnit, setTimeUnit] = useState<"hours" | "days" | "weeks" | "months">("hours")
   const [format, setFormat] = useState<"theory-heavy" | "project-heavy" | "balanced">("balanced")
   const [submitted, setSubmitted] = useState(false)
+  const [showAdvanced, setShowAdvanced] = useState(false)
+  
+  // Advanced options
+  const [learningStyle, setLearningStyle] = useState<"visual" | "auditory" | "kinesthetic" | "reading">("visual")
+  const [goals, setGoals] = useState("")
+  const [deadline, setDeadline] = useState("")
+  const [includeProjects, setIncludeProjects] = useState(true)
+  const [includeCertifications, setIncludeCertifications] = useState(false)
+  const [dailyReminders, setDailyReminders] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -37,6 +53,12 @@ export default function StudyForm({ onSubmit, isLoading }: StudyFormProps) {
         timePerWeek,
         timeUnit,
         format,
+        learningStyle,
+        goals: goals.trim() || undefined,
+        deadline: deadline || undefined,
+        includeProjects,
+        includeCertifications,
+        dailyReminders,
       })
     } finally {
       setSubmitted(false)
@@ -137,14 +159,134 @@ export default function StudyForm({ onSubmit, isLoading }: StudyFormProps) {
         </div>
       </div>
 
+      {/* Advanced Options Toggle */}
+      <div className="slide-in" style={{ animationDelay: "0.4s" }}>
+        <button
+          type="button"
+          onClick={() => setShowAdvanced(!showAdvanced)}
+          className="w-full border-2 border-neon-pink bg-panel-black hover:bg-terminal-black p-4 text-neon-pink font-bold text-base transition-all flex items-center justify-between"
+        >
+          <span className="flex items-center gap-2">
+            <Sparkles className="w-5 h-5" />
+            ADVANCED OPTIONS
+          </span>
+          {showAdvanced ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+        </button>
+
+        {showAdvanced && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 slide-in">
+            {/* Learning Style */}
+            <div className="border-4 border-neon-cyan pixel-border p-6 bg-panel-black">
+              <label className="text-neon-cyan text-base block mb-4 font-bold">LEARNING STYLE:</label>
+              <div className="space-y-3">
+                {(["visual", "auditory", "kinesthetic", "reading"] as const).map((style) => (
+                  <label
+                    key={style}
+                    className="flex items-center gap-3 cursor-pointer text-base text-neon-cyan hover:text-neon-pink transition-colors"
+                  >
+                    <input
+                      type="radio"
+                      name="learningStyle"
+                      value={style}
+                      checked={learningStyle === style}
+                      onChange={(e) => setLearningStyle(e.target.value as typeof learningStyle)}
+                      disabled={isLoading}
+                      className="cursor-pointer"
+                    />
+                    <span className="capitalize">{style}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* Goals */}
+            <div className="border-4 border-neon-green pixel-border p-6 bg-panel-black">
+              <label className="text-neon-green text-base block mb-4 font-bold">YOUR GOALS:</label>
+              <textarea
+                value={goals}
+                onChange={(e) => setGoals(e.target.value)}
+                placeholder="e.g., Get a job as a developer, build a portfolio..."
+                className="w-full h-24 text-neon-green bg-terminal-black border-2 border-neon-green p-3 text-sm focus:outline-none focus:border-neon-cyan"
+                disabled={isLoading}
+              />
+            </div>
+
+            {/* Deadline */}
+            <div className="border-4 border-neon-pink pixel-border p-6 bg-panel-black">
+              <label className="text-neon-pink text-base block mb-4 font-bold">TARGET DATE:</label>
+              <input
+                type="date"
+                value={deadline}
+                onChange={(e) => setDeadline(e.target.value)}
+                className="w-full text-neon-pink bg-terminal-black border-2 border-neon-pink p-3 text-base focus:outline-none focus:border-neon-cyan"
+                disabled={isLoading}
+              />
+              <p className="text-neon-pink text-xs mt-2 opacity-70">optional completion target</p>
+            </div>
+
+            {/* Preferences */}
+            <div className="border-4 border-pixel-yellow pixel-border p-6 bg-panel-black">
+              <label className="text-pixel-yellow text-base block mb-4 font-bold">PREFERENCES:</label>
+              <div className="space-y-3">
+                <label className="flex items-center gap-3 cursor-pointer text-base text-pixel-yellow hover:text-neon-cyan transition-colors">
+                  <input
+                    type="checkbox"
+                    checked={includeProjects}
+                    onChange={(e) => setIncludeProjects(e.target.checked)}
+                    disabled={isLoading}
+                    className="cursor-pointer w-4 h-4"
+                  />
+                  <span>Include Projects</span>
+                </label>
+                <label className="flex items-center gap-3 cursor-pointer text-base text-pixel-yellow hover:text-neon-cyan transition-colors">
+                  <input
+                    type="checkbox"
+                    checked={includeCertifications}
+                    onChange={(e) => setIncludeCertifications(e.target.checked)}
+                    disabled={isLoading}
+                    className="cursor-pointer w-4 h-4"
+                  />
+                  <span>Certification Prep</span>
+                </label>
+                <label className="flex items-center gap-3 cursor-pointer text-base text-pixel-yellow hover:text-neon-cyan transition-colors">
+                  <input
+                    type="checkbox"
+                    checked={dailyReminders}
+                    onChange={(e) => setDailyReminders(e.target.checked)}
+                    disabled={isLoading}
+                    className="cursor-pointer w-4 h-4"
+                  />
+                  <span>Daily Reminders</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
       {/* Submit Button */}
-      <div className="flex justify-center slide-in" style={{ animationDelay: "0.4s" }}>
+      <div className="flex justify-center slide-in" style={{ animationDelay: "0.5s" }}>
         <button
           type="submit"
           disabled={!topic.trim() || isLoading}
-          className={`bg-neon-green text-terminal-black border-4 border-neon-green px-12 py-6 text-xl font-bold hover:bg-neon-cyan hover:border-neon-cyan disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-105 active:scale-95 ${isLoading ? "crt-flicker" : ""}`}
+          className={`bg-neon-green text-terminal-black border-4 border-neon-green px-12 py-6 text-xl font-bold hover:bg-neon-cyan hover:border-neon-cyan disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-105 active:scale-95 relative overflow-hidden group ${isLoading ? "crt-flicker" : ""}`}
         >
-          {isLoading ? "> GENERATING..." : "> GENERATE PLAN"}
+          <span className="relative z-10 flex items-center gap-3">
+            {isLoading ? (
+              <>
+                <span className="inline-block w-5 h-5 border-2 border-terminal-black border-t-transparent rounded-full animate-spin"></span>
+                GENERATING...
+              </>
+            ) : (
+              <>
+                <Sparkles className="w-6 h-6" />
+                GENERATE PLAN
+              </>
+            )}
+          </span>
+          {!isLoading && (
+            <span className="absolute inset-0 bg-gradient-to-r from-neon-cyan via-neon-pink to-neon-green opacity-0 group-hover:opacity-30 transition-opacity duration-300"></span>
+          )}
         </button>
       </div>
     </form>

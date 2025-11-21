@@ -1939,7 +1939,7 @@ export default function SolarSystemScene({ isFullscreen = false }: { isFullscree
                   
                   <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-yellow/20 relative z-10">
                     <span className="text-neon-yellow text-xl animate-spin" style={{ animationDuration: '3s' }}>🌐</span>
-                    <span className="text-neon-yellow text-sm font-bold tracking-wider">ORBITAL_CHARACTERISTICS</span>
+                    <span className="text-sm text-neon-green text-sm font-bold tracking-wider">ORBITAL_CHARACTERISTICS</span>
                     <div className="ml-auto">
                       <div className="flex items-center gap-1">
                         <div className="w-1 h-4 bg-neon-yellow animate-pulse"></div>

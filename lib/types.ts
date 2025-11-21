@@ -17,6 +17,25 @@ export interface Resource {
   url?: string
 }
 
+export interface ProgressEntry {
+  completed: boolean
+  timestamp?: string
+  notes?: string
+  timeSpent?: number // in minutes
+}
+
+export interface TrackedProgress {
+  [key: string]: ProgressEntry
+}
+
+export interface StudyPlanSettings {
+  theme?: "dark" | "light" | "neon"
+  notificationsEnabled?: boolean
+  dailyGoal?: number // minutes
+  reminderTime?: string
+  autoSave?: boolean
+}
+
 export interface StudyPlan {
   title: string
   difficulty: "beginner" | "intermediate" | "advanced"
@@ -30,4 +49,5 @@ export interface StudyPlan {
   timeline: string
   estimatedDuration: string
   tips: string[]
+  settings?: StudyPlanSettings
 }
