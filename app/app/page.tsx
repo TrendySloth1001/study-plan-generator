@@ -81,7 +81,7 @@ export default function AppPage() {
               </h1>
               <p className="text-neon-pink text-sm sm:text-base opacity-80 pulse-glow flex items-center gap-2 flex-wrap">
                 <span className="inline-block w-2 h-2 bg-neon-green rounded-full animate-pulse" />
-                powered by gemini ai • track your progress • achieve your goals
+                powered by ollama + llama2 • track your progress • achieve your goals
               </p>
             </div>
             <Link

@@ -1,15 +1,14 @@
-import { google } from "@ai-sdk/google"
-import { streamText } from "ai"
+import { Ollama } from "ollama"
 
-export const runtime = "edge"
+const ollama = new Ollama({
+  host: process.env.OLLAMA_HOST || 'http://localhost:11434'
+})
 
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json()
 
-    const result = await streamText({
-      model: google("gemini-2.0-flash-exp"),
-      system: `You are an expert AI learning assistant for a study plan generator app. You help users:
+    const systemMessage = `You are an expert AI learning assistant for a study plan generator app. You help users:
 
 1. Learn effectively by answering questions about any topic
 2. Provide study strategies and learning techniques
@@ -19,17 +18,49 @@ export async function POST(req: Request) {
 6. Suggest learning resources and approaches
 
 Be helpful, encouraging, and concise. Format responses clearly with bullet points when appropriate.
-Use a friendly but professional tone. Keep responses focused and actionable.`,
-      messages,
-      temperature: 0.7,
-      maxTokens: 1000,
+Use a friendly but professional tone. Keep responses focused and actionable.`
+
+    // Format messages for Ollama
+    const formattedMessages = [
+      { role: 'system', content: systemMessage },
+      ...messages.map((msg: any) => ({
+        role: msg.role === 'user' ? 'user' : 'assistant',
+        content: msg.content
+      }))
+    ]
+
+    const response = await ollama.chat({
+      model: 'llama2',
+      messages: formattedMessages,
+      stream: true,
     })
 
-    return result.toTextStreamResponse()
+    // Create a ReadableStream for streaming response
+    const encoder = new TextEncoder()
+    const stream = new ReadableStream({
+      async start(controller) {
+        try {
+          for await (const part of response) {
+            const text = part.message.content
+            controller.enqueue(encoder.encode(text))
+          }
+          controller.close()
+        } catch (error) {
+          controller.error(error)
+        }
+      },
+    })
+
+    return new Response(stream, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Transfer-Encoding': 'chunked',
+      },
+    })
   } catch (error) {
     console.error("[Chat API] Error:", error)
     return new Response(
-      JSON.stringify({ error: "Failed to generate response. Please check your API key and try again." }),
+      JSON.stringify({ error: "Failed to generate response. Please check that Ollama is running with llama2 model." }),
       {
         status: 500,
         headers: { "Content-Type": "application/json" },

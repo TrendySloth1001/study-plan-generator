@@ -4619,22 +4619,6 @@
     }
   }
 
-  .shadow-purple-500 {
-    --tw-shadow-color: #ac4bff;
-  }
-
-  @supports (color: lab(0% 0 0)) {
-    .shadow-purple-500 {
-      --tw-shadow-color: lab(52.0183% 66.11 -78.2316);
-    }
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .shadow-purple-500 {
-      --tw-shadow-color: color-mix(in oklab, var(--color-purple-500) var(--tw-shadow-alpha), transparent);
-    }
-  }
-
   .ring-ring\/50 {
     --tw-ring-color: var(--ring);
   }
@@ -4855,6 +4839,10 @@
 
   .fade-in {
     --tw-enter-opacity: 0;
+  }
+
+  .running {
+    animation-play-state: running;
   }
 
   .slide-in-from-bottom {

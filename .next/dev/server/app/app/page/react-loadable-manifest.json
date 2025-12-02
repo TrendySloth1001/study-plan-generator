@@ -2,23 +2,23 @@
   "[project]/components/super-enhanced-canvas.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/components/super-enhanced-canvas.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
+      "static/chunks/node_modules_8097f9a0._.js",
       "static/chunks/components_super-enhanced-canvas_tsx_5789d072._.js",
-      "static/chunks/node_modules__pnpm_75301514._.js",
-      "static/chunks/66675_reactflow_dist_style_ecbcb4e5.css",
-      "static/chunks/components_super-enhanced-canvas_tsx_f837b53a._.js"
+      "static/chunks/node_modules_reactflow_dist_style_58d81dac.css",
+      "static/chunks/components_super-enhanced-canvas_tsx_9c2cbda9._.js"
     ]
   },
   "[project]/components/roadmap-3d-enhanced.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/components/roadmap-3d-enhanced.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
+      "static/chunks/node_modules_react-reconciler_dd58c996._.js",
+      "static/chunks/node_modules_three_build_three_core_996ef05a.js",
+      "static/chunks/node_modules_three_build_three_module_0c59ee63.js",
+      "static/chunks/node_modules_three_build_three_module_f7d46d9b.js",
+      "static/chunks/node_modules_@react-three_fiber_dist_f74d8c24._.js",
+      "static/chunks/node_modules_78e0c66f._.js",
       "static/chunks/components_roadmap-3d-enhanced_tsx_10474833._.js",
-      "static/chunks/e34b3_react-reconciler_514374a8._.js",
-      "static/chunks/dd74e_three_build_three_core_21277b9b.js",
-      "static/chunks/dd74e_three_build_three_module_31e54e3e.js",
-      "static/chunks/dd74e_three_build_three_module_abe6a69d.js",
-      "static/chunks/f97bd_@react-three_fiber_dist_8cac05a6._.js",
-      "static/chunks/node_modules__pnpm_1a5af46e._.js",
-      "static/chunks/components_roadmap-3d-enhanced_tsx_f837b53a._.js"
+      "static/chunks/components_roadmap-3d-enhanced_tsx_9c2cbda9._.js"
     ]
   }
 }

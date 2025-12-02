@@ -5,7 +5,7 @@ An AI-powered study plan generator with retro gaming aesthetics, featuring inter
 ## ✨ Features
 
 ### 🤖 AI-Powered Plan Generation
-- Generate comprehensive study plans using Google Gemini AI
+- Generate comprehensive study plans using **Ollama + Llama2** (local AI)
 - Customizable difficulty levels (beginner, intermediate, advanced)
 - Flexible time commitment options
 - Multiple learning formats (theory-heavy, project-heavy, balanced)
@@ -53,41 +53,67 @@ An AI-powered study plan generator with retro gaming aesthetics, featuring inter
 
 ### Prerequisites
 - Node.js 18+ or npm/pnpm
-- Google Gemini API key ([Get one here](https://ai.google.dev/))
+- **Ollama installed and running** ([Installation Guide](OLLAMA_SETUP.md))
+- **Llama2 model downloaded** (`ollama pull llama2`)
 
 ### Installation
 
-1. **Clone the repository**
+1. **Install Ollama** (if not already installed)
+   
+   **macOS:**
+   ```bash
+   brew install ollama
+   ```
+   
+   **Linux:**
+   ```bash
+   curl -fsSL https://ollama.ai/install.sh | sh
+   ```
+   
+   **Windows:** Download from [https://ollama.ai/download/windows](https://ollama.ai/download/windows)
+
+2. **Pull Llama2 model**
+   ```bash
+   ollama pull llama2
+   ```
+
+3. **Start Ollama service**
+   ```bash
+   ollama serve
+   ```
+   (On macOS, it usually runs automatically after installation)
+
+4. **Clone the repository**
    ```bash
    git clone <repository-url>
    cd study-plan-generator
    ```
 
-2. **Install dependencies**
+5. **Install dependencies**
    ```bash
    npm install
    # or
    pnpm install
    ```
 
-3. **Set up environment variables**
+6. **Set up environment variables (Optional)**
    ```bash
-   cp .env.example .env
+   cp .env.example .env.local
    ```
    
-   Edit `.env` and add your Google Gemini API key:
+   Edit `.env.local` if you need to customize Ollama host:
    ```
-   GOOGLE_GENERATIVE_AI_API_KEY=your_api_key_here
+   OLLAMA_HOST=http://localhost:11434
    ```
 
-4. **Run the development server**
+7. **Run the development server**
    ```bash
    npm run dev
    # or
    pnpm dev
    ```
 
-5. **Open your browser**
+8. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📖 Usage
@@ -129,7 +155,7 @@ An AI-powered study plan generator with retro gaming aesthetics, featuring inter
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
-- **AI**: Google Gemini 2.5 Flash via Vercel AI SDK
+- **AI**: Ollama + Llama2 (Local LLM)
 - **Icons**: Lucide React
 - **PDF Export**: jsPDF
 - **Storage**: LocalStorage for progress tracking
@@ -175,13 +201,23 @@ The app uses CSS custom properties for easy theme customization. Edit `app/globa
 
 ## 🐛 Troubleshooting
 
-### API Quota Exceeded Error
-**Problem**: "You exceeded your current quota" error
+### Ollama Connection Error
+**Problem**: "Failed to generate response" or connection refused
 
 **Solutions**:
-1. Get a new API key from [Google AI Studio](https://ai.google.dev/)
-2. Check your usage at [Google AI Usage Dashboard](https://ai.dev/usage?tab=rate-limit)
-3. Wait for quota reset or upgrade your plan
+1. Verify Ollama is running: `curl http://localhost:11434`
+2. Start Ollama service: `ollama serve`
+3. Check if llama2 is installed: `ollama list`
+4. If not installed: `ollama pull llama2`
+
+### Slow AI Response Times
+**Problem**: AI takes too long to generate plans
+
+**Solutions**:
+1. Use a smaller model: `ollama pull llama2:7b` (then update route files)
+2. Ensure sufficient RAM (minimum 8GB recommended)
+3. Use GPU acceleration if available (automatic with Ollama)
+4. Keep Ollama service running to avoid cold starts
 
 ### Progress Not Saving
 **Problem**: Progress resets on page refresh
@@ -193,6 +229,13 @@ The app uses CSS custom properties for easy theme customization. Edit `app/globa
 
 **Solution**: The app is optimized for screens 320px+. Try different zoom levels or clear cache.
 
+### Port Conflict
+**Problem**: Ollama port 11434 is already in use
+
+**Solution**: Stop other services using the port, or configure Ollama to use a different port and update `OLLAMA_HOST` in `.env.local`
+
+For detailed Ollama setup instructions, see [OLLAMA_SETUP.md](OLLAMA_SETUP.md)
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -203,15 +246,17 @@ This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
-- Powered by Google Gemini AI
-- Built with Next.js and Vercel AI SDK
+- Powered by Ollama + Llama2 (Local AI)
+- Built with Next.js
 - Retro gaming aesthetic inspired by classic terminal interfaces
 
 ## 🔗 Links
 
-- [Google Gemini API Docs](https://ai.google.dev/docs)
+- [Ollama Documentation](https://github.com/ollama/ollama)
+- [Ollama Website](https://ollama.ai)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS](https://tailwindcss.com)
+- [Llama2 Model](https://ollama.ai/library/llama2)
 
 ---
 

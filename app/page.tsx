@@ -230,7 +230,7 @@ export default function Home() {
             <div className="relative border-2 border-neon-green bg-gradient-to-r from-neon-green/10 to-neon-cyan/10 backdrop-blur-xl px-6 py-3 rounded-full shadow-lg">
               <span className="text-neon-green text-sm font-bold flex items-center gap-2 tracking-wider">
                 <Zap className="w-5 h-5 animate-pulse" />
-                POWERED BY GEMINI AI
+                POWERED BY OLLAMA + LLAMA2
                 <Sparkles className="w-5 h-5 animate-pulse" style={{ animationDelay: '0.5s' }} />
               </span>
             </div>
@@ -923,7 +923,7 @@ export default function Home() {
             <h3 className="text-4xl font-black mb-4 tracking-wide bg-gradient-to-r from-neon-green via-neon-cyan to-neon-pink bg-clip-text text-transparent">
               STUDY PLAN GENERATOR
             </h3>
-            <p className="text-gray-400 text-lg mb-8">Powered by Gemini AI • Built for continuous learners</p>
+            <p className="text-gray-400 text-lg mb-8">Powered by Ollama + Llama2 • Built for continuous learners</p>
             <div className="flex justify-center gap-8 mb-8 flex-wrap">
               <span className="px-6 py-2 bg-gradient-to-r from-neon-cyan/10 to-blue-500/10 border border-neon-cyan/30 rounded-full text-neon-cyan font-bold text-lg backdrop-blur-xl">INNOVATE</span>
               <span className="px-6 py-2 bg-gradient-to-r from-neon-green/10 to-emerald-500/10 border border-neon-green/30 rounded-full text-neon-green font-bold text-lg backdrop-blur-xl">LEARN</span>

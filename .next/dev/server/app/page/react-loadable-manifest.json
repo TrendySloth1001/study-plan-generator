@@ -3,12 +3,8 @@
     "id": "[project]/components/solar-system.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
       "static/chunks/_d9496277._.js",
-      "static/chunks/ff9a6_postprocessing_build_index_f2c46ffe.js",
-      "static/chunks/5a733_maath_dist_20d7ab15._.js",
-      "static/chunks/7b341_n8ao_dist_N8AO_e77e189b.js",
-      "static/chunks/3bba6_@react-three_postprocessing_dist_index_10ca558e.js",
-      "static/chunks/node_modules__pnpm_df8aeb39._.js",
-      "static/chunks/components_solar-system_tsx_913ceeeb._.js"
+      "static/chunks/node_modules_83e55488._.js",
+      "static/chunks/components_solar-system_tsx_b6372a4f._.js"
     ]
   }
 }

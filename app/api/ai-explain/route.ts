@@ -1,20 +1,13 @@
 import { NextResponse } from "next/server"
-import { GoogleGenerativeAI } from "@google/generative-ai"
+import { Ollama } from "ollama"
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "")
+const ollama = new Ollama({
+  host: process.env.OLLAMA_HOST || 'http://localhost:11434'
+})
 
 export async function POST(req: Request) {
   try {
     const { topic, context, type } = await req.json()
-
-    if (!process.env.GEMINI_API_KEY) {
-      return NextResponse.json(
-        { error: "Gemini API key not configured" },
-        { status: 500 }
-      )
-    }
-
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" })
 
     const prompts: Record<string, string> = {
       explain: `Explain "${topic}" in a clear, concise way suitable for a study plan. Context: ${context}. Provide a 2-3 sentence explanation focusing on key concepts and practical applications.`,
@@ -27,15 +20,21 @@ export async function POST(req: Request) {
 
     const prompt = prompts[type] || prompts.explain
 
-    const result = await model.generateContent(prompt)
-    const response = await result.response
-    const text = response.text()
+    const response = await ollama.chat({
+      model: 'llama2',
+      messages: [
+        { role: 'user', content: prompt }
+      ],
+      stream: false,
+    })
+
+    const text = response.message.content
 
     return NextResponse.json({ explanation: text })
   } catch (error: any) {
     console.error("AI Explanation Error:", error)
     return NextResponse.json(
-      { error: error.message || "Failed to generate explanation" },
+      { error: error.message || "Failed to generate explanation. Please check that Ollama is running with llama2 model." },
       { status: 500 }
     )
   }
