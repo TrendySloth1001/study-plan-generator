@@ -51,68 +51,7 @@ An AI-powered study plan generator with retro gaming aesthetics, featuring inter
 
 ## Getting Started
 
-There are two ways to run this application:
-
-### Option 1: Using Docker (Recommended)
-
-This is the easiest way to get started. Docker handles all the setup for you.
-
-**Requirements:**
-- Docker Desktop or Docker Engine (version 20.10 or higher)
-- Docker Compose (version 2.0 or higher)
-- At least 8GB of RAM available
-- At least 10GB of free disk space
-
-**Steps to run:**
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd study-plan-generator
-   ```
-
-2. Start the application:
-   ```bash
-   docker-compose up -d
-   ```
-
-   This command will:
-   - Download and setup Ollama
-   - Download the Llama2 model (approximately 4GB, takes 5-10 minutes)
-   - Build and start the application
-
-3. View the logs to monitor progress:
-   ```bash
-   docker-compose logs -f
-   ```
-
-4. Once ready, open your browser and go to:
-   ```
-   http://localhost:3000
-   ```
-
-**Managing Docker containers:**
-
-Stop the application:
-```bash
-docker-compose down
-```
-
-Restart the application:
-```bash
-docker-compose restart
-```
-
-Rebuild after making changes:
-```bash
-docker-compose up -d --build
-```
-
-See detailed Docker instructions in DOCKER_SETUP.md
-
----
-
-### Option 2: Local Development Setup
+   ### Option 1: Local Development Setup
 
 Run the application directly on your machine.
 
